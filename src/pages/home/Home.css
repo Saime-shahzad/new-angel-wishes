@@ -1,0 +1,7 @@
+.carousel-indicators [data-bs-target]{
+    background-color: white !important;
+    /* background-color: #B89313 !important; */
+}
+.carousel-indicators .active {
+    background-color: #B89313 !important; /* Red color */
+}

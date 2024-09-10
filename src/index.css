@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.inputcontrols{
+  background-color: white !important;
+  width: 212px !important;
+ border-top-left-radius: 8px !important;
+ border-bottom-left-radius: 8px !important;
+
+}
+.inputcontrols>div>input{
+ padding: 13px !important;
+}
+.inputcontrols >  div::after{
+  border-bottom: 2px solid #B89313 !important;
+}
+.inputcontrols >  div::before{
+  border-bottom: none !important;
+}
+.blueSection > div{
+  text-align: center !important;
+  background-color: #1C96C5;
+  color: aliceblue ;
+  padding: 17px;
+  width: 100% !important;
+  border-radius: 3px !important;
+  
+  }

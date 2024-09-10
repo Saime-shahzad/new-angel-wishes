@@ -1,0 +1,25 @@
+.carousel-indicators [data-bs-target]{
+    background-color: white !important;
+    /* background-color: #B89313 !important; */
+}
+.carousel-indicators .active {
+    background-color: #B89313 !important; /* Red color */
+}
+.middleSection > div{
+text-align: center !important;
+background-color: #1C96C5;
+color: aliceblue ;
+padding: 17px;
+width: 100% !important;
+border-radius: 3px !important;
+
+}
+.BannerTextControl{
+    left: 110px !important;
+    top: 150px !important;
+}
+@media only screen and (max-width: 600px) {
+    .BannerTextControl {
+        left:0px !important
+    }
+  }

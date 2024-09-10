@@ -19,7 +19,7 @@ const AppRoutes = () => {
         // { path: "/", element: <Home /> },
         { path: "/",exect:"exect", element: <Home/> },
         { path: "/about-us", element: <AboutUs /> },
-        { path: "/carrer", element: <Career /> },
+        { path: "/career", element: <Career /> },
         { path: "/contact-us", element: <Contact /> },
         { path: "/privacy-policy", element: <PrivacyPolicy /> },
         { path: "/terms&condtions", element: <TermsCondition /> },

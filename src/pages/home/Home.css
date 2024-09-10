@@ -5,3 +5,44 @@
 .carousel-indicators .active {
     background-color: #B89313 !important; /* Red color */
 }
+.middleSection > div{
+text-align: center !important;
+background-color: #1C96C5;
+color: aliceblue ;
+padding: 17px;
+width: 100% !important;
+border-radius: 3px !important;
+
+}
+.BannerTextControl{
+    left: 110px !important;
+    top: 150px !important;
+}
+@media only screen and (max-width: 600px) {
+    .BannerTextControl {
+        left:0px !important
+    }
+  }
+
+    /* animation classses */
+  /* Custom Slow Animation for Left-to-Right Movement */
+.custom-animate-left {
+    position: relative;
+    animation-name: customAnimateLeft;
+    animation-duration: 2s; /* Adjust the duration to slow down the animation */
+    animation-timing-function: ease-in-out; /* Smooth start and end */
+    animation-fill-mode: both; /* Retain the final state after the animation ends */
+  }
+  
+  /* Keyframes for Left-to-Right Movement */
+  @keyframes customAnimateLeft {
+    from {
+      left: -100%; /* Start off-screen to the left */
+      opacity: 0;  /* Start invisible */
+    }
+    to {
+      left: 0; /* Move to the final position */
+      opacity: 1;  /* Fade in to full visibility */
+    }
+  }
+  

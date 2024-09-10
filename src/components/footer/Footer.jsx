@@ -29,7 +29,7 @@ export const Footer = () => {
         {
           id: 2,
           title: "Careers",
-          route: "/careers",
+          route: "/career",
         },
         {
           id: 6,
@@ -44,12 +44,12 @@ export const Footer = () => {
         {
           id: 4,
           title: "Report a Concern",
-          route: "/concern-report",
+          route: "/report-a-concern",
         },
         {
           id: 5,
           title: "Accessibility Report",
-          route: "/accessibility-report",
+          route: "/accessibility-reports",
         },
       ],
       usefull_links: [

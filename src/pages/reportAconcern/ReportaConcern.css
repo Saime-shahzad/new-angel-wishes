@@ -1,0 +1,62 @@
+.inputsControls{
+    width: 280px !important;
+    background-color: white !important;
+}
+.inputsControlsMessage{
+    width: 100%!important;
+    background-color: white !important;
+}
+.messageControls > div{
+    width: 100% !important;
+}
+.inputDiv> div >div> div> div >input{
+    background-color: #E9EFEF !important;
+}   
+   
+   
+.inputDiv> div >div> div> div::after{
+    border-bottom: 2px solid #B89313 !important;
+}
+.inputDiv >  div::before{
+    border-bottom: none !important;
+}
+.file-input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #000; /* Show underline */
+  }
+  
+  .file-input-container input[type="file"] {
+    font-size: 0; /* Hide the text */
+    opacity: 0; /* Hide the button */
+    width: 280px !important;
+    margin-top: 24px !important;
+    background-color: #84cbcb !important;
+    cursor: pointer;
+  }
+  .css-batk84-MuiInputBase-root-MuiFilledInput-root{
+    background-color: #E9EFEF !important;
+  }
+  
+  .file-input-container::before {
+   
+  /* Adjust to match your design */
+    pointer-events: none; /* Ensure this text doesn't block the click */
+  }
+  
+  .control-width{
+    width: 80%;
+  }
+  @media (max-width: 600px) {
+    .control-width {
+      width: 100%;
+    }
+  }
+  
+  /* For medium screens (up to 960px) */
+  @media (max-width: 960px) {
+    .control-width {
+      width: 100%;
+    }
+  }

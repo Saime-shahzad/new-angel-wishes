@@ -3,3 +3,7 @@
       display: none !important;
     }
   }
+
+.hoverEffectControl:hover{
+text-decoration: underline !important;
+}

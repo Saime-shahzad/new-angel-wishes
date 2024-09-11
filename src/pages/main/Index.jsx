@@ -3,6 +3,7 @@ import { Header } from "../../components/header/Header";
 import AppRoutes from "../../routes/Index";
 import { Footer } from "../../components/footer/Footer";
 import homeBackGround from "../../assets/images/homeBackGround.png";
+import kidsbackgroundImage from "../../assets/images/kidsbackgroundImage.jpg";
 import { Inputs } from "../../assets/input/Inputs";
 import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
@@ -14,10 +15,11 @@ export const Index = () => {
     <div
       className="main-Parrwent"
       style={{
-        backgroundImage: `url(${location.pathname==="/kidsCorner" ? homeBackGround : homeBackGround})`,
-        backgroundSize: "contain", // or 'contain' depending on your need
+        backgroundImage: `url(${location.pathname==="/kidsCorner" ? kidsbackgroundImage : homeBackGround})`,
+        backgroundSize: "cover", // or 'contain' depending on your need
         backgroundRepeat: "no-repeat",
         width: "100%", // Adjust as per your design
+       
       }}
     >
       <div>
@@ -28,7 +30,7 @@ export const Index = () => {
         <AppRoutes />
       </div>
       <div
-        className="how-to-apply-parrent p-2 text-white row  d-flex flex-sm-column w-100 flex-lg-row  "
+        className="how-to-apply-parrent p-2 text-white d-sm-block  d-lg-flex flex-sm-column w-100 flex-lg-row  "
         style={{ backgroundColor: "#1C96C5" }}
       >
         <div className="child-1 my-auto col-lg-4 col-md-12 col-sm-12 text-center align-items-center">

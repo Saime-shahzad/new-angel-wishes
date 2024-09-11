@@ -44,7 +44,7 @@ export const Index = () => {
         >
           {icons.arrowBackIosNewIcons}
         </div>
-        <div>Angel Wishes Memory Keeper - {location.pathname?.split("/")[1]}</div>
+        <div className="fw-bold">Angel Wishes Memory Keeper - {location.pathname?.split("/")[1]}</div>
       </div>
 
       <div>

@@ -28,7 +28,7 @@ export const ContentSection = ({
               {/* <div className="  img-section "> */}
               <div className= {item.possition === "left" ?  "img-section col-lg-6 col-md-6 col-sm-12" :"col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end"}>
                 {item.img ? 
-                <img src={item.img} width="400px" height="400px" alt="home-1" /> : ""}
+                <img src={item.img} width="80%" height="300px" alt="home-1" /> : ""}
               </div>
               {/* ///extra content section */}
 

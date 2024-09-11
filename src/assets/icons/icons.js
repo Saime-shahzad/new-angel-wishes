@@ -8,6 +8,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MessageIcon from '@mui/icons-material/Message';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 const icons=
@@ -20,6 +21,7 @@ const icons=
     phoneicons: < LocalPhoneIcon style={{ color: webColor.themeColor }}/>,
     messageicons: < MessageIcon style={{ color: webColor.themeColor }}/>,
     expandMoreIcons: < ExpandMoreIcon style={{ color: "white" }}/>,
+    arrowBackIosNewIcons: < ArrowBackIosNewIcon  style={{fontSize:"15px"}} />,
 
 
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import webColor from "../../assets/colors/Colors";
 import './About.css'
-import home1 from "../../assets/images/home1.png"
-import home2 from "../../assets/images/home2.png"
-import home3 from "../../assets/images/home3.png"
-import home4 from "../../assets/images/home4.png"
+import about01 from "../../assets/images/about01.png"
+import about1 from "../../assets/images/about1.png"
+import about2 from "../../assets/images/about2.png"
+import about3 from "../../assets/images/about3.png"
+import about4 from "../../assets/images/about4.png"
+
 import { ContentSection } from "../../assets/contentSection/ContentSection";
 
 export const AboutUs = () => {
@@ -30,7 +32,7 @@ export const AboutUs = () => {
       possition: "left",
       text: "Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. It was at that moment she realized how difficult it was to find a single place, person, or service that provided everything required for those entering end-of-life and their loved ones. She had to go to multiple locations to address these needs, from a family photo download service to a memory maker and video service to an end-of-life consultancy. And that’s when it hit her: there was nowhere to go to save and share memories and videos; nowhere to find out how to write a will; nowhere to get power of attorney. At least, not all in one place .",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
-      img: home1,
+      img: about01,
       extraContent:<div className="extraontent-Parent">
         <p className="mt-3">
         “At that moment, I understood that creating a portal for caregivers, families, and friends was up to me. Friends lost family members overnight without any will or trust paperwork. I saw someone denied information about her mother’s medical condition because they did not have the proper paperwork once her mom had been transferred to another hospice. That’s why our goal is to help people come together around their loved ones, support them, and care for them the way they deserve at the end of their lives.” - Melanie M., Founder, Angel Wishes Memory Keeper
@@ -50,7 +52,7 @@ export const AboutUs = () => {
       possition: "right",
       text: "Angel Wishes Memory Keeper was created to serve a variety of people. Whether you are an individual entering end-of-life, a family member of an individual entering end-of-life, a caregiver, or otherwise, our services are for you. Whether you are in New York, California, or anywhere in between if you have a loved one nearing end-of-life and do not know where to turn, turn to Angel Wishes Memory Keeper. Our dedicated staff is available 24/7 to ensure you have access to photos, videos, memories, and any other information you may need as you plan for your loved one’s end-of-life needs. As members of the community just like yourself, we understand what it is like to lose a loved one, and we want to make the process of managing that loss as compassionate and understanding as possible",
       className: "content-Parent  row my-4    ",
-      img: home2,
+      img: about1,
     },
 
     {
@@ -81,7 +83,7 @@ export const AboutUs = () => {
       ),
       className:
         "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
-      img: home3,
+      img: about2
     },
 
     {
@@ -96,7 +98,7 @@ export const AboutUs = () => {
       possition: "right",
       text: "Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.",
       className: "content-Parent  row my-5   ",
-      img: home4,
+      img: about3
     },
     {
       heading: (
@@ -119,7 +121,7 @@ export const AboutUs = () => {
       ),
       className:
         "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
-      img: home3,
+      img: about4,
     },
   ];
   return(

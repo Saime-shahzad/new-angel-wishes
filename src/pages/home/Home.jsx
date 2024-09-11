@@ -39,7 +39,7 @@ export const Home = () => {
       subHeading:"",
       possition:"right",
       text:"These Terms shall be governed and construed in accordance with the laws of the state where Angel Wishes Memory Keeper is headquartered, without regard to its conflict of law provisions.",
-      className:" w-100 middleSection  row ",
+      className:" w-100 middleSection ",
       img:false
     },
 

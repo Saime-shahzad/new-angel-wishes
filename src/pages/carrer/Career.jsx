@@ -105,6 +105,11 @@ export const Career = () => {
       </div>
       <div className="child-3 card-Section mt-4 my-5">
         <div className="container">
+          <div className="boxHeading text-center fw-bold">
+          <h3 className="fw-bold my-5">
+            Open Possitions
+          </h3>
+          </div>
     <CardSections data={cardsData} />
         </div>
 

@@ -26,7 +26,7 @@ export const ContentSection = ({
               
               
               {/* <div className="  img-section "> */}
-              <div className= {item.possition === "left" ?  "img-section col-lg-6 col-md-6 col-sm-12" :"col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end"}>
+              <div className= {item.possition === "left" ?  "img-section col-lg-6 col-md-6 col-sm-12 d-flex align-items-center" :"col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-center"}>
                 {item.img ? 
                 <img src={item.img} width="80%" height="300px" alt="home-1" /> : ""}
               </div>

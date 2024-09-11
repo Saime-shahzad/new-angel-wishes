@@ -8,22 +8,43 @@ import { Inputs } from "../../assets/input/Inputs";
 import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
 import { useLocation } from "react-router-dom";
+import useRoutFunction from "../../assets/others/UseFullFunctions";
 
 export const Index = () => {
-  const location=useLocation()
+  const location = useLocation();
+  const RoutFunction = useRoutFunction();
+  
+
   return (
     <div
       className="main-Parrwent"
       style={{
-        backgroundImage: `url(${location.pathname==="/kidsCorner" ? kidsbackgroundImage : homeBackGround})`,
+        backgroundImage: `url(${
+          location.pathname === "/kidsCorner"
+            ? kidsbackgroundImage
+            : homeBackGround
+        })`,
         backgroundSize: "cover", // or 'contain' depending on your need
         backgroundRepeat: "no-repeat",
         width: "100%", // Adjust as per your design
-       
       }}
     >
       <div>
         <Header />
+      </div>
+      <div className="breadcrumb-parent container  my-3 " style={{display:location.pathname === "/" ? "none" : "flex"}}>
+        <div
+          className="icon-parent  align-items-center d-flex  rounded-2 p-1 "
+          style={{
+            marginRight: "20px",
+            backgroundColor: "#E3D7AA",
+            cursor: "pointer",
+          }}
+          onClick={() => RoutFunction(-1)}
+        >
+          {icons.arrowBackIosNewIcons}
+        </div>
+        <div>Angel Wishes Memory Keeper - {location.pathname?.split("/")[1]}</div>
       </div>
 
       <div>

@@ -3,24 +3,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import "./Cards.css"
 
 export default function MediaCard({image, imageSize , paragraphText , headingText}) {
   return (
-    <Card className=" mx-1 " sx={{ maxWidth: 345 }}>
-      {/* <CardMedia
-      className='rounded-3 '
-      component='div'
-      sx={{ 
-        height: imageSize ? imageSize.height:200,
-        width: imageSize ? imageSize.width:277  ,
-        backgroundSize: 'cover', // Ensures the image covers the entire area
-        backgroundPosition: 'center', // Centers the image
-        backgroundRepeat: 'no-repeat',
-     }}
-    
-        image={image}
-        
-      /> */}
+    <Card className=" mx-1 cardhoverStyle" sx={{ maxWidth: 345 }}>
+ 
       
       <div className='rounded-3 d-flex justify-content-center  ' style={{padding:imageSize?"10px" : ""}}>
         <img src={image} alt="!"

@@ -80,16 +80,16 @@ export const Home = () => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img class="d-block w-100"  height="400px" src={ban1} alt="First slide"/>
+    <img class="d-block w-100"  height="450px" src={ban1} alt="First slide"/>
 
     </div>
     <div class="carousel-item">
-    <img class="d-block w-100"  height="400px" src={ban2} alt="First slide"/>
+    <img class="d-block w-100"  height="450px" src={ban2} alt="First slide"/>
     
 
     </div>
     <div class="carousel-item">
-    <img class="d-block w-100"  height="400px" src={ban3} alt="First slide"/>
+    <img class="d-block w-100"  height="450px" src={ban3} alt="First slide"/>
     
     </div>
   </div>

@@ -38,7 +38,7 @@ export const Home = () => {
       heading:"Terms And Conditions",
       subHeading:"",
       possition:"right",
-      text:"These Terms shall be governed and construed in accordance with the laws of the state where Angel Wishes Memory Keeper is headquartered, without regard to its conflict of law provisions.",
+      text:<p className="pt-3 text-center" style={{fontSize:"13px"}}>These Terms shall be governed and construed in accordance with the laws of the state where Angel Wishes Memory Keeper is headquartered, without regard to its conflict of law provisions.</p>,
       className:" w-100 middleSection ",
       img:false
     },

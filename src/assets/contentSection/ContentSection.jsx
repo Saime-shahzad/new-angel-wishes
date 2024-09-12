@@ -17,7 +17,7 @@ export const ContentSection = ({
               {/* <div className="text-section  text-center  "> */}
               <div className= "text-section d-flex align-items-center col-lg-6 col-md-6 col-sm-12 " >
                 
-                <div className=" ">
+                <div className=" w-100">
                 <h1>{item.heading}</h1>
                 <h5>{item.subHeading}</h5>
                 <div className="">{item.text}</div>

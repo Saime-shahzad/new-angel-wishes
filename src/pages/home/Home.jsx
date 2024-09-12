@@ -104,7 +104,7 @@ export const Home = () => {
     </div>
     <div className="content-parent pt-2"> 
       <span className="d-block fw-bold mb-2" style={{fontSize:"15px"}}>
-        Welcom To
+        Welcome To
       </span>
     <h5 className="fw-normal" style={{fontSize:"45px"}}>ANGEL WISHES</h5>
     {/* <p className="w-50 d-none d-md-block" style={{fontSize:"10px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque sint quo, quam dignissimos provident magnam corrupti perspiciatis voluptates 

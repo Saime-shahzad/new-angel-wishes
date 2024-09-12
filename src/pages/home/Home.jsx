@@ -107,8 +107,8 @@ export const Home = () => {
         Welcom To
       </span>
     <h5 className="fw-normal" style={{fontSize:"45px"}}>ANGEL WISHES</h5>
-    <p className="w-50 d-none d-md-block" style={{fontSize:"10px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque sint quo, quam dignissimos provident magnam corrupti perspiciatis voluptates 
-      enim sapiente quisquam ea debitis rerum earum, beatae quasi excepturi. Maxime!</p>
+    {/* <p className="w-50 d-none d-md-block" style={{fontSize:"10px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque sint quo, quam dignissimos provident magnam corrupti perspiciatis voluptates 
+      enim sapiente quisquam ea debitis rerum earum, beatae quasi excepturi. Maxime!</p> */}
       <div className="d-flex ">
       <Buttons  text='Get A Quote ' className='bg-white  mx-1' style={{color:webColor.themeColor}} />
       <Buttons  text='Get A Quote '  style={{color:"white" , backgroundColor:webColor.themeColor}} />

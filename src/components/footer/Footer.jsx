@@ -278,8 +278,8 @@ export const Footer = () => {
 
       {/* ///extra footer section */}
       <div className="extra-section-prent  d-md-flex  d-none p-2">
-        <div className="extra-section d-flex justify-content-between align-items-center">
-          <div className="child-1  d-md-flex align-items-center ">
+        <div className="extra-section w-100 d-flex justify-content-end align-items-center">
+          {/* <div className="child-1  d-md-flex align-items-center ">
             <div>@ 2024 , All Rights Reserved</div>
             <ul className="d-flex  m-0  " style={{ width: "428px" }}>
               <li className="w-25">SiteMap</li>
@@ -287,7 +287,7 @@ export const Footer = () => {
               <li className="w-25">Privacy</li>
               <li className="w-50">Your Privacy Choices</li>
             </ul>
-          </div>
+          </div> */}
           <div className="child-2 d-flex  align-items-center">
             {socialMedia?.map((items) => {
               return (

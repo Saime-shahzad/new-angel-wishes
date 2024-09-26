@@ -51,20 +51,20 @@ export const Index = () => {
         <AppRoutes />
       </div>
       <div
-        className="how-to-apply-parrent p-2 text-white d-sm-block  d-lg-flex flex-sm-column w-100 flex-lg-row  "
+        className="how-to-apply-parrent p-2 text-white  justify-content-center d-flex w-100  "
         style={{ backgroundColor: "#1C96C5" }}
       >
-        <div className="child-1 my-auto col-lg-4 col-md-12 col-sm-12 text-center align-items-center">
-          <h3>How To Apply</h3>
+        <div className="child-1 my-auto  text-center align-items-center ">
+          <h3>Subscribe to Our Newsletter</h3>
         </div>
-        <div className="child-2 my-auto justify-content-sm-center col-lg-4 col-md-12 col-sm-12  ">
+        {/* <div className="child-2 my-auto justify-content-sm-center col-lg-4 col-md-12 col-sm-12  ">
           <p style={{ fontSize: "12px" }} className="my-auto">
             Interested in joining Angel Wishes Memory Keeper? Submit your
             application and resume through our online portal. We look forward to
             learning more about how you can contribute to our mission!
           </p>
-        </div>
-        <div className="child-3 justify-content-sm-center col-lg-4 col-md-12 col-sm-12 d-flex my-auto">
+        </div> */}
+        <div className="child-3 justify-content-sm-center mx-3 d-flex my-auto">
           <Inputs
             icon={icons.mailIcons}
             className="inputcontrols"
@@ -73,7 +73,7 @@ export const Index = () => {
           />
           <Buttons
             text="Submit"
-            style={{ padding: "12px", backgroundColor: "#B89313" }}
+            style={{ padding: "12px", backgroundColor: "#FDB515" }}
           />
         </div>
       </div>

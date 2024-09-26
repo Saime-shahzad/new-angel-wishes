@@ -79,7 +79,7 @@ export const Faqs = () => {
        <p>
        For more information or further assistance, please feel free to contact us. We are committed to helping you preserve your most cherished memories and ensuring peace of mind for you and your family.
        </p>
-       <Buttons  onClick={() => RoutFunction("/contact-us")}  text="Contact Us"style={{backgroundColor:"#B89313"}} />
+       <Buttons  onClick={() => RoutFunction("/contact-us")}  text="Contact Us"style={{backgroundColor:"#FDB515"}} />
        </div>
 
       </div>

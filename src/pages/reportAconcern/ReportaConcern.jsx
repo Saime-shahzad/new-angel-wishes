@@ -16,7 +16,8 @@ export const ReportaConcern = () => {
         "Provide direct assistance and support to our clients, helping them navigate our services and ensuring they receive the care and information they need.",
       image: report1,
       className:
-        "col-lg-4 col-md-6 col-sm-12 box-shadow text-center p-0 d-flex justify-content-around",
+        "col-lg-4 col-md-6 col-sm-12  box-shadow text-center p-0 d-flex justify-content-around",
+        
       imageSize: {
         width: "120px",
         height: "120px",
@@ -92,7 +93,7 @@ export const ReportaConcern = () => {
           style={{ fontSize: "16px" }}
         />
       </div>
-      <div className="cards-setion child-2 container my-5">
+      <div className="cards-setion child-2 container my-5 " >
         <CardSections data={cardsData} />
       </div>
       <div
@@ -118,7 +119,7 @@ export const ReportaConcern = () => {
                  
                 >
                     {item.type === "Submit" ? (
-                        <Buttons text={item.label} style={{backgroundColor:"#B89313"}} type={item.type}/>
+                        <Buttons text={item.label} style={{backgroundColor:"#FDB515"}} type={item.type}/>
                     ) : (
                     <Inputs
                     className={item.type === "file" ? "file-input-container" : "inputsControls"}

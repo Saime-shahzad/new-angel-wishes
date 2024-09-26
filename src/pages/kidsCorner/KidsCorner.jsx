@@ -47,7 +47,7 @@ export const KidsCorner = () => {
             not feeling well, it's important to have all their happy moments
             saved to look at whenever they need a smile.
           </p>
-          <Buttons text="AboutUs" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#B89313" }} />
+          <Buttons text="AboutUs" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#FDB515" }} />
         </div>
       ),
 
@@ -91,7 +91,7 @@ export const KidsCorner = () => {
             necessary is kept together and won’t lose it. Let us keep all your
             favorite digital memories and documents safe and in one place.
           </p>
-          <Buttons text="AboutUs" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#B89313" }} />
+          <Buttons text="AboutUs" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#FDB515" }} />
         </div>
       ),
       className: "content-Parent  row my-5   ",
@@ -115,7 +115,7 @@ export const KidsCorner = () => {
             collection with us. You can start filling your virtual treasure
             chest today and add more smiles and stories whenever possible!
           </p>
-          <Buttons text="Sign up Now" onClick={() => RoutFunction("/")} style={{ backgroundColor: "#B89313" }} />
+          <Buttons text="Sign up Now" onClick={() => RoutFunction("/")} style={{ backgroundColor: "#FDB515" }} />
         </div>
       ),
     },
@@ -131,10 +131,10 @@ export const KidsCorner = () => {
             it’s so unique, click the buttons below!
           </p>
           <div className="d-flex justify-content-center">
-            <Buttons text="About-us" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#B89313" }} />
+            <Buttons text="About-us" onClick={() => RoutFunction("/about-us")} style={{ backgroundColor: "#FDB515" }} />
             <Buttons
               text="FAQS"
-              style={{ backgroundColor: "#B89313", marginLeft: "3px" }}
+              style={{ backgroundColor: "#FDB515", marginLeft: "3px" }}
               onClick={() => RoutFunction("/faqs")}
             />
           </div>

@@ -1,5 +1,5 @@
 const webColor={
-    themeColor:"#B89313"
+    themeColor:"#FDB515"
 }
 
 export default webColor

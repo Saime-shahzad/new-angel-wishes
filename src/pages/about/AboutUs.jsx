@@ -35,7 +35,26 @@ export const AboutUs = () => {
       img: about01,
       extraContent:<div className="extraontent-Parent">
         <p className="mt-3">
-        “At that moment, I understood that creating a portal for caregivers, families, and friends was up to me. Friends lost family members overnight without any will or trust paperwork. I saw someone denied information about her mother’s medical condition because they did not have the proper paperwork once her mom had been transferred to another hospice. That’s why our goal is to help people come together around their loved ones, support them, and care for them the way they deserve at the end of their lives.” - Melanie M., Founder, Angel Wishes Memory Keeper
+        <div className="fst-italic fw-bold">
+        <span className="fs-2  " >
+        ❝
+          </span>
+          <div>
+            At that moment, I understood that creating a portal for caregivers, families, and friends was up to me. Friends lost family members overnight without any will or trust paperwork. I saw someone denied information about her mother’s medical condition because they did not have the proper paperwork once her mom had been transferred to another hospice. That’s why our goal is to help people come together around their loved ones, support them, and care for them the way they deserve at the end of their lives.
+            </div>
+            <div className=" row">  
+              
+          <span className="col-lg-6 col-md-12 col-sm-12  fw-normal "  style={{fontSize:"14px"}}>
+
+- Melanie M., Founder, Angel Wishes Memory Keeper 
+</span>
+          <span className="fs-2 text-md-center text-sm-center col-lg-6 col-md-12 col-sm-12 d-lg-flex  text-lg-center py-2  " style={{left:"270px" }}>
+       
+          ❞
+          </span>
+            </div>
+          </div>
+           
         We are a caring team that makes life’s most important moments count through pictures, videos, stories, and comprehensive end-of-life services. We want to give people with terminal illnesses a place to create and store memories, be at peace, and pull together their greatest memories. Finally, we help integrate life’s best moments along with estate plans, power of attorney, and financial and health considerations for those entering end-of-life. Angel Wishes Memory Keeper aims to help families gather all their wishes and estate planning into an actionable plan.
         </p>
       </div>

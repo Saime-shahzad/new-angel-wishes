@@ -22,7 +22,7 @@ code {
  padding: 13px !important;
 }
 .inputcontrols >  div::after{
-  border-bottom: 2px solid #B89313 !important;
+  border-bottom: 2px solid #FDB515 !important;
 }
 .inputcontrols >  div::before{
   border-bottom: none !important;

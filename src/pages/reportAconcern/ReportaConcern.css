@@ -15,7 +15,7 @@
    
    
 .inputDiv> div >div> div> div::after{
-    border-bottom: 2px solid #B89313 !important;
+    border-bottom: 2px solid #FDB515 !important;
 }
 .inputDiv >  div::before{
     border-bottom: none !important;
@@ -59,4 +59,7 @@
     .control-width {
       width: 100%;
     }
+  }
+  .hoverEffects :hover{
+margin-left: 2px !important;
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import { ContentSection } from "../../assets/contentSection/ContentSection";
-import mission1 from "../../assets/images/mission1.png";
+import mission1 from "../../assets/images/mission1.jpg";
 import mission2 from "../../assets/images/mission2.png";
 
 export const MissionVission = () => {

@@ -39,18 +39,18 @@ export const CommonParagraph = ({
 export const BoxesSection = ({ headingText, subHeading, data }) => {
   return (
     <div className="middleHeader">
-      <div className="child1">
+      <div className="child1" >
         <div className="subChild ">
-          <div>
-            <h3 className="py-4 fw-bold text-center">{headingText}</h3>
+          <div >
+            <h3 className="py-4 fw-bold text-center" >{headingText}</h3>
             <p className="text-center">{subHeading}</p>
             <div className="container">
               <div className="row">
                 {data?.map((item) => {
                   return (
-                    <div className="box-parent col-lg-6 col-md-12 col-sm-12 hoverAnimation">
+                    <div className="box-parent col-lg-6 col-md-12 col-sm-12 hoverAnimation" >
                       <div className="content-with-icon-parrent d-flex">
-                        <div className="image-parent p-3 pt-2">
+                        <div className="image-parent p-3 pt-2" >
                           <img
                             src={item.image}
                             width={item.width}
@@ -94,12 +94,12 @@ export const ExtraBlueSection = ({ text, heading, className }) => {
 };
 export const CardSections = ({ text, heading, className ,data }) => {
   return (
-    <div className="middleHeader row ">
+    <div className="middleHeader row  ">
       {
         data?.map((item) =>{
 
 return(
-      <div className={item.className}>
+      <div className={item.className} >
          <Cards headingText={item.heading} paragraphText={item.paragraphText} image={item.image} imageSize={item.imageSize}/>
       </div>)
         })

@@ -140,7 +140,7 @@ export const Career = () => {
       </div>
       <div
         className="child-3 my-5 p-3 form-Section container"
-        style={{ backgroundColor: "#1C96C5" }}
+        style={{ backgroundColor: "#21668E" }}
       >
         <form
           className="my-5 container control-width rounded-2  "
@@ -197,7 +197,7 @@ export const Career = () => {
           </div>
         </form>
       </div>
-      {/* <div className="child-2 my-5 " style={{backgroundColor:"#1C96C5"}}>
+      {/* <div className="child-2 my-5 " style={{backgroundColor:"#21668E"}}>
         <ExtraBlueSection
           heading={middleExtraSectionBlue.heading}
           text={middleExtraSectionBlue.text}

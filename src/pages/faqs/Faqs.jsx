@@ -59,7 +59,7 @@ export const Faqs = () => {
         return(
             <div className='faqs-parrent'>
                  <Accordion className='rounded-3 my-3'>
-        <AccordionSummary className='text-white rounded' style={{backgroundColor:"#1C96C5"}}
+        <AccordionSummary className='text-white rounded' style={{backgroundColor:"#21668E"}}
           expandIcon={icons.expandMoreIcons}
           aria-controls="panel1-content"
           id="panel1-header"

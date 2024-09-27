@@ -29,10 +29,13 @@ code {
 }
 .blueSection > div{
   text-align: center !important;
-  background-color: #1C96C5;
+  background-color: #21668E;
   color: aliceblue ;
   padding: 17px;
   width: 100% !important;
   border-radius: 3px !important;
   
   }
+  .inputcontrolings >  div > div > div > .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root ::after{
+    border-bottom: 2px solid #FDB515 !important;
+}

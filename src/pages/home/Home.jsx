@@ -11,8 +11,12 @@ import home2 from "../../assets/images/home2.png"
 import home3 from "../../assets/images/home3.png"
 import home4 from "../../assets/images/home4.png"
 import { ContentSection } from "../../assets/contentSection/ContentSection";
+import useRoutFunction from "../../assets/others/UseFullFunctions";
+
 
 export const Home = () => {
+  const routeTo = useRoutFunction();
+
 
   const homePageContent = [
 
@@ -109,8 +113,8 @@ export const Home = () => {
                 <h5 className="fw-normal" style={{ fontSize: "45px" }}>Angels Wishes Memory Keeper</h5>
                 <p className="w-50 d-none d-md-block" style={{ fontSize: "10px" }}>Where you can secure your memories, safeguard your data, and prepare your final wishes with expert guidance.</p>
                 <div className="d-flex ">
-                  <Buttons text='Get Started' className='bg-white  mx-1' style={{ color: webColor.themeColor }} />
-                  <Buttons text='Sign Up ' style={{ color: "white", backgroundColor: webColor.themeColor }} />
+                  <Buttons text='Get Started' onClick={() => {routeTo("/sign-in")}} className='bg-white  mx-1' style={{ color: webColor.themeColor }} />
+                  <Buttons text='Sign Up '  onClick={() => {routeTo("/sign-up")}} style={{ color: "white", backgroundColor: webColor.themeColor }} />
                 </div>
               </div>
             </div>

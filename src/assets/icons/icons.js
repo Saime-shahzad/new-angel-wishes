@@ -9,6 +9,8 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MessageIcon from '@mui/icons-material/Message';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import SyncLockIcon from '@mui/icons-material/SyncLock';
+import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
 
 
 const icons=
@@ -17,7 +19,9 @@ const icons=
     instaIcons: < InstagramIcon style={{ color: webColor.themeColor }}/>,
     pintrestIcons: < PinterestIcon style={{ color: webColor.themeColor }}/>,
     manIcons: < Person3Icon style={{ color: webColor.themeColor }}/>,
+    ageIcons: < FaceRetouchingNaturalIcon style={{ color: webColor.themeColor }}/>,
     mailIcons: < EmailIcon style={{ color: webColor.themeColor }}/>,
+    passwordIcons: < SyncLockIcon style={{ color: webColor.themeColor }}/>,
     phoneicons: < LocalPhoneIcon style={{ color: webColor.themeColor }}/>,
     messageicons: < MessageIcon style={{ color: webColor.themeColor }}/>,
     expandMoreIcons: < ExpandMoreIcon style={{ color: "white" }}/>,

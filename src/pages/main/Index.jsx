@@ -14,6 +14,7 @@ export const Index = () => {
   const location = useLocation();
   const RoutFunction = useRoutFunction();
   
+  
 
   return (
     <div
@@ -52,7 +53,7 @@ export const Index = () => {
       </div>
       <div
         className="how-to-apply-parrent p-2 text-white  justify-content-center d-flex w-100  "
-        style={{ backgroundColor: "#1C96C5" }}
+        style={{ backgroundColor: "#21668E" }}
       >
         <div className="child-1 my-auto  text-center align-items-center ">
           <h3>Subscribe to Our Newsletter</h3>

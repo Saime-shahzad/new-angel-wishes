@@ -4,8 +4,8 @@ import "./Header.css";
 import haderLogo from "../../assets/images/logo.png";
 import menueImage from "../../assets/images/menu.png";
 import bannerLogowhite from "../../assets/images/bannerLogowhite.png";
-import profileImage from "../../assets/images/user.png";
-import profilewhiteImage from "../../assets/images/manlogowhite.png";
+// import profileImage from "../../assets/images/user.png";
+// import profilewhiteImage from "../../assets/images/manlogowhite.png";
 import menueWhite from "../../assets/images/menuewhite.png";
 import { Link, useLocation } from "react-router-dom";
 import webColor from "../../assets/colors/Colors";
@@ -63,22 +63,34 @@ export const Header = () => {
   const profileMenue = [
     {
       title: "Logout",
-      onClick: () => routeTo(" "),
+      onClick: () => {
+        // routeTo("")
+        handleClose()
+      },
     },
     {
       title: "Profile",
-      onClick: () => routeTo(" "),
+      onClick: () => {
+        // routeTo("/sign-in")
+        handleClose()
+      },
+    },
+    {
+      title: "SignIn",
+      onClick: () => {routeTo("/sign-in")
+        handleClose()
+      },
     },
   ];
 
   return (
-    <div className="Header-Parrent">
-      <div className="first-child">
+    <div className="Header-Parrent ">
+      <div className="first-child ">
         <div
           className="child-1  d-flex justify-content-between align-items-center p-2 px-5 "
           style={{
             backgroundColor:
-              location.pathname === "/" ? "white" : webColor.themeColor,
+              location.pathname === "/" ? "#21668E" : webColor.themeColor,
           }}
         >
           <div className=" d-flex justify-content-between    socialMediaDivStyle">
@@ -118,7 +130,7 @@ export const Header = () => {
             })}
           </div>
           <div className="child-3 d-flex ">
-            <div
+            {/* <div
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
@@ -133,7 +145,7 @@ export const Header = () => {
                 className="mx-3"
                 alt="logo"
               />
-            </div>
+            </div> */}
             <div
               ////popup//
               id="basic-button"
@@ -141,6 +153,7 @@ export const Header = () => {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
+              style={{cursor:"pointer"}}
 
               /////close
             >
@@ -166,7 +179,7 @@ export const Header = () => {
         >
           {(isPopupName === "profile" ? profileMenue : profileMenue)?.map(
             (item) => {
-              return <MenuItem onClick={handleClose}>{item.title}</MenuItem>;
+              return <MenuItem onClick={item.onClick}>{item.title}</MenuItem>;
             }
           )}
         </Menu>

@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import "./Inputs.css"
 import { InputAdornment } from '@mui/material';
 
-export const Inputs = ({type , labelName , icon ,placeholder, className, suffix}) => {
+export const Inputs = ({type , labelName , icon ,placeholder, className, suffix , variants}) => {
   return (
     <div>
         <div className='textFieldparrent mb-2'>
@@ -20,7 +20,7 @@ export const Inputs = ({type , labelName , icon ,placeholder, className, suffix}
     multiline={labelName === "Message" ? true : false}
     
     type={type}
-    variant="filled"
+    variant={ variants ? "outlined"  :"filled"}
   />
   </div>
   

@@ -98,7 +98,7 @@ export const ReportaConcern = () => {
       </div>
       <div
         className="child-3 my-5 p-3 form-Section container"
-        style={{ backgroundColor: "#1C96C5" }}
+        style={{ backgroundColor: "#21668E" }}
       >
         <form
           className="my-5 container control-width rounded-2  "

@@ -97,7 +97,7 @@ Stay updated with the latest news and updates from Angel Wishes Memory Keeper by
           <div  className="contact-word-parent  fs-1 col-lg-6 col-md-6 col-sm-6 p-2 text-lg-end text-sm-start "  style={{backgroundColor:"#E9EAEB" , color:"#FDB515"}}>
         CONTACT
           </div>
-          <div  className="WITH-US-word-parent fs-1 col-lg-6 col-md-6 p-2  col-sm-6 text-white" style={{backgroundColor:"#1C96C5"}}>
+          <div  className="WITH-US-word-parent fs-1 col-lg-6 col-md-6 p-2  col-sm-6 text-white" style={{backgroundColor:"#21668E"}}>
         WITH US
           </div>
          </div>
@@ -119,7 +119,7 @@ Stay updated with the latest news and updates from Angel Wishes Memory Keeper by
         </div>
 
         {/* ///form Right Side */}
-        <div className="from-right-side col-lg-6 col-md-6 col-sm-12" style={{backgroundColor:"#1C96C5"}}>
+        <div className="from-right-side col-lg-6 col-md-6 col-sm-12" style={{backgroundColor:"#21668E"}}>
           {formRightSideContent?.map((item) =>{
             return(
               <div className="parent text-white">

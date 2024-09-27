@@ -12,6 +12,8 @@ import { MissionVission } from "../pages/mission&Vission/MissionVission";
 import { ReportaConcern } from "../pages/reportAconcern/ReportaConcern";
 import { AccessibilityReports } from "../pages/accessibility-reports/AccessibilityReports";
 import { Faqs } from "../pages/faqs/Faqs";
+import SignIn from "../pages/signIn/SignIn";
+import  SignUp  from "../pages/signUp/SignUp";
 // import { publicRoutesList } from "./Routes";
 
 const AppRoutes = () => {
@@ -29,6 +31,8 @@ const AppRoutes = () => {
         { path: "/report-a-concern", element: <ReportaConcern /> },
         { path: "/accessibility-reports", element: <AccessibilityReports /> },
         { path: "/faqs", element: <Faqs /> },
+        { path: "/sign-in", element: <SignIn /> },
+        { path: "/sign-up", element: <SignUp /> },
        
       ];
   return (

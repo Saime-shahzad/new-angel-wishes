@@ -67,14 +67,14 @@ export const Index = () => {
         </div> */}
         <div className="child-3 justify-content-sm-center mx-3 d-flex my-auto">
           <Inputs
-            icon={icons.mailIcons}
+            icon={<div style={{color:"lightgrey" }} >{ icons.mailIcons}Email  
+                      </div>}
             className="inputcontrols"
             type="text"
-            placeholder="Email Address"
           />
           <Buttons
             text="Submit"
-            style={{ padding: "12px", backgroundColor: "#FDB515" }}
+            style={{ padding: "12.2px", backgroundColor: "#FDB515" ,  borderTopLeftRadius:"0px" , borderBottomLeftRadius:"0px"}}
           />
         </div>
       </div>

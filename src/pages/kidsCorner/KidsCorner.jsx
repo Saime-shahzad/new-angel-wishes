@@ -23,8 +23,11 @@ export const KidsCorner = () => {
       subHeading: "A Safe Space to Save Your Favorite Memories",
       possition: "left",
       text: "Here at Angel Wishes Memory Keeper, we help you keep all your favorite memories safe and sound, from photos of a fun day to a video of your birthday party or stories about your adventures safe. It’s like having a digital treasure chest to save all the most important things in your life! Whether you want to reflect on these memories later or share them with someone you love, we ensure they're always there for you.",
-      className: "content-Parent  row my-4 flex-lg-row-reverse  ",
+      className: "row my-4 flex-lg-row-reverse   ",
+      // className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: kids1,
+      sizes:["480px" , "300px"]
+
     },
 
     {
@@ -53,6 +56,8 @@ export const KidsCorner = () => {
 
       className: "content-Parent  row my-4    ",
       img: kids2,
+      sizes:["480px" , "300px"]
+
     },
 
     {
@@ -69,6 +74,7 @@ export const KidsCorner = () => {
       className:
         "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
       img: kids3,
+      sizes:["480px" , "300px"]
     },
 
     {
@@ -96,6 +102,8 @@ export const KidsCorner = () => {
       ),
       className: "content-Parent  row my-5   ",
       img: kids4,
+      sizes:["480px" , "300px"]
+
     },
   ];
   const extraContent = [
@@ -155,18 +163,18 @@ export const KidsCorner = () => {
   };
 
   return (
-    <div className="parrent">
-      <div className="child-1">
+    <div className="parrent container">
+      <div className="child-1 px-5 container">
         <div className="topContentParrent container mt-5">
           <MiddleHeader
             headingText={topContent.headingText}
             paragraphText={topContent.paragraphText}
           />
         </div>
-        <div className="middleContent-parent">
+        <div className="middleContent-parent ">
           <ContentSection data={kidsPageContent} />
         </div>
-        <div className="container">
+        <div className="container my-5">
           {extraContent?.map((items) => (
             <MiddleHeader
               paragraphText={items.paragraphText}

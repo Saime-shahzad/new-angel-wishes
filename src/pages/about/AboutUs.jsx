@@ -30,7 +30,7 @@ export const AboutUs = () => {
       ),
       subHeading: "We Allow Families to Cherish Every Moment",
       possition: "left",
-      text: "Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. It was at that moment she realized how difficult it was to find a single place, person, or service that provided everything required for those entering end-of-life and their loved ones. She had to go to multiple locations to address these needs, from a family photo download service to a memory maker and video service to an end-of-life consultancy. And that’s when it hit her: there was nowhere to go to save and share memories and videos; nowhere to find out how to write a will; nowhere to get power of attorney. At least, not all in one place .",
+      text: "Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. It was at that moment she realized how difficult it was to find a single place, person, or service that provided everything required for those entering end-of-life and their loved ones. She had to go to multiple locations to address these needs, from a family photo download service to a memory maker and video service to an end-of-life consultancy. And that’s when it hit her: there was nowhere to go to save and share memories and videos; nowhere to find out how to write a will; nowhere to get power of attorney. At least, not all in one place.",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: about01,
       extraContent:<div className="extraontent-Parent">
@@ -69,9 +69,10 @@ export const AboutUs = () => {
       ),
       subHeading: "",
       possition: "right",
-      text: "Angel Wishes Memory Keeper was created to serve a variety of people. Whether you are an individual entering end-of-life, a family member of an individual entering end-of-life, a caregiver, or otherwise, our services are for you. Whether you are in New York, California, or anywhere in between if you have a loved one nearing end-of-life and do not know where to turn, turn to Angel Wishes Memory Keeper. Our dedicated staff is available 24/7 to ensure you have access to photos, videos, memories, and any other information you may need as you plan for your loved one’s end-of-life needs. As members of the community just like yourself, we understand what it is like to lose a loved one, and we want to make the process of managing that loss as compassionate and understanding as possible",
+      text: "Angel Wishes Memory Keeper was created to serve a variety of people. Whether you are an individual entering end-of-life, a family member of an individual entering end-of-life, a caregiver, or otherwise, our services are for you. Whether you are in New York, California, or anywhere in between if you have a loved one nearing end-of-life and do not know where to turn, turn to Angel Wishes Memory Keeper. Our dedicated staff is available 24/7 to ensure you have access to photos, videos, memories, and any other information you may need as you plan for your loved one’s end-of-life needs. As members of the community just like yourself, we understand what it is like to lose a loved one, and we want to make the process of managing that loss as compassionate and understanding as possible.",
       className: "content-Parent  row my-4    ",
       img: about1,
+      sizes:["540px" , "492px"]
     },
 
     {
@@ -80,7 +81,7 @@ export const AboutUs = () => {
           Who We <span style={{ color: webColor.themeColor }}>Work </span> With
         </span>
       ),
-      subHeading: "Expert Guidance When You Need It Most",
+      // subHeading: "Expert Guidance When You Need It Most",
       possition: "left",
       text: (
         <div className="text-parent">
@@ -125,7 +126,7 @@ export const AboutUs = () => {
           What’s <span style={{ color: webColor.themeColor }}>Next?  </span> 
         </span>
       ),
-      subHeading: "Expert Guidance When You Need It Most",
+      // subHeading: "Expert Guidance When You Need It Most",
       possition: "left",
       text: (
         <div className="text-parent">

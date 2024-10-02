@@ -3,19 +3,19 @@ import {
   // Link,
   useNavigate,
 } from "react-router-dom";
-import twitter from "../../assets/images/twitter.png";
-import linkedIn from "../../assets/images/linkedIn.png";
-import fb from "../../assets/images/fb.png";
-import insta from "../../assets/images/insta.png";
-import X from "../../assets/images/X.png";
-import youtube from "../../assets/images/youtube.png";
-import tiktok from "../../assets/images/tiktok.png";
-import pinterest from "../../assets/images/pinterest.png";
-import mail from "../../assets/images/mail.png";
-import phone from "../../assets/images/phone.png";
+// import twitter from "../../assets/images/twitter.png";
+// import linkedIn from "../../assets/images/linkedIn.png";
+// import fb from "../../assets/images/fb.png";
+// import insta from "../../assets/images/insta.png";
+// import X from "../../assets/images/X.png";
+// import youtube from "../../assets/images/youtube.png";
+// import tiktok from "../../assets/images/tiktok.png";
+// import pinterest from "../../assets/images/pinterest.png";
+
 import { Box, Typography } from "@mui/material";
 import footerLogo from "../../assets/images/fotter_logo_old.png";
 import "./Footer.css"
+import icons from "../../assets/icons/icons";
 
 export const Footer = () => {
   const footerValues = [
@@ -31,33 +31,30 @@ export const Footer = () => {
           title: "Careers",
           route: "/career",
         },
-        {
-          id: 6,
-          title: "Contact Us",
-          route: "/contact-us",
-        },
-        {
-          id: 3,
-          title: "Mission and Vision",
-          route: "/mission&vission",
-        },
-        {
-          id: 4,
-          title: "Report a Concern",
-          route: "/report-a-concern",
-        },
+        // {
+        //   id: 6,
+        //   title: "Contact Us",
+        //   route: "/contact-us",
+        // },
+        // {
+        //   id: 3,
+        //   title: "Mission and Vision",
+        //   route: "/mission&vision",
+        // },
+       
         {
           id: 5,
           title: "Accessibility Report",
           route: "/accessibility-reports",
         },
-      ],
-      usefull_links: [
         {
           id: 1,
           title: "Kids Corner",
           route: "/kidsCorner",
         },
+      ],
+      usefull_links: [
+     
         {
           id: 2,
           title: "Privacy Policy",
@@ -67,6 +64,11 @@ export const Footer = () => {
           id: 3,
           title: "Terms & Condition",
           route: "/terms&condtions",
+        },
+        {
+          id: 4,
+          title: "Report a Concern",
+          route: "/report-a-concern",
         },
         {
           id: 4,
@@ -94,56 +96,61 @@ export const Footer = () => {
       contacts: [
         {
           id: 1,
-          image: mail,
+          image: icons.mailIcons,
+
           title: "support@angel-wishes.com",
         },
         {
           id: 2,
-          image: phone,
+          // image: phone,
+          image: icons.phoneicons,
+
           title: "(949) 771-6361",
         },
-        // {
-        //     id:3,
-        //     image: location,
-        //     title:"street 112/5"
-        // }
+        {
+            id:3,
+            image: icons.locationIcons,
+            title:<p>474274 EState Rd <br /> 200Fernandina  Beach, FL32034</p>
+        }
       ],
     },
   ];
-  const socialMedia = [
-    {
-      id: 1,
-      img: twitter,
-    },
-    {
-      id: 2,
-      img: linkedIn,
-    },
-    {
-      id: 3,
-      img: fb,
-    },
-    {
-      id: 4,
-      img: insta,
-    },
-    {
-      id: 5,
-      img: X,
-    },
-    {
-      id: 6,
-      img: youtube,
-    },
-    {
-      id: 7,
-      img: tiktok,
-    },
-    {
-      id: 8,
-      img: pinterest,
-    },
-  ];
+
+  //commit due to kaleem's input
+  // const socialMedia = [
+  //   {
+  //     id: 1,
+  //     img: twitter,
+  //   },
+  //   {
+  //     id: 2,
+  //     img: linkedIn,
+  //   },
+  //   {
+  //     id: 3,
+  //     img: fb,
+  //   },
+  //   {
+  //     id: 4,
+  //     img: insta,
+  //   },
+  //   {
+  //     id: 5,
+  //     img: X,
+  //   },
+  //   {
+  //     id: 6,
+  //     img: youtube,
+  //   },
+  //   {
+  //     id: 7,
+  //     img: tiktok,
+  //   },
+  //   {
+  //     id: 8,
+  //     img: pinterest,
+  //   },
+  // ];
   const navigation = useNavigate();
   return (
     <Box
@@ -153,9 +160,9 @@ export const Footer = () => {
         px: { md: "1rem", xs: "1rem" },
       }}
     >
-      <div className="row d-flex border-bottom">
+      <div className="row d-flex  py-5">
         <div
-          className=" col-lg-6 col-md-4 col-sm-6"
+          className=" col-lg-4 col-md-4   col-sm-6"
           // xs={12}
           // md={4}
           // sm={6}
@@ -169,29 +176,38 @@ export const Footer = () => {
             sx={{
               width: { sm: "17.1rem", xs: "100%" },
               height: { sm: "17.1rem", xs: "15rem" },
+              alignItems:"center",
+              display:"flex",
+              justifyContent:"center"
               // ml:{xs:-10}
+              
             }}
           >
+            <div className="image-div text-center mt-5">
+
             <img
               src={footerLogo}
               alt="logo"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "277px", height: "112px" }}
             />
+            <p style={{fontSize:"14px"}}>
+            Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. 
+
+            </p>
+            </div>
+           
           </Box>
         </div>
         <div
-          className=" col-lg-2 col-md-3 col-sm-6"
+          className=" col-lg-2 col-md-3 col-sm-6 d-flex align-items-center"
 
           //   xs={12} md={3} sm={6}
         >
           <Box
             sx={{
-              borderRight: { md: "1px solid #A7A7A7" },
-              ml: { xs: 2, md: 0, sm: 10 },
-              mt: { xs: 3, md: 0, sm: 5 },
             }}
           >
-            <Typography sx={{ fontWeight: 700, my: { md: 4, xs: 2 } }}>
+            <Typography sx={{ fontSize:"18px" }}>
               Angel Wishes
             </Typography>
             {footerValues[0]?.angel_wishes.map((wish) => (
@@ -207,19 +223,19 @@ export const Footer = () => {
           </Box>
         </div>
         <div
-          className=" col-lg-2 col-md-3 col-sm-6"
+          className=" col-lg-2 col-md-3 col-sm-6   d-flex align-items-center"
 
           //    xs={12} md={3} sm={6}
         >
           <Box
-            sx={{
-              borderRight: { md: "1px solid #A7A7A7" },
-              mt: { sm: 8, md: 0 },
-              ml: { sm: 11, md: 0, xs: 2 },
-            }}
+          sx={{
+
+            marginTop: { sm: "30px", xs: "10px" },
+          }}
+           
           >
-            <Typography sx={{ fontWeight: 700, my: { md: 4, xs: 2 } }}>
-              Usefull Links
+            <Typography sx={{ fontSize:"18px" }}>
+              Useful Links
             </Typography>
             {footerValues[0]?.usefull_links?.map((usefull) => (
               <Typography className=" hoverEffectControls"
@@ -234,20 +250,20 @@ export const Footer = () => {
         </div>
         <div
           //   xs={12} md={2} sm={6}
-          className=" col-lg-2 col-md-3 col-sm-6"
+          className=" col-lg-4 col-md-3 col-sm-6 d-flex align-items-center"
         >
-          <Box sx={{ mt: { sm: 8, md: 0 }, ml: { sm: 10, md: 0, xs: 2 } }}>
-            <Typography sx={{ fontWeight: 700, my: { md: 4, xs: 2 } }}>
+          <Box sx={{ mt: { sm: 8, md: 1 }, ml: { sm: 10, md: 0, xs: 2 } }}>
+            <Typography sx={{ fontSize:"18px" }}>
               Contact us
             </Typography>
             {footerValues[0]?.contacts.map((contacts) => (
               <Box
                 key={contacts?.id}
-                className=" hoverEffectControls"
+                className=" hoverEffectControls "
                 sx={{
                   display: "flex",
                   // alignItems: "center",
-                  gap: 1.5,
+                  gap: 2,
                   my: 1,
                   cursor: "pointer",
                 }}
@@ -259,7 +275,7 @@ export const Footer = () => {
                     flexShrink: 0,
                   }}
                 >
-                  <img
+                  {/* <img
                     src={contacts?.image}
                     alt=""
                     style={{
@@ -267,13 +283,15 @@ export const Footer = () => {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                  />
+                  /> */}
+                  {contacts.image}
                 </div>
                 <Typography sx={{}}>{contacts?.title}</Typography>
               </Box>
             ))}
           </Box>
         </div>
+     
       </div>
 
       {/* ///extra footer section */}
@@ -288,7 +306,10 @@ export const Footer = () => {
               <li className="w-50">Your Privacy Choices</li>
             </ul>
           </div> */}
-          <div className="child-2 d-flex  align-items-center">
+
+          {/* //commit due to kaleems input  */}
+
+          {/* <div className="child-2 d-flex  align-items-center">
             {socialMedia?.map((items) => {
               return (
                 <div className="d-flex">
@@ -303,7 +324,7 @@ export const Footer = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
 

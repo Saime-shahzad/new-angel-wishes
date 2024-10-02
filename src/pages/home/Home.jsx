@@ -12,7 +12,7 @@ import home3 from "../../assets/images/home3.png"
 import home4 from "../../assets/images/home4.png"
 import { ContentSection } from "../../assets/contentSection/ContentSection";
 import useRoutFunction from "../../assets/others/UseFullFunctions";
-import homeVedio1 from "../../assets/images/homeVedio1.mov"
+import homeVedio1 from "../../assets/images/homeVedio1.mp4"
 
 
 

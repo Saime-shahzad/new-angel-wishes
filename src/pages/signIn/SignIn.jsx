@@ -46,7 +46,7 @@ const SignIn = () => {
    >
 
 <div className='row'>
-    <div className='img-section   vh-100 col-lg-4 d-md-none align-items-center d-lg-flex d-sm-none' >
+    <div className='img-section   vh-100 col-lg-4 d-md-none align-items-center justify-content-end d-lg-flex d-sm-none' >
 <img src={bgImage1} width="200px" height="=400px" alt='logo' />
     </div>
     <div className='col-lg-8  justify-content-start align-items-center d-flex'>

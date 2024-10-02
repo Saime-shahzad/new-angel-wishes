@@ -14,6 +14,7 @@ import { AccessibilityReports } from "../pages/accessibility-reports/Accessibili
 import { Faqs } from "../pages/faqs/Faqs";
 import SignIn from "../pages/signIn/SignIn";
 import  SignUp  from "../pages/signUp/SignUp";
+import Packages from "../pages/packages/Packages";
 // import { publicRoutesList } from "./Routes";
 
 const AppRoutes = () => {
@@ -27,12 +28,13 @@ const AppRoutes = () => {
         { path: "/terms&condtions", element: <TermsCondition /> },
         { path: "/legacies", element: <Legacies /> },
         { path: "/kidsCorner", element: <KidsCorner /> },
-        { path: "/mission&vission", element: <MissionVission /> },
+        { path: "/mission&vision", element: <MissionVission /> },
         { path: "/report-a-concern", element: <ReportaConcern /> },
         { path: "/accessibility-reports", element: <AccessibilityReports /> },
         { path: "/faqs", element: <Faqs /> },
         { path: "/sign-in", element: <SignIn /> },
         { path: "/sign-up", element: <SignUp /> },
+        { path: "/packages-details", element: <Packages /> },
        
       ];
   return (

@@ -4,9 +4,13 @@ import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
 import icons from '../../assets/icons/icons';
+import useRoutFunction from "../../assets/others/UseFullFunctions";
+
 
 
 const SignUp = () => {
+  const RoutFunction = useRoutFunction();
+
     const formContent = [
         {
           label: "Name",
@@ -14,7 +18,7 @@ const SignUp = () => {
           icon:icons.manIcons,
           placeholder:"Name",
 
-          className:"col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+          className:"col-lg-6 col-md-12 col-sm-12  justify-content-lg-center justify-content-sm-start inputcontrolings  d-flex ",
           variant:true
         },
         {
@@ -23,7 +27,7 @@ const SignUp = () => {
           icon:icons.mailIcons,
           placeholder:"Email",
 
-          className:"col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+          className:"col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
           variant:true
         },
       
@@ -33,7 +37,7 @@ const SignUp = () => {
           placeholder:"Age",
 
             icon:icons.ageIcons,
-            className:"col-lg-6 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
+            className:"col-lg-6 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
           variant:true
         },
         {
@@ -42,7 +46,7 @@ const SignUp = () => {
           placeholder:"Password",
 
             icon:icons.passwordIcons,
-            className:"col-lg-6 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
+            className:"col-lg-6 col-md-12 col-sm-12 inputcontrolings  my-2 d-flex ",
           variant:true
         },
       
@@ -55,7 +59,7 @@ const SignUp = () => {
           icon:icons.manIcons,
           placeholder:"Name",
 
-          className:"col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+          className:"col-lg-6 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  d-flex ",
           variant:true
         },
         {
@@ -64,7 +68,7 @@ const SignUp = () => {
           icon:icons.mailIcons,
           placeholder:"Email",
 
-          className:"col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+          className:"col-lg-6 col-md-12 col-sm-12   inputcontrolings  d-flex ",
           variant:true
         },
       
@@ -75,12 +79,17 @@ const SignUp = () => {
           placeholder:"Contect",
 
             icon:icons.phoneicons,
-            className:"col-lg-6 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
+            className:"col-lg-12 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
           variant:true
         },
       
     
       ];
+
+      const onSignup=(() =>{
+         RoutFunction("/packages-details")
+
+      })
   return (
     <div className='sign-in -parent'  style={{
         backgroundImage: `url(${homeBackGround})`,
@@ -93,19 +102,19 @@ const SignUp = () => {
    >
 
 <div className='row'>
-    <div className='img-section  justify-content-end vh-100 col-lg-4 d-md-none align-items-center d-lg-flex d-sm-none' >
+    <div className='img-section  justify-content-end vh-100 col-lg-3 d-md-none align-items-center d-lg-flex d-none' >
 <img src={bgImage1} width="200px" height="=400px" alt='logo' />
     </div>
-    <div className='col-lg-8  justify-content-start align-items-center d-flex'>
+    <div className='col-lg-9  justify-content-start align-items-center d-flex'>
         <div className='form-parent'>
         <form
           className="my-5 container control-width rounded-2 w-100  "
         >
           <div className="heading-contant p-2 text-center ">
-            <h1 style={{color:"#FDB515"}} >Sign In</h1>
+            <h1 style={{color:"#FDB515"}} >Sign Up</h1>
            
           </div>
-          <div className="from-body     ">
+          <div className="from-body  row   ">
             {formContent?.map((item) => {
               return (
                 <div
@@ -127,9 +136,9 @@ const SignUp = () => {
                 
               );
             })}
-            <div className='nominy-section'>
+            <div className='nominy-section fw-bold'>
                <p> You can also Add nominy here for the future</p>
-               <div >
+               <div className='row' >
                {nominyFormContent?.map((item) => {
               return (
                 <div
@@ -154,7 +163,10 @@ const SignUp = () => {
                </div>
             </div>
           </div>
-          <Buttons text="Submit" style={{backgroundColor:"#FDB515"}} />
+          <div className='d-flex justify-content-center'>
+
+          <Buttons text="Submit" onClick={onSignup}  style={{backgroundColor:"#FDB515"}} />
+          </div>
 
           
         </form>

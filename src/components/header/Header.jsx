@@ -34,7 +34,7 @@ export const Header = () => {
       style: location.pathname === "/" ? "underline" : "none",
     },
     {
-      tabName: "About-Us",
+      tabName: "About Us",
       link: "/about-us",
       style: location.pathname === "/about-us" ? "underline" : "none",
     },
@@ -44,9 +44,9 @@ export const Header = () => {
       style: location.pathname === "/career" ? "underline" : "none",
     },
     {
-      tabName: "Mission And Visson",
-      link: "/mission&vission",
-      style: location.pathname === "/mission&vission" ? "underline" : "none",
+      tabName: "Mission And Vison",
+      link: "/mission&vision",
+      style: location.pathname === "/mission&vision" ? "underline" : "none",
     },
     {
       tabName: "Report a Concern",
@@ -61,20 +61,20 @@ export const Header = () => {
     },
   ];
   const profileMenue = [
-    {
-      title: "Logout",
-      onClick: () => {
-        // routeTo("")
-        handleClose()
-      },
-    },
-    {
-      title: "Profile",
-      onClick: () => {
-        // routeTo("/sign-in")
-        handleClose()
-      },
-    },
+    // {
+    //   title: "Logout",
+    //   onClick: () => {
+    //     // routeTo("")
+    //     handleClose()
+    //   },
+    // },
+    // {
+    //   title: "Profile",
+    //   onClick: () => {
+    //     // routeTo("/sign-in")
+    //     handleClose()
+    //   },
+    // },
     {
       title: "SignIn",
       onClick: () => {routeTo("/sign-in")

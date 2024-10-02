@@ -24,9 +24,9 @@ export const ReportaConcern = () => {
       },
     },
     {
-      heading: "Legal Consultant",
+      heading: "Gather Information",
       paragraphText:
-        "Specialize in estate planning, wills, and trusts to provide expert advice and peace of mind to our clients and their families.",
+        "Gather any relevant information or documents supporting your report. This could include screenshots, correspondence, or other pertinent details.",
       image: report2,
       className:
         "col-lg-4 col-md-6 col-sm-12 box-shadow text-center p-0 d-flex justify-content-around",
@@ -36,9 +36,9 @@ export const ReportaConcern = () => {
       },
     },
     {
-      heading: "Legal Consultant",
+      heading: "Submit Your Report",
       paragraphText:
-        "Specialize in estate planning, wills, and trusts to provide expert advice and peace of mind to our clients and their families.",
+        "Use the form below to submit your concern. Please fill in all required fields to help us process your report quickly.",
       image: report3,
       className:
         "col-lg-4 col-md-6 col-sm-12 box-shadow  text-center p-0 d-flex justify-content-around",

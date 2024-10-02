@@ -1,3 +1,58 @@
 /* .cardhoverStyle :hover {
     transform: translateY(-1px) !important;
 } */
+
+.sidepart:before{
+   position: relative !important;
+    background-image: url("../../assets/images/about3.png") !important;
+top:0 !important;
+bottom: 0
+
+}
+.sidepart:after{
+    position: relative !important;
+ 
+    background-image: url("../../assets/images/about01.jpg") !important;
+
+}
+.ribbon {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 300px; /* Adjust width */
+    margin: 20px 0;
+    display: inline-block;
+  }
+  
+  .ribbon:before,
+  .ribbon:after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centering the image vertically */
+    transform: translateY(-50%); /* Vertically align center */
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+    background-size: cover;
+  }
+  
+  .ribbon:before {
+    left: -22px;
+    top: 71px; /* Adjust position to the left */
+    width: 30px;
+    background-image: url('../../assets/images/upArrowimg.png');
+    /* Replace with your image URL */
+  }
+  
+  .ribbon:after {
+    right: -51px;
+    width: 60px;
+    height: 42px;
+    
+    top: -41px; /* Adjust position to the right */
+    background-image: url('../../assets/images/downArrowimg.png'); /* Replace with your image URL */
+     /* Replace with your image URL */
+  }
+  .card-Parent > div {
+    box-shadow: none;
+  }

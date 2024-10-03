@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import './App.css';
 import { Index } from './pages/main/Index';
 import { useLocation } from 'react-router-dom';
-import SignIn from './pages/signIn/SignIn';
-import SignUp from './pages/signUp/SignUp';
+// import SignIn from './pages/signIn/SignIn';
+// import SignUp from './pages/signUp/SignUp';
 
 
 
@@ -23,10 +23,10 @@ function App() {
     <div className="">
       {/* <AppRoutes /> */}
       {/* <Home /> */}
-      {location.pathname === "/sign-in" ? <SignIn /> : location.pathname === "/sign-up" ? <SignUp /> :
+    
       
       <Index />
-      }
+      
        
     </div>
   );

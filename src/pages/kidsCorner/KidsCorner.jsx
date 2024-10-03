@@ -123,7 +123,7 @@ export const KidsCorner = () => {
             collection with us. You can start filling your virtual treasure
             chest today and add more smiles and stories whenever possible!
           </p>
-          <Buttons text="Sign up Now" onClick={() => RoutFunction("/")} style={{ backgroundColor: "#FDB515" }} />
+          <Buttons text="Sign up Now" onClick={() => RoutFunction("/sign-up")} style={{ backgroundColor: "#FDB515" }} />
         </div>
       ),
     },

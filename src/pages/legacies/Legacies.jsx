@@ -1,5 +1,6 @@
 import React from "react";
 import { CommonParagraph } from "../../assets/others/Others";
+import webColor from "../../assets/colors/Colors";
 
 export const Legacies = () => {
   const legacyContent = [
@@ -9,7 +10,7 @@ export const Legacies = () => {
         "Losing someone special is never easy, and finding a way to honor their memory can be a comforting part of the healing process. At Angel Wishes Memory Keeper, we have created this special page for your angel, a place dedicated to remembering and celebrating those who have passed on. This space allows you to keep their stories alive, share cherished moments, and connect with others who understand the significance of loss and remembrance.",
     },
     {
-      headingText: "Why This Page Matters",
+      headingText: "Why This Page Matters?",
       paragraphText:
         "Our Legacies page is more than just a space to share; it's a community of memory and legacy. Here, every story told, every picture shared, and every video posted serves as a lasting tribute to loved ones who, while no longer with us physically, continue to inspire and touch our lives. It's a place where memories are preserved, the past meets the present, and the essence of a loved one's spirit is kept vibrant and alive.",
     },
@@ -25,7 +26,7 @@ export const Legacies = () => {
             share memories, and keep the spirit of your loved ones alive through
             stories, videos, and pictures.
           </p>
-          <h5>How to Share Your Memories</h5>
+          <h5>How to Share Your Memories?</h5>
           <p>
             This page is designed to be a comforting space to honor your loved
             ones by sharing the moments that meant the most. Here’s how you can
@@ -117,7 +118,13 @@ export const Legacies = () => {
   ];
   return (
     <div className="parent">
-      <div className="child-1 container mt-5">
+      <div className="child-1 container my-5">
+        <div className="text-center my-5">
+          <h1>Our <span style={{color:webColor.themeColor}}>
+            legacies 
+            </span> 
+            </h1>
+        </div>
         {legacyContent?.map((item) => (
           <CommonParagraph
             paragraphText={item.paragraphText}

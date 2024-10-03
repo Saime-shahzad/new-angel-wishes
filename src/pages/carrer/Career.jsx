@@ -147,10 +147,9 @@ export const Career = () => {
           style={{ backgroundColor: "#E9EFEF", border: "8px solid white" }}
         >
           <div className="heading-contant p-2 ">
-            <h1>Report Form</h1>
+            <h1>Career form</h1>
             <p>
-              Please complete the form below to submit your concern. All
-              information provided will be handled confidentially.
+            Please fill out the following info and attach your resume so we can get in touch with you. Thanks!
             </p>
           </div>
           <div className="from-body  d-flex row  ">
@@ -174,7 +173,7 @@ export const Career = () => {
               );
             })}
           </div>
-          <div className="d-flex  flex-column flex-lg-row my-2">
+          <div className=" my-2">
             <div className="">
                 <div>
                 {icons.phoneicons}
@@ -184,7 +183,7 @@ export const Career = () => {
                 (555) 123-4567
                 </div>
             </div>
-            <div className=" mx-lg-4 ">
+            <div className="mt-2">
                 <div>
                 {icons.mailIcons}
                 </div>

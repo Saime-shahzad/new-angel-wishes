@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Link,
   // Link,
   useNavigate,
 } from "react-router-dom";
@@ -23,11 +24,16 @@ export const Footer = () => {
       angel_wishes: [
         {
           id: 1,
+          title: "Home",
+          route: "/",
+        },
+        {
+          id: 2,
           title: "About Us",
           route: "/about-us",
         },
         {
-          id: 2,
+          id: 3,
           title: "Careers",
           route: "/career",
         },
@@ -43,12 +49,12 @@ export const Footer = () => {
         // },
        
         {
-          id: 5,
+          id: 4,
           title: "Accessibility Report",
           route: "/accessibility-reports",
         },
         {
-          id: 1,
+          id: 5,
           title: "Kids Corner",
           route: "/kidsCorner",
         },
@@ -77,7 +83,7 @@ export const Footer = () => {
         },
         {
           id: 1,
-          title: "FAQ",
+          title: "FAQs",
           route: "/faqs",
         },
         // {
@@ -183,7 +189,7 @@ export const Footer = () => {
               
             }}
           >
-            <div className="image-div text-center mt-5">
+            <div className="image-div text-center ">
 
             <img
               src={footerLogo}
@@ -191,7 +197,7 @@ export const Footer = () => {
               style={{ width: "277px", height: "112px" }}
             />
             <p style={{fontSize:"14px"}}>
-            Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. 
+            An online legacy keeper to hold life’s best moments for all
 
             </p>
             </div>
@@ -207,8 +213,8 @@ export const Footer = () => {
             sx={{
             }}
           >
-            <Typography sx={{ fontSize:"18px" }}>
-              Angel Wishes
+            <Typography sx={{ fontSize:"20px" , fontWeight:"bold"  }}>
+              Quick Links
             </Typography>
             {footerValues[0]?.angel_wishes.map((wish) => (
               <Typography
@@ -228,13 +234,10 @@ export const Footer = () => {
           //    xs={12} md={3} sm={6}
         >
           <Box
-          sx={{
-
-            marginTop: { sm: "30px", xs: "10px" },
-          }}
+         
            
           >
-            <Typography sx={{ fontSize:"18px" }}>
+            <Typography sx={{ fontSize:"20px" , fontWeight:"bold"  }}>
               Useful Links
             </Typography>
             {footerValues[0]?.usefull_links?.map((usefull) => (
@@ -252,12 +255,14 @@ export const Footer = () => {
           //   xs={12} md={2} sm={6}
           className=" col-lg-4 col-md-3 col-sm-6 d-flex align-items-center"
         >
-          <Box sx={{ mt: { sm: 8, md: 1 }, ml: { sm: 10, md: 0, xs: 2 } }}>
-            <Typography sx={{ fontSize:"18px" }}>
+          <Box 
+          sx={{ mb: { sm: 8, md: 3 },  }}
+          >
+            <Typography sx={{ fontSize:"20px"   , fontWeight:"bold" }}>
               Contact us
             </Typography>
             {footerValues[0]?.contacts.map((contacts) => (
-              <Box
+              <Box 
                 key={contacts?.id}
                 className=" hoverEffectControls "
                 sx={{
@@ -286,7 +291,8 @@ export const Footer = () => {
                   /> */}
                   {contacts.image}
                 </div>
-                <Typography sx={{}}>{contacts?.title}</Typography>
+                <Typography sx={{}}><Link  className="text-decoration-none hoverEffectControls text-white" to={ contacts?.title === "support@angel-wishes.com" ? "mailto:someone@example.com" : ""}> 
+                {contacts?.title}</Link></Typography>
               </Box>
             ))}
           </Box>

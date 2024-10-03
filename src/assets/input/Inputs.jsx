@@ -6,7 +6,7 @@ import { InputAdornment } from '@mui/material';
 export const Inputs = ({type , labelName , icon ,placeholder, className, suffix , variants}) => {
   return (
     <div>
-        <div className='textFieldparrent mb-2'>
+        <div className='textFieldparrent '>
             <div>
                 {labelName}
             </div>

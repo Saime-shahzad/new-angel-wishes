@@ -3,10 +3,10 @@ import "./Header.css";
 // import icons from "../../assets/icons/icons";
 import haderLogo from "../../assets/images/logo.png";
 import menueImage from "../../assets/images/menu.png";
-import bannerLogowhite from "../../assets/images/bannerLogowhite.png";
+// import bannerLogowhite from "../../assets/images/bannerLogowhite.png";
 // import profileImage from "../../assets/images/user.png";
 // import profilewhiteImage from "../../assets/images/manlogowhite.png";
-import menueWhite from "../../assets/images/menuewhite.png";
+// import menueWhite from "../../assets/images/menuewhite.png";
 import { Link, useLocation } from "react-router-dom";
 import webColor from "../../assets/colors/Colors";
 import Menu from "@mui/material/Menu";
@@ -68,16 +68,17 @@ export const Header = () => {
     //     handleClose()
     //   },
     // },
-    // {
-    //   title: "Profile",
-    //   onClick: () => {
-    //     // routeTo("/sign-in")
-    //     handleClose()
-    //   },
-    // },
     {
-      title: "SignIn",
-      onClick: () => {routeTo("/sign-in")
+      title: "Sign Up",
+      onClick: () => {
+        routeTo("/sign-up")
+        handleClose()
+      },
+    },
+    {
+      title: "Login In",
+      onClick: () => {
+        routeTo("/sign-in")
         handleClose()
       },
     },
@@ -89,13 +90,12 @@ export const Header = () => {
         <div
           className="child-1  d-flex justify-content-between align-items-center p-2 px-5 "
           style={{
-            backgroundColor:
-              location.pathname === "/" ? "#21668E" : webColor.themeColor,
+            backgroundColor: "#21668E"
           }}
         >
           <div className=" d-flex justify-content-between    socialMediaDivStyle">
             <img
-              src={location.pathname === "/" ? haderLogo : bannerLogowhite}
+              src={haderLogo}
               width="150px"
               alt="logo"
             />
@@ -109,9 +109,7 @@ export const Header = () => {
                     className="text-decoration-none social-media-icons "
                     style={{
                       color:
-                        location.pathname === "/"
-                          ? webColor.themeColor
-                          : "white",
+                        webColor.themeColor,
                       textDecoration: "none",
                     }}
                     to={items.link}
@@ -153,12 +151,12 @@ export const Header = () => {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              style={{cursor:"pointer"}}
+              style={{ cursor: "pointer" }}
 
-              /////close
+            /////close
             >
               <img
-                src={location.pathname === "/" ? menueImage : menueWhite}
+                src={ menueImage }
                 className="social-media-icons"
                 width="22px"
                 alt="logo"

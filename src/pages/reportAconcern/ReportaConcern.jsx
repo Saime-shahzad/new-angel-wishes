@@ -132,7 +132,7 @@ export const ReportaConcern = () => {
               );
             })}
           </div>
-          <div className="d-flex  flex-column flex-lg-row my-2">
+          <div className="  my-2">
             <div className="">
                 <div>
                 {icons.phoneicons}
@@ -142,7 +142,7 @@ export const ReportaConcern = () => {
                 (555) 123-4567
                 </div>
             </div>
-            <div className=" mx-lg-4 ">
+            <div className=" mt-2 ">
                 <div>
                 {icons.mailIcons}
                 </div>

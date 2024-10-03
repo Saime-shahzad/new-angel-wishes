@@ -1,5 +1,6 @@
 import React from "react";
 import { CommonParagraph } from "../../assets/others/Others";
+import webColor from "../../assets/colors/Colors";
 
 export const PrivacyPolicy = () => {
   const privacyPolicyContent = [
@@ -126,7 +127,13 @@ export const PrivacyPolicy = () => {
 
   return (
     <div className="parent">
-      <div className="child-1 container mt-5">
+      <div className="child-1 container my-5">
+      <div className="text-center my-3">
+          <h1>Terms And  <span style={{color:webColor.themeColor}}>
+            Conditions 
+            </span> 
+            </h1>
+        </div>
         {privacyPolicyContent?.map((item) => (
           <CommonParagraph style={{fontSize:"16px"}}
             paragraphText={item.paragraphText}

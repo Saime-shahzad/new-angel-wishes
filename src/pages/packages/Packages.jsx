@@ -12,7 +12,7 @@ const Packages = () => {
         {
         packageName:"Premium Package",
         price:<div className='text-center rounded-top-2 ' style={{margin:"0px 30px 0px 30px" , backgroundColor:webColor.themeColor}}>
-            <p  style={{color:"white" , margin:"0px" , fontSize:"88px"}}>&10<sub style={{fontSize:"10px" , textAlign:"center"}}>Per month</sub></p>
+            <p  style={{color:"white" , margin:"0px" , fontSize:"88px"}}>$10<sub style={{fontSize:"10px" , textAlign:"center"}}>Per month</sub></p>
         </div>,
         //fe represent features
         fe1:["Basic features plus",

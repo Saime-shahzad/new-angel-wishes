@@ -1,10 +1,11 @@
 import React from "react";
 import { CommonParagraph } from "../../assets/others/Others";
+import webColor from "../../assets/colors/Colors";
 
 export const TermsCondition = () => {
   const termsConditionContent = [
     {
-      headingText: "Terms and Conditions",
+      headingText: "",
       paragraphText:
         "Welcome to Angel Wishes Memory Keeper! You agree to comply with and be bound by the following terms and conditions by accessing and using our website, services, and tools. Please review these terms carefully. If you disagree with these terms, you should not use this site or any of its services or contact us with any questions.",
     },
@@ -81,7 +82,13 @@ export const TermsCondition = () => {
   ];
   return (
     <div className="parrent">
-      <div className="child-1 container mt-5">
+      <div className="child-1 container my-5 ">
+      <div className="text-center my-3">
+          <h1>Terms And  <span style={{color:webColor.themeColor}}>
+            Conditions 
+            </span> 
+            </h1>
+        </div>
         {termsConditionContent?.map((item) => (
           <CommonParagraph
             className=""

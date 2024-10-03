@@ -13,6 +13,8 @@ import useRoutFunction from "../../assets/others/UseFullFunctions";
 export const Index = () => {
   const location = useLocation();
   const RoutFunction = useRoutFunction();
+  console.log("location>>>>>>", location);
+  
   
   
 
@@ -45,7 +47,7 @@ export const Index = () => {
         >
           {icons.arrowBackIosNewIcons}
         </div>
-        <div className="fw-bold">Angel Wishes Memory Keeper - {location.pathname?.split("/")[1]}</div>
+        <div className="fw-bold">Angel Wishes Memory Keeper - <span className="text-capitalize">{location.pathname?.split("/")[1] === "faqs" ?  "FAQs" : location.pathname?.split("/")[1]}</span></div>
       </div>
 
       <div>
@@ -65,11 +67,11 @@ export const Index = () => {
             learning more about how you can contribute to our mission!
           </p>
         </div> */}
-        <div className="child-3 justify-content-sm-center mx-3 d-flex my-auto">
+        <div className="child-3 justify-content-sm-center    mx-3 d-flex ">
           <Inputs
             icon={<div style={{color:"lightgrey" }} >{ icons.mailIcons}Email  
                       </div>}
-            className="inputcontrols"
+            className="inputcontrols  "
             type="text"
           />
           <Buttons

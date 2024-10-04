@@ -98,7 +98,7 @@ Stay updated with the latest news and updates from Angel Wishes Memory Keeper by
         CONTACT
           </div>
           <div  className="WITH-US-word-parent fs-1 col-lg-6 col-md-6 p-2  col-sm-6 text-white" style={{backgroundColor:"#21668E"}}>
-        WITH US
+         US
           </div>
          </div>
           <div className="row ">

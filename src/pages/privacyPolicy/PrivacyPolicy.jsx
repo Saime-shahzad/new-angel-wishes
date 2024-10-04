@@ -129,8 +129,8 @@ export const PrivacyPolicy = () => {
     <div className="parent">
       <div className="child-1 container my-5">
       <div className="text-center my-3">
-          <h1>Terms And  <span style={{color:webColor.themeColor}}>
-            Conditions 
+          <h1>Privacy <span style={{color:webColor.themeColor}}>
+            Policy 
             </span> 
             </h1>
         </div>

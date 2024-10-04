@@ -4,7 +4,8 @@ import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
 import icons from '../../assets/icons/icons';
-import {useRoutFunction} from "../../assets/others/UseFullFunctions";
+import { useRoutFunction } from "../../assets/others/UseFullFunctions";
+import Selects from '../../assets/select/Selects';
 
 
 
@@ -33,11 +34,11 @@ const SignUp = () => {
 
     {
       label: "Age",
-      type: "number",
+      type: "age",
       placeholder: "Age",
 
       icon: icons.ageIcons,
-      className: "col-lg-6 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
+      className: "col-lg-6 col-md-12 col-sm-12 p-0 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
       variant: true
     },
     {
@@ -123,15 +124,18 @@ const SignUp = () => {
                         className={item.className}
 
                       >
+                        {item.type === "age" ? (
+                          <Selects />
 
-                        <Inputs
-                          className=""
-                          type={item.type}
-                          icon={<div style={{ color: "lightgrey" }} >{item.icon} {item.placeholder}
-                          </div>}
-                          //   icon={ item.icon}
-                          variants={item.variant}
-                        />
+                        ) :
+                          <Inputs
+                            className=""
+                            type={item.type}
+                            icon={<div style={{ color: "lightgrey" }} >{item.icon} {item.placeholder}
+                            </div>}
+                            //   icon={ item.icon}
+                            variants={item.variant}
+                          />}
 
 
                       </div>

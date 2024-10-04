@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 // import downArrowimg from "../../assets/images/downArrowimg.png"
-import useRoutFunction from "../../assets/others/UseFullFunctions";
+import {useRoutFunction} from "../../assets/others/UseFullFunctions";
 
 import "./Cards.css"
 import webColor from '../../assets/colors/Colors';

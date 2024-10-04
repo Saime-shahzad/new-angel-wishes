@@ -113,7 +113,7 @@ Stay updated with the latest news and updates from Angel Wishes Memory Keeper by
         })}
         <div className="buttons-parrent d-flex justify-content-around  ">
 
-        <Buttons type="submit" text="Submit" style={{backgroundColor:"#FDB515"}} />
+        <Buttons type="submit" text="Submit" style={{backgroundColor:"#FDB515" , marginTop:"5px"}} />
         </div>
           </form>   
         </div>

@@ -10,19 +10,25 @@ const Packages = () => {
     const packagesDetailsContent=[
 
         {
-        packageName:"Premium Package",
+        packageName:"Platinum Package",
         price:<div className='text-center rounded-top-2 ' style={{margin:"0px 30px 0px 30px" , backgroundColor:webColor.themeColor}}>
             <p  style={{color:"white" , margin:"0px" , fontSize:"88px"}}>$10<sub style={{fontSize:"10px" , textAlign:"center"}}>Per month</sub></p>
         </div>,
         //fe represent features
-        fe1:["Basic features plus",
+        fe1:["Upload pictures",
 
-          "Favorite Music List using links",
-          "Hipaa Compliance",
-          "Estate Plan folders password protected (restricted to the specific nominees for that folder to be assigned by the client)",
-          "Create Videos of life stories favorite memories or upload favorite life's moments videos",
-          "Allow other family and friends upload best memories with client -pictures via a link (client and their nominee can approve them)",
-          "Background pic or header to customize look and feel ( beach, sunset, sunrise, flowers, birds like cardinals, ect)",
+          "Be able to turn pictures into a slide show",
+          "Letters to family members (children) creating individual folders using with password protection code",
+          "QR code to be made into stickers, printed, text, or emailed",
+          "Used on a card next to turn or service pamphlet and circulate amongst family and friends (to be used once a person passes on to share at the celebration of life or other service).",
+          "Medical docs folder for doctor to review to be able to view uploaded tests.",
+          "Able to E-fax docs from folder to medical facilities including Medical POA docs, any uploaded tests, and Hipaa Compliance form.",
+          "Once person dies, we will move the medical folder to an area no longer accessible to anyone. ite Music List using links.",
+          "Hipaa Compliance form",
+          "Estate Plan folders restricted to the specific nominees for that folder to be Assigned by client.",
+          "Create Videos of life stories favorite memories or upload favorite life's moments videos.",
+          "Allow other family and friends upload best memories with client-pictures via a link (client and their nominee can approve them)",
+          "Background pic or header to customize look and feel (beach, sunset, sunrise, flowers, birds like cardinals, etc.)"
         ],
         }
     ]
@@ -43,8 +49,8 @@ const Packages = () => {
                                    
                                     <div className='d-flex px-2 '>
                                         
-                                        <div className='px-2'> {icons.checkCircleIcon}</div>
-                                        <p>
+                                        <div className={item === "Hipaa Compliance form" ? "d-none " : "px-2"}> {icons.checkCircleIcon}</div>
+                                        <p className={item === "Hipaa Compliance form" ? "fw-bold fs-6 text-dark px-2 " : ""}>
                                             {item}
                                         </p>
                                     </div>

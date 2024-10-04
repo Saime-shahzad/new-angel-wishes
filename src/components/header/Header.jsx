@@ -11,7 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 import webColor from "../../assets/colors/Colors";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import useRoutFunction from "../../assets/others/UseFullFunctions";
+import {useRoutFunction} from "../../assets/others/UseFullFunctions";
 
 export const Header = () => {
   const location = useLocation();

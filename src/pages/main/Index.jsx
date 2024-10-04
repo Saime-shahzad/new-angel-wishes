@@ -8,7 +8,8 @@ import { Inputs } from "../../assets/input/Inputs";
 import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
 import { useLocation } from "react-router-dom";
-import useRoutFunction from "../../assets/others/UseFullFunctions";
+import {useRoutFunction} from "../../assets/others/UseFullFunctions";
+import ScrollToTop from "../../assets/others/UseFullFunctions";
 
 export const Index = () => {
   const location = useLocation();
@@ -32,6 +33,8 @@ export const Index = () => {
         width: "100%", // Adjust as per your design
       }}
     >
+      <ScrollToTop />
+
       <div>
         <Header />
       </div>

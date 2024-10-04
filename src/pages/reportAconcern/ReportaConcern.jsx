@@ -6,7 +6,7 @@ import report3 from "../../assets/images/report3.png";
 import { Inputs } from "../../assets/input/Inputs";
 import "./ReportaConcern.css";
 import { Buttons } from "../../components/button/Buttons";
-import icons from "../../assets/icons/icons";
+// import icons from "../../assets/icons/icons";
 
 export const ReportaConcern = () => {
   const cardsData = [
@@ -65,22 +65,22 @@ export const ReportaConcern = () => {
       placeholder: "",
       className:"col-lg-6 col-md-6 col-sm-12   d-flex inputDiv"
     },
-    {
-      label: "Supporting Document",
-      type: "file",
-      placeholder: "",
-      className:"col-lg-6 col-md-6 col-sm-12   d-flex inputDiv"
-    },
+    // {
+    //   label: "Supporting Document",
+    //   type: "file",
+    //   placeholder: "",
+    //   className:"col-lg-6 col-md-6 col-sm-12   d-flex inputDiv"
+    // },
     {
       label: "Message",
       type: "text",
       placeholder: "",
-      className:"col-lg-12 col-md-12 col-sm-12 w-100  messageControls d-flex  inputDiv"
+      className:"col-lg-6 col-md-12 col-sm-12   messageControls d-flex  inputDiv"
     },
     {
         label: "Submit",
         type: "Submit",
-        className:"col-lg-6 col-md-6 col-sm-12 justify-content-end m-auto d-flex inputDiv"
+        className:"col-lg-6 col-md-6 col-sm-12 my-4 justify-content-end m-auto d-flex inputDiv"
     },
   ];
   return (
@@ -105,7 +105,7 @@ export const ReportaConcern = () => {
           style={{ backgroundColor: "#E9EFEF", border: "8px solid white" }}
         >
           <div className="heading-contant p-2 ">
-            <h1>Report Form</h1>
+            <h1>Report a Concern</h1>
             <p>
               Please complete the form below to submit your concern. All
               information provided will be handled confidentially.
@@ -119,7 +119,7 @@ export const ReportaConcern = () => {
                  
                 >
                     {item.type === "Submit" ? (
-                        <Buttons text={item.label} style={{backgroundColor:"#FDB515"}} type={item.type}/>
+                        <Buttons text={item.label} style={{backgroundColor:"#FDB515" , }} type={item.type}/>
                     ) : (
                     <Inputs
                     className={item.type === "file" ? "file-input-container" : "inputsControls"}
@@ -132,7 +132,9 @@ export const ReportaConcern = () => {
               );
             })}
           </div>
-          <div className="  my-2">
+
+          {/* /// according to ghazaal inputs */}
+          {/* <div className="  my-2">
             <div className="">
                 <div>
                 {icons.phoneicons}
@@ -152,7 +154,7 @@ export const ReportaConcern = () => {
                 </p>
             </div>
          
-          </div>
+          </div> */}
         </form>
       </div>
     </div>

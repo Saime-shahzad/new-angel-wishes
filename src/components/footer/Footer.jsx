@@ -291,7 +291,7 @@ export const Footer = () => {
                   /> */}
                   {contacts.image}
                 </div>
-                <Typography sx={{}}><Link  className="text-decoration-none hoverEffectControls text-white" to={ contacts?.title === "support@angel-wishes.com" ? "mailto:someone@example.com" : ""}> 
+                <Typography sx={{}}><Link  className="text-decoration-none hoverEffectControls text-white" to={ contacts?.title === "support@angel-wishes.com" ? "mailto:someone@example.com" : "/contact-us"}> 
                 {contacts?.title}</Link></Typography>
               </Box>
             ))}

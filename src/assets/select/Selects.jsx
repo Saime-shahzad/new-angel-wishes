@@ -4,6 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import icons from '../icons/icons';
 
 export default function Selects() {
   const [age, setAge] = React.useState('');
@@ -20,12 +21,12 @@ export default function Selects() {
       }}
     >
       <FormControl fullWidth className='' >
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label">{icons.ageIcons} Age </InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={age}
-          label="Age"
+          label="Agemmm"
           onChange={handleChange}
           className='rounded-4 selectControl ' 
         >

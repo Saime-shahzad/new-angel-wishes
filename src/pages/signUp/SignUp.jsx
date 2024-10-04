@@ -38,7 +38,7 @@ const SignUp = () => {
       placeholder: "Age",
 
       icon: icons.ageIcons,
-      className: "col-lg-6 col-md-12 col-sm-12 p-0 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
+      className: "col-lg-6 col-md-12 col-sm-12 p-0 justify-content-lg-center justify-content-sm-start selectcontroling  my-2 d-flex ",
       variant: true
     },
     {

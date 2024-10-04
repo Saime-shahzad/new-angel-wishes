@@ -39,3 +39,6 @@ code {
   .inputcontrolings >  div > div > div > .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root ::after{
     border-bottom: 2px solid #FDB515 !important;
 }
+.selectControl > div{
+padding: 13px !important;
+}

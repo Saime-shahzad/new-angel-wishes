@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const useRoutFunction = () => {
+export const useRoutFunction = () => {
     const navigate = useNavigate();
 
     const RoutFunction = (route) => {
@@ -13,4 +15,18 @@ const useRoutFunction = () => {
     return RoutFunction;
 };
 
-export default useRoutFunction;
+
+
+
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+export default ScrollToTop;

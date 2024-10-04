@@ -59,6 +59,12 @@ export const Header = () => {
       style:
         location.pathname === "/accessibility-reports" ? "underline" : "none",
     },
+    {
+      tabName: "Contact Us",
+      link: "/contact-us",
+      style:
+        location.pathname === "/contact-us" ? "underline" : "none",
+    },
   ];
   const profileMenue = [
     // {
@@ -76,7 +82,7 @@ export const Header = () => {
       },
     },
     {
-      title: "Login In",
+      title: "Sign In",
       onClick: () => {
         routeTo("/sign-in")
         handleClose()

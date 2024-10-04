@@ -7,7 +7,7 @@ import kids4 from "../../assets/images/kids4.png";
 import webColor from "../../assets/colors/Colors";
 import { MiddleHeader } from "../../assets/others/Others";
 import { Buttons } from "../../components/button/Buttons";
-import useRoutFunction from "../../assets/others/UseFullFunctions";
+import {useRoutFunction} from "../../assets/others/UseFullFunctions";
 
 export const KidsCorner = () => {
   const RoutFunction = useRoutFunction();

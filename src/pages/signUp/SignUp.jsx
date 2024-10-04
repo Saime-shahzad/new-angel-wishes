@@ -4,7 +4,7 @@ import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
 import icons from '../../assets/icons/icons';
-import useRoutFunction from "../../assets/others/UseFullFunctions";
+import {useRoutFunction} from "../../assets/others/UseFullFunctions";
 
 
 

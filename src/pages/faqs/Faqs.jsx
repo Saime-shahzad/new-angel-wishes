@@ -4,7 +4,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import icons from '../../assets/icons/icons';
 import { Buttons } from '../../components/button/Buttons';
-import useRoutFunction from '../../assets/others/UseFullFunctions';
+import {useRoutFunction} from '../../assets/others/UseFullFunctions';
+import webColor from '../../assets/colors/Colors';
 
 export const Faqs = () => {
     const RoutFunction = useRoutFunction();
@@ -54,6 +55,12 @@ export const Faqs = () => {
   return (
     <div className='parent '>
         <div className='child-1  container p-5'>
+        <div className="text-center my-3">
+          <h1>FAQ<span style={{color:webColor.themeColor}}>
+        s 
+            </span> 
+            </h1>
+        </div>
 
        {faqsData?.map((item) =>{
         return(

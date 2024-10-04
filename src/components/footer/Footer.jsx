@@ -197,7 +197,7 @@ export const Footer = () => {
               style={{ width: "277px", height: "112px" }}
             />
             <p style={{fontSize:"14px"}}>
-            An online legacy keeper to hold life’s best moments for all
+            An online legacy keeper to hold life’s best moments for all.
 
             </p>
             </div>

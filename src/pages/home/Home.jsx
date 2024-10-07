@@ -65,7 +65,7 @@ export const Home = () => {
       text: <div>
         <p>Are you ready to secure your memories, safeguard your data, and prepare your final wishes with expert guidance? Click below to explore our services and discover how Angel Wishes Memory Keeper can support you and your family through every step of the journey.
         <span style={{color:"#FDB515" , fontWeight:"bold" , cursor:"pointer"}} onClick={() => {
-        routeTo("/sign-up")
+        routeTo("/legacies")
         
       }} > Start Preserving Your Legacy
 

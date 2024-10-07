@@ -101,6 +101,11 @@ export const AboutUs = () => {
               )
             })}
           </ul>
+          <p>
+          Angel Wishes Memory Keeper has partnered with individuals and organizations across North America to ensure that someone is there to help you no matter where you are. Our vast directory of medical professionals, lawyers, accountants, and caregivers spans from coast to coast.
+
+
+          </p>
         </div>
       ),
       className:
@@ -118,7 +123,18 @@ export const AboutUs = () => {
       ),
       // subHeading:"subheading",
       possition: "right",
-      text: "Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.",
+      // text: "Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.",
+      text: <div>
+        <p>
+
+        Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.",
+        </p>
+        <p>
+        Angel Wishes Memory Keeper ensures full confidentiality with a robust network security infrastructure, a comprehensive privacy policy, and full HIPAA compliance. We know how important these documents are to you, and we do not take this responsibility lightly.
+
+
+        </p>
+      </div>,
       className: "content-Parent  row my-5   ",
       img: about3
     },
@@ -135,9 +151,7 @@ export const AboutUs = () => {
           <p>
           Are you an individual, family member, or caregiver looking for resources to help you manage someone’s end-of-life needs? If so, that’s why we exist. Simply use the button below to reach out to us, fill out the form, and we will get back to you within 24 hours. Learn more about what makes Angel Wishes Memory Keeper so valuable to families and their loved ones across America.
           </p>
-          <p>
-          Angel Wishes Memory Keeper ensures full confidentiality with a robust network security infrastructure, a comprehensive privacy policy, and full HIPAA compliance. We know how important these documents are to you, and we do not take this responsibility lightly.
-          </p>
+          
           
         </div>
       ),

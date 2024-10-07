@@ -32,11 +32,11 @@ export const Footer = () => {
           title: "About Us",
           route: "/about-us",
         },
-        {
-          id: 3,
-          title: "Careers",
-          route: "/career",
-        },
+        // {
+        //   id: 3,
+        //   title: "Careers",
+        //   route: "/career",
+        // },
         // {
         //   id: 6,
         //   title: "Contact Us",
@@ -205,7 +205,7 @@ export const Footer = () => {
           </Box>
         </div>
         <div
-          className=" col-lg-2 col-md-3 col-sm-6 d-flex align-items-center"
+          className=" col-lg-2 col-md-3 mb-4 col-sm-6 d-flex align-items-center"
 
           //   xs={12} md={3} sm={6}
         >

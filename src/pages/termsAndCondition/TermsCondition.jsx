@@ -1,8 +1,12 @@
 import React from "react";
 import { CommonParagraph } from "../../assets/others/Others";
 import webColor from "../../assets/colors/Colors";
+import { useRoutFunction } from "../../assets/others/UseFullFunctions";
+import { Buttons } from "../../components/button/Buttons";
 
 export const TermsCondition = () => {
+  const RoutFunction = useRoutFunction();
+
   const termsConditionContent = [
     {
       headingText: "",
@@ -10,28 +14,51 @@ export const TermsCondition = () => {
         "Welcome to Angel Wishes Memory Keeper! You agree to comply with and be bound by the following terms and conditions by accessing and using our website, services, and tools. Please review these terms carefully. If you disagree with these terms, you should not use this site or any of its services or contact us with any questions.",
     },
     {
-      headingText: "Use of the Website",
+      headingText: "Acceptance of Terms",
       paragraphText: (
         <div>
-          <h5>License to Use Website</h5>
+          {/* <h5>License to Use Website</h5> */}
           <p>
+          By using our website and services, you signify your agreement to these terms and conditions
+and our Privacy Policy. These terms apply to all visitors, users, and others who access or use
+the Service.
+
+          </p>
+          <h3>Changes to Terms
+          </h3>
+          <p>
+          Angel Wishes Memory Keeper reserves the right to modify or replace these Terms at any time. If
+a revision is material, we will provide at least 30 days' notice before any new terms take effect.
+What constitutes a material change will be determined at our sole discretion.
+          </p>
+          <h3>Use of the Website</h3>
+          <div>
+         
+          
+          <ul>
+            <li><span className="fw-bold">
+             License to Use Website:
+            </span>
             Angel Wishes Memory Keeper grants you a non-exclusive,
-            non-transferable, revocable license to use the website strictly in
-            accordance with these terms.
-          </p>
-          <h5>User Conduct</h5>
-          <p>
-            You agree not to use the site in a way that may impair its
-            performance, corrupt its content, or otherwise reduce its overall
-            functionality. You also agree not to compromise the
-          </p>
-          <h5>Business Transfers</h5>
-          <p>
-            Your personal information may be transferred in the event of a
-            merger, acquisition, or asset sale. We will provide notice before
-            your personal information is transferred and becomes subject to a
-            different privacy policy.
-          </p>
+non-transferable, revocable license to use the website strictly in accordance with these
+terms.
+
+            </li>
+            <li><span className="fw-bold">
+            User Conduct:
+            </span>
+            You agree not to use the site in a way that may impair its performance,
+corrupt its content, or otherwise reduce its overall functionality. You also agree not to
+compromise the website's security or attempt to gain access to secured areas or
+sensitive information.
+            </li>
+           
+
+          </ul>
+
+
+
+        </div>
         </div>
       ),
     },
@@ -76,6 +103,8 @@ export const TermsCondition = () => {
             <li>Email: contact@angelwishesmemorykeeper.com</li>
             <li>Phone: (555) 123-4567</li>
           </ul>
+          <Buttons text="Contact Us" onClick={() => RoutFunction("/contact-us")} style={{ backgroundColor: "#FDB515" }} />
+
         </div>
       ),
     },

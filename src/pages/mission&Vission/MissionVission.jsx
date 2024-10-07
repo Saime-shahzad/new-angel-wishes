@@ -26,6 +26,85 @@ export const MissionVission = () => {
     <div className="parent ">
       <div className="child-1 container mt-5">
         <ContentSection data={pageContent} />
+
+
+        {/* /////by kaleem awl fwl changes */}
+        <div>
+          <h1>
+            Our Values
+          </h1>
+          <h5 className="fw-bold">Compassion, Integrity, and Innovation</h5>
+          <ul>
+            <li><span className="fw-bold">
+              Compassion:
+            </span>
+              At the heart of all we do is a profound empathy for those we serve. We approach every interaction with care and understanding, acknowledging the sensitive nature of our work.
+            </li>
+            <li><span className="fw-bold">
+              Integrity:
+            </span>
+              We commit to the highest standards of professionalism and ethical conduct. Trust is the foundation of our relationships with clients, partners, and each other.
+            </li>
+            <li><span className="fw-bold">
+              Innovation:
+            </span>
+              We continuously seek innovative ways to improve our services and clients' experiences. From secure digital storage solutions to user-friendly interfaces, we embrace technology to meet the needs of today’s families.
+            </li>
+
+          </ul>
+
+
+
+        </div>
+        <div>
+          <h1>
+            Our Commitment
+
+
+          </h1>
+          <h5 className="fw-bold">Ensuring Security and Confidentiality</h5>
+          <p>
+            We understand the importance of privacy and security for our clients. Angel Wishes Memory Keeper is committed to protecting the information you entrust to us. We employ state-of-the-art security measures and adhere to strict privacy policies to safeguard your personal and sensitive data, ensuring that your memories and documents are always secure and accessible.
+
+
+          </p>
+        </div>
+        <div>
+          <h1>
+            How We Make a Difference
+
+
+          </h1>
+          <h5 className="fw-bold">Supporting You Every Step of the Way</h5>
+          <p>
+            Angel Wishes Memory Keeper is more than just a service; it’s a partner in planning for life’s final chapters. We provide support not only for individuals planning for their own future but also for families and caregivers navigating the complexities of end-of-life care. Our comprehensive resources and dedicated team ensure that you have the support you need to make informed decisions and create a lasting legacy.
+
+
+
+
+          </p>
+        </div>
+        <div>
+          <h1>
+            Join Us
+
+
+
+
+          </h1>
+          <h5 className="fw-bold">Build a Legacy with Angel Wishes Memory Keeper
+
+          </h5>
+          <p>
+            Are you ready to take control of your end-of-life planning? Do you want to ensure your life’s stories and achievements are preserved for generations to come? Reach out to us at Angel Wishes Memory Keeper, and let us help you create a legacy filled with dignity and love.
+
+
+
+
+
+
+          </p>
+        </div>
       </div>
     </div>
   );

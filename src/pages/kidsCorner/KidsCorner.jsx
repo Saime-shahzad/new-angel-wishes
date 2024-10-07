@@ -22,7 +22,14 @@ export const KidsCorner = () => {
       ),
       subHeading: "A Safe Space to Save Your Favorite Memories",
       possition: "left",
-      text: "Here at Angel Wishes Memory Keeper, we help you keep all your favorite memories safe and sound, from photos of a fun day to a video of your birthday party or stories about your adventures safe. It’s like having a digital treasure chest to save all the most important things in your life! Whether you want to reflect on these memories later or share them with someone you love, we ensure they're always there for you.",
+      // text: "Here at Angel Wishes Memory Keeper, we help you keep all your favorite memories safe and sound, from photos of a fun day to a video of your birthday party or stories about your adventures safe. It’s like having a digital treasure chest to save all the most important things in your life! Whether you want to reflect on these memories later or share them with someone you love, we ensure they're always there for you.",
+      text: <div>
+      <p>
+      Here at Angel Wishes Memory Keeper, we help you keep all your favorite memories safe and sound, from photos of a fun day to a video of your birthday party or stories about your adventures safe. It’s like having a digital treasure chest to save all the most important things in your life! Whether you want to reflect on these memories later or share them with someone you love, we ensure they're always there for you.
+
+      </p>
+      <Buttons text="FAQs" onClick={() => RoutFunction("/faqs")} style={{ backgroundColor: "#FDB515" }} />
+    </div>,
       className: "row my-4 flex-lg-row-reverse   ",
       // className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: kids1,

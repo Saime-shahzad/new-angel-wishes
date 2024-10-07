@@ -1,8 +1,11 @@
 import React from "react";
 import { CommonParagraph } from "../../assets/others/Others";
 import webColor from "../../assets/colors/Colors";
+import { useRoutFunction } from "../../assets/others/UseFullFunctions";
 
 export const Legacies = () => {
+  const routeTo = useRoutFunction();
+
   const legacyContent = [
     {
       headingText: "Do You Have a Loved One Who Has Passed Away?",
@@ -103,18 +106,24 @@ export const Legacies = () => {
         paragraphText:
           <p>
             Preserving Memories with Angel Wishes Memory Keeper <br/>
-            Want to learn more about how to preserve your memories or create a digital legacy? Visit our About Us page to understand more about our mission and the services we offer that can help you save every precious moment. <br/>
+            Want to learn more about how to preserve your memories or create a digital legacy? Visit our
+            <span style={{color:"#FDB515" , fontWeight:"bold" , cursor:"pointer"}} onClick={() => {
+        routeTo("/about-us")
+        
+      }} > About Us
+
+</span> About Us page to understand more about our mission and the services we offer that can help you save every precious moment. <br/>
             The "Legacies" page is crafted to foster a community of remembrance and respect, providing users with the tools and space to celebrate the lives of those they have lost. This page offers a platform for sharing and connecting with others, ensuring that memories continue to live on and provide comfort and inspiration
           </p>
       },
-    {
-        headingText: "Commitment to Transparency and Integrity",
-        paragraphText:
-          <p>
-            At Angel Wishes Memory Keeper, we are dedicated to transparency and integrity in all our operations. We appreciate your help maintaining the quality and safety of our services and your taking the time to report your concerns. <br/>
-            This Report a Concern page is designed to facilitate an easy and efficient way for users to communicate issues, reinforcing Angel Wishes Memory Keeper's commitment to transparency, integrity, and responsive customer service. Clear instructions and direct communication options ensure that users feel supported and valued throughout the process.
-          </p>
-      },
+    // {
+    //     headingText: "Commitment to Transparency and Integrity",
+    //     paragraphText:
+    //       <p>
+    //         At Angel Wishes Memory Keeper, we are dedicated to transparency and integrity in all our operations. We appreciate your help maintaining the quality and safety of our services and your taking the time to report your concerns. <br/>
+    //         This Report a Concern page is designed to facilitate an easy and efficient way for users to communicate issues, reinforcing Angel Wishes Memory Keeper's commitment to transparency, integrity, and responsive customer service. Clear instructions and direct communication options ensure that users feel supported and valued throughout the process.
+    //       </p>
+    //   },
   ];
   return (
     <div className="parent">

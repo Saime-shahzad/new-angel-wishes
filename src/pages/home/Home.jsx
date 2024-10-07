@@ -61,7 +61,19 @@ export const Home = () => {
       heading: <span>Begin Your Journey with Angel Wishes <span style={{ color: webColor.themeColor }}>Memory Keeper's</span> Assistance</span>,
       // subHeading:"subheading",
       possition: "right",
-      text: "Are you ready to secure your memories, safeguard your data, and prepare your final wishes with expert guidance? Click below to explore our services and discover how Angel Wishes Memory Keeper can support you and your family through every step of the journey.",
+      // text: "Are you ready to secure your memories, safeguard your data, and prepare your final wishes with expert guidance? Click below to explore our services and discover how Angel Wishes Memory Keeper can support you and your family through every step of the journey.",
+      text: <div>
+        <p>Are you ready to secure your memories, safeguard your data, and prepare your final wishes with expert guidance? Click below to explore our services and discover how Angel Wishes Memory Keeper can support you and your family through every step of the journey.
+        <span style={{color:"#FDB515" , fontWeight:"bold" , cursor:"pointer"}} onClick={() => {
+        routeTo("/sign-up")
+        
+      }} > Start Preserving Your Legacy
+
+</span></p>
+<p>
+This home page content highlights Angel Wishes Memory Keeper's core services, inviting visitors to engage with the platform through a clear, concise, and reassuring tone. Each section is designed to address specific needs and reassure users of the services' secure, caring, and professional nature.
+</p>
+      </div>,
       className: "content-Parent  row my-5   ",
       img: home4
     },

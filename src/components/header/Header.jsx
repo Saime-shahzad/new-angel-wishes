@@ -38,11 +38,11 @@ export const Header = () => {
       link: "/about-us",
       style: location.pathname === "/about-us" ? "underline" : "none",
     },
-    {
-      tabName: "Career",
-      link: "/career",
-      style: location.pathname === "/career" ? "underline" : "none",
-    },
+    // {
+    //   tabName: "Career",
+    //   link: "/career",
+    //   style: location.pathname === "/career" ? "underline" : "none",
+    // },
     {
       tabName: "Mission And Vison",
       link: "/mission&vision",

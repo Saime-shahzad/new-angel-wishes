@@ -49,7 +49,7 @@ bottom: 0
     width: 60px;
     height: 42px;
     
-    top: -41px; /* Adjust position to the right */
+    top: -40px; /* Adjust position to the right */
     background-image: url('../../assets/images/downArrowimg.png'); /* Replace with your image URL */
      /* Replace with your image URL */
   }

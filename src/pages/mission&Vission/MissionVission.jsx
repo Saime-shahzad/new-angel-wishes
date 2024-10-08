@@ -1,7 +1,7 @@
 import React from "react";
 import { ContentSection } from "../../assets/contentSection/ContentSection";
-import mission1 from "../../assets/images/mission1.jpg";
-import mission2 from "../../assets/images/mission2.jpg";
+import mission1 from "../../assets/images/mission1.png";
+import mission2 from "../../assets/images/mission2.png";
 import webColor from "../../assets/colors/Colors";
 
 export const MissionVission = () => {
@@ -13,6 +13,8 @@ export const MissionVission = () => {
       text: "At Angel Wishes Memory Keeper, we aim to provide individuals and families with the tools and support needed to capture, celebrate, and preserve life's most precious moments. We strive to ease the challenges of final wishes planning by offering comprehensive, compassionate services, including memory keeping, estate planning, and access to vital legal and healthcare resources. We aim to ensure that every individual can leave a legacy of love and care that endures beyond their lifetime.",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: mission1,
+      sizes:["540px" , "378px"],
+
     },
     {
       heading: "Our Vision",

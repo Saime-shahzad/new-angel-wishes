@@ -1,9 +1,9 @@
 import React from "react";
 import { ContentSection } from "../../assets/contentSection/ContentSection";
 import kids1 from "../../assets/images/kids1.png";
-import kids2 from "../../assets/images/kids2.png";
+import kids2 from "../../assets/images/kids2.jpg";
 import kids3 from "../../assets/images/kids3.png";
-import kids4 from "../../assets/images/kids4.png";
+import kids4 from "../../assets/images/kids4.jpg";
 import webColor from "../../assets/colors/Colors";
 import { MiddleHeader } from "../../assets/others/Others";
 import { Buttons } from "../../components/button/Buttons";

@@ -6,6 +6,8 @@ import React from "react";
 import { Inputs } from "../../assets/input/Inputs";
 import "./ReportaConcern.css";
 import { Buttons } from "../../components/button/Buttons";
+import webColor from "../../assets/colors/Colors";
+
 // import icons from "../../assets/icons/icons";
 
 export const ReportaConcern = () => {
@@ -85,6 +87,12 @@ export const ReportaConcern = () => {
   ];
   return (
     <div className="parent">
+       <div className="text-center my-5">
+          <h1>Report a <span style={{color:webColor.themeColor}}>
+          Concern 
+            </span> 
+            </h1>
+        </div>
       {/* <div className="child-1 my-5 ">
         <CommonParagraph
           headingText="How to Report a Concern"
@@ -107,7 +115,7 @@ export const ReportaConcern = () => {
 
 
           </h1>
-          <h5 className="fw-bold">Your Feedback is Vital
+          <h5 className="">Your Feedback is Vital
 
 
 
@@ -123,7 +131,7 @@ export const ReportaConcern = () => {
             How to Report a Concern
 
           </h1>
-          <h5 className="fw-bold">Step-by-Step Guidance
+          <h5 className="">Step-by-Step Guidance
 
           </h5>
           <p>
@@ -221,7 +229,7 @@ export const ReportaConcern = () => {
             What Happens Next?
 
           </h1>
-          <h5 className="fw-bold">Our Process
+          <h5 className="">Our Process
 
           </h5>
           <p>

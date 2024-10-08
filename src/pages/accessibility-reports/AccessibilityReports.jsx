@@ -1,34 +1,33 @@
 import React from "react";
 // import "./styles.css";
 import { Box, Typography } from "@mui/material";
+import webColor from "../../assets/colors/Colors";
 
 export const AccessibilityReports = () => {
   return (
     <div>
-      <Box pt={4} sx={{ width: { md: "90%", xs: "100%" }, margin: "0 auto" }}>
-        <Typography
+       <div className="text-center my-5">
+          <h1>Accessibility <span style={{color:webColor.themeColor}}>
+          Reports 
+            </span> 
+            </h1>
+        </div>
+      <Box  sx={{ width: { md: "90%", xs: "100%" }, margin: "0 auto" }}>
+     
+        
+        <h1
           sx={{
             textAlign: { sm: "justify", xs: "start" },
-            fontSize: 22,
-            fontWeight: 600,
-          }}
-          mb={4}
-        >
-          Angel Wishes Memory Keeper - Accessibility Report
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: { sm: "justify", xs: "start" },
-            fontSize: 18,
-            fontWeight: 600,
+            // fontSize: 18,
+            fontWeight: "bold",
           }}
         >
           Commitment to Accessibility
-        </Typography>
+        </h1>
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h5 py={2} >
             Inclusivity at Angel Wishes Memory Keeper
-          </Typography>
+          </h5>
           <Typography py={1} sx={{ color: "#000", textAlign: "justify" }}>
             At Angel Wishes Memory Keeper, we are dedicated to building a
             service everyone can use, including people with disabilities. Our
@@ -38,19 +37,19 @@ export const AccessibilityReports = () => {
             technology or ability.
           </Typography>
         </Box>
-        <Typography
+        <h1
           sx={{
             textAlign: { sm: "justify", xs: "start" },
-            fontSize: 18,
-            fontWeight: 600,
+            // fontSize: 18,
+            fontWeight: "bold",
           }}
         >
           Accessibility Features
-        </Typography>
+        </h1>
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h5 py={2} >
             Enhanced User Experience
-          </Typography>
+          </h5>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             Our website incorporates a variety of accessibility features
             designed to enhance the user experience for everyone:
@@ -58,21 +57,21 @@ export const AccessibilityReports = () => {
           <ul>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600 }}>Text-to-Speech: </span>
+                <span style={{ fontWeight: "bold" }}>Text-to-Speech: </span>
                 This feature allows users to listen to the content, making it
                 easier for those with difficulty reading screens.
               </Typography>
             </li>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600 }}>High Contrast Mode: </span>
+                <span style={{ fontWeight: "bold" }}>High Contrast Mode: </span>
                 Users can switch to a high contrast mode that enhances text
                 visibility and clarity for those with vision impairments.
               </Typography>
             </li>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600 }}>Alt Text for Images: </span>
+                <span style={{ fontWeight: "bold" }}>Alt Text for Images: </span>
                 All images on our site are accompanied by alternative text
                 descriptions, making information conveyed by images accessible
                 to individuals using screen readers.
@@ -80,7 +79,7 @@ export const AccessibilityReports = () => {
             </li>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600 }}>Scalable Text:</span> Users
+                <span style={{ fontWeight: "bold" }}>Scalable Text:</span> Users
                 can adjust the text size through their browser settings to make
                 it easier to read.
               </Typography>
@@ -88,20 +87,20 @@ export const AccessibilityReports = () => {
           </ul>
         </Box>
 
-        <Typography
+        <h1
           sx={{
             textAlign: { sm: "justify", xs: "start" },
-            fontSize: 18,
-            fontWeight: 600,
+            // fontSize: 18,
+            fontWeight: "bold",
           }}
         >
           Ongoing Efforts
-        </Typography>
+        </h1>
 
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h5 py={2} >
             Continuous Improvement
-          </Typography>
+          </h5>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             We recognize that technology and needs evolve, and so does our
             approach to accessibility. We are committed to ongoing development
@@ -112,20 +111,20 @@ export const AccessibilityReports = () => {
           </Typography>
         </Box>
 
-        <Typography
+        <h1
           sx={{
             textAlign: { sm: "justify", xs: "start" },
-            fontSize: 18,
-            fontWeight: 600,
+            // fontSize: 18,
+            fontWeight: "bold",
           }}
         >
           Feedback and Contact Information
-        </Typography>
+        </h1>
 
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h5 py={2} >
             Your Voice Matters
-          </Typography>
+          </h5>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             Your feedback is crucial in helping us improve our accessibility
             standards. If you encounter any accessibility barriers or have
@@ -135,7 +134,7 @@ export const AccessibilityReports = () => {
           <ul>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600, paddingRight: "5px" }}>
+                <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Email:
                 </span>
                 accessibility@angelwishesmemorykeeper.com
@@ -143,7 +142,7 @@ export const AccessibilityReports = () => {
             </li>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600, paddingRight: "5px" }}>
+                <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Phone:
                 </span>
                 (555) 123-4568
@@ -151,7 +150,7 @@ export const AccessibilityReports = () => {
             </li>
             <li>
               <Typography>
-                <span style={{ fontWeight: 600, paddingRight: "5px" }}>
+                <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Contact Form:
                 </span>
                 Contact Us
@@ -165,19 +164,18 @@ export const AccessibilityReports = () => {
           </Typography>
         </Box>
 
-        <Typography
+        <h1
           sx={{
             textAlign: { sm: "justify", xs: "start" },
-            fontSize: 18,
-            fontWeight: 600,
+            fontWeight: "bold",
           }}
         >
           Accessibility Resources
-        </Typography>
+        </h1>
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h5 py={2} >
             Learn More About Our Efforts
-          </Typography>
+          </h5>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             For more information on our accessibility policies and resources, or
             to view our annual accessibility reports, please visit the links
@@ -194,9 +192,9 @@ export const AccessibilityReports = () => {
         </Box>
 
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h1 py={2} sx={{ fontSize: 18,  }}>
             Let's Make a Difference Together
-          </Typography>
+          </h1>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             At Angel Wishes Memory Keeper, we believe in creating an environment
             that supports and values all users. We are continually working to
@@ -213,9 +211,9 @@ export const AccessibilityReports = () => {
           </Typography>
         </Box>
         <Box>
-          <Typography py={2} sx={{ fontSize: 18, fontWeight: 600 }}>
+          <h1 py={2} sx={{ fontSize: 18, }}>
           [CTA BUTTON - Provide Accessibility Feedback]
-          </Typography>
+          </h1>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
           This accessibility report page copy is crafted to convey Angel Wishes Memory Keeper's
 commitment to accessibility, providing clear information on features, ongoing efforts, and how

@@ -2,6 +2,7 @@ import React from "react";
 import { ContentSection } from "../../assets/contentSection/ContentSection";
 import mission1 from "../../assets/images/mission1.jpg";
 import mission2 from "../../assets/images/mission2.jpg";
+import webColor from "../../assets/colors/Colors";
 
 export const MissionVission = () => {
   const pageContent = [
@@ -24,6 +25,13 @@ export const MissionVission = () => {
   ];
   return (
     <div className="parent ">
+      <div className="text-center my-5">
+          <h1>Mission   <span style={{color:webColor.themeColor}}>
+          And  
+             </span> 
+            &nbsp;Vision
+            </h1>
+        </div>
       <div className="child-1 container mt-5">
         <ContentSection data={pageContent} />
 
@@ -33,14 +41,14 @@ export const MissionVission = () => {
           <h1>
             Our Values
           </h1>
-          <h5 className="fw-bold">Compassion, Integrity, and Innovation</h5>
-          <ul>
-            <li><span className="fw-bold">
+          <h5 className="fw-bold py-2">Compassion, Integrity, and Innovation</h5>
+          <ul className="py-2">
+            <li className="py-2"><span className="fw-bold ">
               Compassion:
             </span>
               At the heart of all we do is a profound empathy for those we serve. We approach every interaction with care and understanding, acknowledging the sensitive nature of our work.
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2"><span className="fw-bold">
               Integrity:
             </span>
               We commit to the highest standards of professionalism and ethical conduct. Trust is the foundation of our relationships with clients, partners, and each other.
@@ -62,7 +70,7 @@ export const MissionVission = () => {
 
 
           </h1>
-          <h5 className="fw-bold">Ensuring Security and Confidentiality</h5>
+          <h5 className="py-2">Ensuring Security and Confidentiality</h5>
           <p>
             We understand the importance of privacy and security for our clients. Angel Wishes Memory Keeper is committed to protecting the information you entrust to us. We employ state-of-the-art security measures and adhere to strict privacy policies to safeguard your personal and sensitive data, ensuring that your memories and documents are always secure and accessible.
 
@@ -75,7 +83,7 @@ export const MissionVission = () => {
 
 
           </h1>
-          <h5 className="fw-bold">Supporting You Every Step of the Way</h5>
+          <h5 className=" py-2" >Supporting You Every Step of the Way</h5>
           <p>
             Angel Wishes Memory Keeper is more than just a service; it’s a partner in planning for life’s final chapters. We provide support not only for individuals planning for their own future but also for families and caregivers navigating the complexities of end-of-life care. Our comprehensive resources and dedicated team ensure that you have the support you need to make informed decisions and create a lasting legacy.
 
@@ -92,7 +100,7 @@ export const MissionVission = () => {
 
 
           </h1>
-          <h5 className="fw-bold">Build a Legacy with Angel Wishes Memory Keeper
+          <h5 className="">Build a Legacy with Angel Wishes Memory Keeper
 
           </h5>
           <p>

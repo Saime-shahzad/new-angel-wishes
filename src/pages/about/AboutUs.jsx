@@ -28,11 +28,13 @@ export const AboutUs = () => {
           Our <span style={{ color: webColor.themeColor }}>Brand </span>Story
         </span>
       ),
-      subHeading: "We Allow Families to Cherish Every Moment",
+      // subHeading: "We Allow Families to Cherish Every Moment",
       possition: "left",
       text: "Angel Wishes Memory Keeper was started when our founder, Melanie, was at home sick and meditated about her soul’s purpose. It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories. An online legacy keeper to hold life’s best moments for all. It was at that moment she realized how difficult it was to find a single place, person, or service that provided everything required for those entering end-of-life and their loved ones. She had to go to multiple locations to address these needs, from a family photo download service to a memory maker and video service to an end-of-life consultancy. And that’s when it hit her: there was nowhere to go to save and share memories and videos; nowhere to find out how to write a will; nowhere to get power of attorney. At least, not all in one place.",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: about01,
+      sizes:["540px" , "492px"],
+
       extraContent:<div className="extraontent-Parent">
         <p className="mt-3">
         <div className="fst-italic fw-bold">
@@ -127,7 +129,7 @@ export const AboutUs = () => {
       text: <div>
         <p>
 
-        Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.",
+        Angel Wishes Memory Keeper is built on a custom AWS secure configuration with 400 terabytes of dedicated storage (that’s a lot!). No matter what, your precious memories are safe in our Angel’s hands. When you need to access a sensitive document, you can rest assured you’ll gain quick access to it with 99.98% uptime.
         </p>
         <p>
         Angel Wishes Memory Keeper ensures full confidentiality with a robust network security infrastructure, a comprehensive privacy policy, and full HIPAA compliance. We know how important these documents are to you, and we do not take this responsibility lightly.

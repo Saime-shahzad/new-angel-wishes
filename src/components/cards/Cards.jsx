@@ -15,7 +15,7 @@ export default function MediaCard({ image, imageSize, subHeading, paragraphText,
   const routeTo = useRoutFunction();
 
   return (
-    <Card className=" mx-1 cardhoverStyle border-0" sx={{ maxWidth: 345 }}>
+    <Card className=" mx-1 cardhoverStyle border-0" sx={{ maxWidth: 385 }}>
 
       {image &&
 

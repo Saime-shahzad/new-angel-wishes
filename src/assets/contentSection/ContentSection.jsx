@@ -29,17 +29,17 @@ export const ContentSection = ({
 
               {/* <div className="  img-section "> */}
               <div data-aos="fade-right" className={item.possition === "left" ? "img-section col-lg-6 col-md-6 col-sm-12 d-flex align-items-center" : "col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start align-items-center"} style={{width:item.vedios ? "100%" : ""}}>
-                {item.img ?
-                  <img src={item.img} width={item.sizes? item.sizes[0] :"584px"} height={item.sizes? item.sizes[1] :"388px"} alt="home-1" /> : 
-                  <video
+                {item.img &&
+                  <img src={item.img} width={item.sizes? item.sizes[0] :"584px"} height={item.sizes? item.sizes[1] :"388px"} alt="home-1" /> }
+                 {item.vedios &&  <video
               controls // Add controls for the video player
               // style={{ maxWidth: "100%", maxHeight: "100%" }}
               className="w-100"
             >
               <source src={item.vedios} type="video/mp4" />
               {/* Provide the source of your video */}
-            </video>
-                  }
+            </video>}
+                  
               </div>
               {/* ///extra content section */}
 

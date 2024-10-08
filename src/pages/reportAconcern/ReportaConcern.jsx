@@ -140,17 +140,17 @@ export const ReportaConcern = () => {
 
           </p>
           <ol>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold ">
               Identify the Issue:
             </span>
               Clearly describe the concern you have encountered. Whether it relates to our services, staff conduct, or our online platform, providing specific details will help us understand and address the issue more effectively.
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
               Gather Information:
             </span>
               Gather any relevant information or documents supporting your report. This coold include screenshots, correspondence, or other pertinent details.
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
               Submit Your Report:
             </span>
               Use the form below to submit your concern. Please fill in all required fields to help us process your report quickly.
@@ -240,17 +240,17 @@ export const ReportaConcern = () => {
 
           </p>
           <ul>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
               Acknowledgment:
             </span>
               We will acknowledge receipt of your report within 24 hours.
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
               Investigation:
             </span>
               We will thoroughly investigate your concern, involving relevant departments and ensuring a fair process.
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
               Resolution:
             </span>
               We aim to resolve concerns swiftly. We will communicate with you throughout the process and notify you once a resolution has been reached.
@@ -275,12 +275,12 @@ export const ReportaConcern = () => {
 
           </p>
           <ul>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
             Phone: 
             </span>
             (555) 123-4567
             </li>
-            <li><span className="fw-bold">
+            <li className="py-2 "><span className="fw-bold">
             Email:
             </span>
             concerns@angelwishesmemorykeeper.com

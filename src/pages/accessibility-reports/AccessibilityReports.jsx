@@ -55,21 +55,21 @@ export const AccessibilityReports = () => {
             designed to enhance the user experience for everyone:
           </Typography>
           <ul>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold" }}>Text-to-Speech: </span>
                 This feature allows users to listen to the content, making it
                 easier for those with difficulty reading screens.
               </Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold" }}>High Contrast Mode: </span>
                 Users can switch to a high contrast mode that enhances text
                 visibility and clarity for those with vision impairments.
               </Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold" }}>Alt Text for Images: </span>
                 All images on our site are accompanied by alternative text
@@ -77,7 +77,7 @@ export const AccessibilityReports = () => {
                 to individuals using screen readers.
               </Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold" }}>Scalable Text:</span> Users
                 can adjust the text size through their browser settings to make
@@ -132,7 +132,7 @@ export const AccessibilityReports = () => {
             do not hesitate to contact us:
           </Typography>
           <ul>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Email:
@@ -140,7 +140,7 @@ export const AccessibilityReports = () => {
                 accessibility@angelwishesmemorykeeper.com
               </Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Phone:
@@ -148,7 +148,7 @@ export const AccessibilityReports = () => {
                 (555) 123-4568
               </Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>
                 <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Contact Form:
@@ -182,10 +182,10 @@ export const AccessibilityReports = () => {
             below:
           </Typography>
           <ul>
-            <li>
+            <li className="py-2 ">
               <Typography>[Link to Detailed Accessibility Policy]</Typography>
             </li>
-            <li>
+            <li className="py-2 ">
               <Typography>[Link to Annual Accessibility Reports]</Typography>
             </li>
           </ul>

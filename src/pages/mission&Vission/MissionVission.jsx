@@ -41,7 +41,7 @@ export const MissionVission = () => {
           <h1>
             Our Values
           </h1>
-          <h5 className="fw-bold py-2">Compassion, Integrity, and Innovation</h5>
+          <h5 className=" py-2">Compassion, Integrity, and Innovation</h5>
           <ul className="py-2">
             <li className="py-2"><span className="fw-bold ">
               Compassion:

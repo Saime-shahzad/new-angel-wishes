@@ -1,8 +1,8 @@
 import React from "react";
 import angell from "../../assets/images/angell.png"
 import ban1 from "../../assets/images/ban1.jpg"
-import ban2 from "../../assets/images/ban2.png"
-import ban3 from "../../assets/images/ban3.jpg"
+import ban2 from "../../assets/images/ban2.jpg"
+import ban3 from "../../assets/images/ban3.png"
 import { Buttons } from "../../components/button/Buttons";
 import webColor from "../../assets/colors/Colors";
 import './Home.css'
@@ -13,11 +13,30 @@ import home4 from "../../assets/images/home4.png"
 import { ContentSection } from "../../assets/contentSection/ContentSection";
 import {useRoutFunction} from "../../assets/others/UseFullFunctions";
 import homeVedio1 from "../../assets/images/homeVedio1.mp4"
+import { ExtraBlueSection } from "../../assets/others/Others";
 
 
 
 export const Home = () => {
   const routeTo = useRoutFunction();
+  const middleExtraSectionBlue = {
+    heading: "About Us",
+    text: (
+      <div>
+        <p>Angel Wishes Memory Keeper was started when our founder, 
+          Melanie, was at home sick and meditated about her soul’s purpose. 
+          It came to her in two recurring dreams: to build a place to keep important documents and life’s treasures and stories...
+          <span 
+          onClick={() => routeTo("/about-us")}
+          className="fw-bold" style={{color:webColor.themeColor , cursor:"pointer"}}>Read More</span>
+        </p>
+       
+      </div>
+    ),
+
+    className: "blueSection container ",
+  };
+
 
 
   const homePageContent = [
@@ -29,7 +48,10 @@ export const Home = () => {
       possition: "left",
       text: "Every moment in life counts. At Angel Wishes Memory Keeper, we provide a secure and loving space where you and your loved ones can preserve these precious memories. Whether it's photos, videos, or written stories, our platform ensures that your life's highlights are safely stored and easily accessible. Start today and keep your cherished memories alive for generations to come. Experience the comfort of knowing that your most significant moments are preserved with care and respect.",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
-      img: home1
+      img: home1,
+      sizes:["540px" , "422px"],
+
+
     },
 
     {
@@ -47,6 +69,15 @@ export const Home = () => {
       vedios:homeVedio1
       
     },
+    {
+      className:" w-100 mt-4 ",
+      extraContent:<ExtraBlueSection
+      heading={middleExtraSectionBlue.heading}
+      text={middleExtraSectionBlue.text}
+      className={middleExtraSectionBlue.className}
+    />
+      
+    },
 
     {
       heading: <span>Get  <span style={{ color: webColor.themeColor }}>Consulting</span> Assistance</span>,
@@ -54,7 +85,9 @@ export const Home = () => {
       possition: "left",
       text: "Navigating final wishes planning can be complex and emotional. That's why Angel Wishes Memory Keeper offers compassionate and professional final wishes consulting. Our experts are here to guide you through every step of the process, from estate planning to creating a living trust. We ensure you have all the resources and support needed to make informed decisions that honor your wishes and provide peace of mind for your family. Reach out today to learn how our consulting services can help simplify this critical journey.",
       className: "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
-      img: home3
+      img: home3,
+      sizes:["540px" , "422px"],
+
     },
 
     {
@@ -75,7 +108,9 @@ This home page content highlights Angel Wishes Memory Keeper's core services, in
 </p>
       </div>,
       className: "content-Parent  row my-5   ",
-      img: home4
+      img: home4,
+      sizes:["540px" , "492px"],
+
     },
 
 
@@ -97,16 +132,16 @@ This home page content highlights Angel Wishes Memory Keeper's core services, in
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" height="600px" src={ban1} alt="First slide" />
+                <img class="d-block w-100"  src={ban1} alt="First slide" />
 
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" height="600px" src={ban2} alt="First slide" />
+                <img class="d-block w-100"  src={ban2} alt="First slide" />
 
 
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" height="600px" src={ban3} alt="First slide" />
+                <img class="d-block w-100"  src={ban3} alt="First slide" />
 
               </div>
             </div>

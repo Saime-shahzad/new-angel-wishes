@@ -15,7 +15,7 @@ export const AccessibilityReports = () => {
       <Box  sx={{ width: { md: "90%", xs: "100%" }, margin: "0 auto" }}>
      
         
-        <h1
+        <h3
           sx={{
             textAlign: { sm: "justify", xs: "start" },
             // fontSize: 18,
@@ -23,7 +23,7 @@ export const AccessibilityReports = () => {
           }}
         >
           Commitment to Accessibility
-        </h1>
+        </h3>
         <Box>
           <h5 py={2} >
             Inclusivity at Angel Wishes Memory Keeper
@@ -37,7 +37,7 @@ export const AccessibilityReports = () => {
             technology or ability.
           </Typography>
         </Box>
-        <h1
+        <h3
           sx={{
             textAlign: { sm: "justify", xs: "start" },
             // fontSize: 18,
@@ -45,7 +45,7 @@ export const AccessibilityReports = () => {
           }}
         >
           Accessibility Features
-        </h1>
+        </h3>
         <Box>
           <h5 py={2} >
             Enhanced User Experience
@@ -87,7 +87,7 @@ export const AccessibilityReports = () => {
           </ul>
         </Box>
 
-        <h1
+        <h3
           sx={{
             textAlign: { sm: "justify", xs: "start" },
             // fontSize: 18,
@@ -95,7 +95,7 @@ export const AccessibilityReports = () => {
           }}
         >
           Ongoing Efforts
-        </h1>
+        </h3>
 
         <Box>
           <h5 py={2} >
@@ -111,7 +111,7 @@ export const AccessibilityReports = () => {
           </Typography>
         </Box>
 
-        <h1
+        <h3
           sx={{
             textAlign: { sm: "justify", xs: "start" },
             // fontSize: 18,
@@ -119,7 +119,7 @@ export const AccessibilityReports = () => {
           }}
         >
           Feedback and Contact Information
-        </h1>
+        </h3>
 
         <Box>
           <h5 py={2} >
@@ -164,14 +164,14 @@ export const AccessibilityReports = () => {
           </Typography>
         </Box>
 
-        <h1
+        <h3
           sx={{
             textAlign: { sm: "justify", xs: "start" },
             fontWeight: "bold",
           }}
         >
           Accessibility Resources
-        </h1>
+        </h3>
         <Box>
           <h5 py={2} >
             Learn More About Our Efforts
@@ -191,10 +191,10 @@ export const AccessibilityReports = () => {
           </ul>
         </Box>
 
-        <Box>
-          <h1 py={2} sx={{ fontSize: 18,  }}>
+        <Box  sx={{marginBottom:"10px"}}>
+          <h3 py={2} sx={{ fontSize: 18,  }}>
             Let's Make a Difference Together
-          </h1>
+          </h3>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
             At Angel Wishes Memory Keeper, we believe in creating an environment
             that supports and values all users. We are continually working to
@@ -210,17 +210,17 @@ export const AccessibilityReports = () => {
             accessible to all.
           </Typography>
         </Box>
-        <Box>
-          <h1 py={2} sx={{ fontSize: 18, }}>
+        {/* <Box>
+          <h3 py={2} sx={{ fontSize: 18, }}>
           [CTA BUTTON - Provide Accessibility Feedback]
-          </h1>
+          </h3>
           <Typography pb={1} sx={{ color: "#000", textAlign: "justify" }}>
           This accessibility report page copy is crafted to convey Angel Wishes Memory Keeper's
 commitment to accessibility, providing clear information on features, ongoing efforts, and how
 users can contribute feedback. It aims to foster a sense of community and proactive
 engagement, emphasizing inclusivity and continuous improvement in accessibility practices
           </Typography>
-        </Box>
+        </Box> */}
       </Box>
     </div>
   );

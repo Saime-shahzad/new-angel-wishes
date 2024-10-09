@@ -40,9 +40,9 @@ export const MissionVission = () => {
 
         {/* /////by kaleem awl fwl changes */}
         <div>
-          <h1>
+          <h3>
             Our Values
-          </h1>
+          </h3>
           <h5 className=" py-2">Compassion, Integrity, and Innovation</h5>
           <ul className="py-2">
             <li className="py-2"><span className="fw-bold ">
@@ -67,11 +67,11 @@ export const MissionVission = () => {
 
         </div>
         <div>
-          <h1>
+          <h3>
             Our Commitment
 
 
-          </h1>
+          </h3>
           <h5 className="py-2">Ensuring Security and Confidentiality</h5>
           <p>
             We understand the importance of privacy and security for our clients. Angel Wishes Memory Keeper is committed to protecting the information you entrust to us. We employ state-of-the-art security measures and adhere to strict privacy policies to safeguard your personal and sensitive data, ensuring that your memories and documents are always secure and accessible.
@@ -80,11 +80,11 @@ export const MissionVission = () => {
           </p>
         </div>
         <div>
-          <h1>
+          <h3>
             How We Make a Difference
 
 
-          </h1>
+          </h3>
           <h5 className=" py-2" >Supporting You Every Step of the Way</h5>
           <p>
             Angel Wishes Memory Keeper is more than just a service; it’s a partner in planning for life’s final chapters. We provide support not only for individuals planning for their own future but also for families and caregivers navigating the complexities of end-of-life care. Our comprehensive resources and dedicated team ensure that you have the support you need to make informed decisions and create a lasting legacy.
@@ -95,13 +95,13 @@ export const MissionVission = () => {
           </p>
         </div>
         <div>
-          <h1>
+          <h3>
             Join Us
 
 
 
 
-          </h1>
+          </h3>
           <h5 className="">Build a Legacy with Angel Wishes Memory Keeper
 
           </h5>

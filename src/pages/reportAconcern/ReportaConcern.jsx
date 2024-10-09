@@ -107,14 +107,14 @@ export const ReportaConcern = () => {
 
       <div className="container">
         <div>
-          <h1>
+          <h3>
             We're Listening
 
 
 
 
 
-          </h1>
+          </h3>
           <h5 className="">Your Feedback is Vital
 
 
@@ -127,10 +127,10 @@ export const ReportaConcern = () => {
           </p>
         </div>
         <div>
-          <h1>
+          <h3>
             How to Report a Concern
 
-          </h1>
+          </h3>
           <h5 className="">Step-by-Step Guidance
 
           </h5>
@@ -171,7 +171,7 @@ export const ReportaConcern = () => {
           style={{ backgroundColor: "#E9EFEF", border: "8px solid white" }}
         >
           <div className="heading-contant p-2 ">
-            <h1>Report a Concern</h1>
+            <h3>Report a Concern</h3>
             <p>
               Please complete the form below to submit your concern. All
               information provided will be handled confidentially.
@@ -225,10 +225,10 @@ export const ReportaConcern = () => {
       </div>
       <div className="container">
         <div>
-          <h1>
+          <h3>
             What Happens Next?
 
-          </h1>
+          </h3>
           <h5 className="">Our Process
 
           </h5>
@@ -260,11 +260,11 @@ export const ReportaConcern = () => {
 
         </div>
         <div>
-          <h1>
+          <h3>
           Contact Us Directly
 
 
-          </h1>
+          </h3>
      
           <p>
           If you prefer to speak with someone directly or if your concern is urgent, please do not hesitate to contact us at:
@@ -291,14 +291,14 @@ export const ReportaConcern = () => {
 
         </div>
         <div>
-          <h1>
+          <h3>
           Commitment to Transparency and Integrity
 
 
 
 
 
-          </h1>
+          </h3>
          
           <p>
           At Angel Wishes Memory Keeper, we are dedicated to transparency and integrity in all our operations. We appreciate your help maintaining the quality and safety of our services and your taking the time to report your concerns.

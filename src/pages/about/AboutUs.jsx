@@ -25,7 +25,7 @@ export const AboutUs = () => {
       // heading:"Save Your Memories",
       heading: (
         <span>
-          Our <span style={{ color: webColor.themeColor }}>Brand </span>Story
+          Our <span style={{ color: webColor.themeColor }}>Story </span>
         </span>
       ),
       // subHeading: "We Allow Families to Cherish Every Moment",

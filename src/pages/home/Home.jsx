@@ -1,7 +1,7 @@
 import React from "react";
 import angell from "../../assets/images/angell.png"
 import ban1 from "../../assets/images/ban1.jpg"
-import ban2 from "../../assets/images/ban2.jpg"
+import ban2 from "../../assets/images/ban2.png"
 import ban3 from "../../assets/images/ban3.png"
 import { Buttons } from "../../components/button/Buttons";
 import webColor from "../../assets/colors/Colors";

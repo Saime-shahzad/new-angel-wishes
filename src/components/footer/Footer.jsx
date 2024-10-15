@@ -116,7 +116,8 @@ export const Footer = () => {
         {
             id:3,
             image: icons.locationIcons,
-            title:<p>474274 EState Rd <br /> 200Fernandina  Beach, FL32034</p>
+            title:<p>474274 State Rd 200,  <br /> Fernandina Beach, FL 32034</p>
+            // title:<p>474274 EState Rd <br /> 200Fernandina  Beach, FL32034</p>
         }
       ],
     },

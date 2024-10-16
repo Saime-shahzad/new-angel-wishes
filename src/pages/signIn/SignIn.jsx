@@ -1,12 +1,42 @@
-import React from 'react'
-import homeBackGround from "../../assets/images/homeBackGround.png";
+import React, { useState } from 'react'
 import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
 import icons from '../../assets/icons/icons';
+import { toast } from 'react-toastify';
+import { useRoutFunction } from '../../assets/others/UseFullFunctions';
 
-
+ 
 const SignIn = () => {
+  const userObj={
+    userEmail:"",
+    password:"",
+  }
+  const routeTo = useRoutFunction();
+
+  const[isUserData , setIsUserData]=useState(userObj)
+
+  const submituserInfo=(() =>{
+if(!isUserData.userEmail || !isUserData.password){
+  // toast.warn(!isUserData.userEmail ? `Fields${isUserData.userEmail}` : `${isUserData.password} Fields`)
+  toast.warn(
+    !isUserData.userEmail
+      ? ` ${isUserData.userEmail || 'Email is missing'}`
+      : `${isUserData.password || 'Password is missing'}`
+  );
+  
+}
+  })
+  const inputValues=((e) =>{
+    if(e?.target.type ==="password"){
+      setIsUserData({...isUserData , password:e?.target.value})
+    }
+    if(e?.target.type ==="email"){
+      setIsUserData({...isUserData , userEmail:e?.target.value})
+    }
+    
+  })
+
     const formContent = [
         {
           label: "Email",
@@ -35,13 +65,7 @@ const SignIn = () => {
         },
       ];
   return (
-    <div className='sign-in -parent'  style={{
-        backgroundImage: `url(${homeBackGround})`,
-        backgroundSize: "cover", // Makes the image cover the entire div while maintaining aspect ratio
-        backgroundRepeat: "no-repeat", // Prevents the image from repeating
-        width: "100%", // Ensures the div takes up the full width of its container
-        height: "100vh", // Makes the div take up the full viewport height (adjust if necessary)
-      }}>
+    <div className='sign-in -parent' >
 <div className='parent container' 
    >
 
@@ -67,12 +91,18 @@ const SignIn = () => {
                 >
                     {item.type === "Submit" ? (
                         <div className='d-flex justify-content-between'>
-                            <Buttons text={item.label} style={{backgroundColor:"#FDB515"}} type={item.type}/>
-                        <div style={{color:"#21668E" , cursor:"pointer"}}>forget Password?</div>
+                            <Buttons text={item.label} style={{backgroundColor:"#FDB515"}} onClick={submituserInfo} />
+                        <div style={{color:"#21668E" , cursor:"pointer"}}
+                      onClick={() => {
+                        routeTo("/forgetPassword")
+                        
+                      }} >forget Password?</div>
                             </div>
                     ) : (
                     <Inputs
                     className= ""
+                    onChange={inputValues}
+                    // onChange={() => setIsUserData({...isUserData , userEmail:})}
                       type={item.type}
                       icon={<div style={{color:"lightgrey"}} >{ item.icon} {item.placeholder}
                       </div>}

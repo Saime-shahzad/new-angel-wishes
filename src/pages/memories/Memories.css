@@ -1,0 +1,72 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-card {
+    min-width: 300px; /* Adjust this to fit your card size */
+    flex: 0 0 300px; /* Ensure each card takes the correct width */
+    margin-right: 15px; /* Add spacing between cards */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  .previewControl{
+    padding: 30px !important;
+  }
+  .custom-upload-button {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #FDB515;
+    font-size: 14px;
+    font-weight: 500 !important;
+    transition: background-color 0.3s ease;
+    height: 50px !important;
+    box-shadow: 1px 1px lightgray !important;
+    border:1px solid lightgray;
+  }
+  
+  /* .custom-upload-button:hover {
+   
+    background-color: #B89313;
+  }
+   */
+  .file-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  .message-Parrent-controls > div>div>div >div{
+/* background-color: white !important; */
+
+height:  150px;
+box-shadow: 1px 1px lightgray !important;
+border:1px solid lightgray;
+  }
+  

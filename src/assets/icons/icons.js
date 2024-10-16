@@ -13,6 +13,11 @@ import SyncLockIcon from '@mui/icons-material/SyncLock';
 import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
+import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import AddIcon from '@mui/icons-material/Add';
+
 
 
 const icons=
@@ -30,6 +35,10 @@ const icons=
     checkCircleIcon: < CheckCircleIcon />,
     arrowBackIosNewIcons: < ArrowBackIosNewIcon  style={{fontSize:"15px"}} />,
     locationIcons: < FmdGoodIcon  style={{color: webColor.themeColor}} />,
+    cancelIcons: < CancelIcon  style={{color: webColor.themeColor}} />,
+    createNewFolderIcons: < CreateNewFolderIcon   />,
+    addPhotoAlternateIcons: < AddPhotoAlternateIcon   />,
+    addIcons: < AddIcon   />,
 
 
 }

@@ -15,6 +15,11 @@ import { Faqs } from "../pages/faqs/Faqs";
 import SignIn from "../pages/signIn/SignIn";
 import  SignUp  from "../pages/signUp/SignUp";
 import Packages from "../pages/packages/Packages";
+import ForgetPassword from "../pages/forgetPassword/ForgetPassword";
+import UpdatePassword from "../pages/updatePassword/UpdatePassword";
+import Dashboard from "../pages/dashboard/Dashboard";
+import {Memories} from "../pages/memories/Memories";
+import DetailAudioList from "../pages/detailAudioList/DetailAudioList";
 // import { publicRoutesList } from "./Routes";
 
 const AppRoutes = () => {
@@ -34,7 +39,13 @@ const AppRoutes = () => {
         { path: "/faqs", element: <Faqs /> },
         { path: "/sign-in", element: <SignIn /> },
         { path: "/sign-up", element: <SignUp /> },
+        { path: "/forgetPassword", element: <ForgetPassword /> },
+        { path: "/updatePassword", element: <UpdatePassword /> },
         { path: "/packages-details", element: <Packages /> },
+        { path: "/dashboard", element: <Dashboard /> },
+        { path: "/memories", element: <Memories /> },
+        { path: "/audioList", element: <DetailAudioList /> },
+
        
       ];
   return (

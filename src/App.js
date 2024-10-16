@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 import './App.css';
 import { Index } from './pages/main/Index';
 import { useLocation } from 'react-router-dom';
+import {  ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 // import SignIn from './pages/signIn/SignIn';
 // import SignUp from './pages/signUp/SignUp';
 
@@ -26,6 +30,17 @@ function App() {
     
       
       <Index />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       
        
     </div>

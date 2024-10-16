@@ -1,5 +1,4 @@
 import React from 'react'
-import homeBackGround from "../../assets/images/homeBackGround.png";
 import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
@@ -92,13 +91,7 @@ const SignUp = () => {
 
   })
   return (
-    <div className='sign-in -parent' style={{
-      backgroundImage: `url(${homeBackGround})`,
-      backgroundSize: "cover", // Makes the image cover the entire div while maintaining aspect ratio
-      backgroundRepeat: "no-repeat", // Prevents the image from repeating
-      width: "100%", // Ensures the div takes up the full width of its container
-      height: "100vh", // Makes the div take up the full viewport height (adjust if necessary)
-    }}>
+    <div className='sign-in -parent' >
       <div className='parent container'
 
         style={{ marginLeft: "10px" }}

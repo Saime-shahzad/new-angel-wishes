@@ -88,6 +88,13 @@ export const Header = () => {
         handleClose()
       },
     },
+    {
+      title: "Dashboard",
+      onClick: () => {
+        routeTo("/dashboard")
+        handleClose()
+      },
+    },
   ];
 
   return (

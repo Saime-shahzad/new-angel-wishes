@@ -12,13 +12,12 @@ import {
   updateUserAuthStart,
   updateUserAuthSuccess,
   updateUserAuthFailure,
- 
 } from "../reducer/UserAuthReducer";
 // -this import is from api-routes
 import {
   GET_USER_AUTH,
   UPDATE_USER_AUTH,
-  ADD_USER_AUTH,
+  REGISTER_USER,
   userRequest,
 } from "../../apiRouts/apiRouts";
 
@@ -34,7 +33,6 @@ export const getUser = async (dispatch) => {
     dispatch(getUserAuthSuccess(res.data.payload));
     return res;
   } catch (error) {
-  
     dispatch(getUserAuthFailure());
     return error;
   }
@@ -43,7 +41,7 @@ export const getUser = async (dispatch) => {
 export const Registeruser = async (dispatch, inputData) => {
   dispatch(createUserAuthStart());
   try {
-    const result = await userRequest.post(`${ADD_USER_AUTH}`, inputData);
+    const result = await userRequest.post(`${REGISTER_USER}`, inputData);
     dispatch(createUserAuthSuccess(result));
     toast.success("Inserted Successfully");
     return result;
@@ -67,6 +65,3 @@ export const updateUsers = async (userData, dispatch) => {
     return error;
   }
 };
-
-
-

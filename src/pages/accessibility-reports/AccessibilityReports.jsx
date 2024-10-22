@@ -5,14 +5,14 @@ import webColor from "../../assets/colors/Colors";
 
 export const AccessibilityReports = () => {
   return (
-    <div>
+    <div className="container">
        <div className="text-center my-5">
           <h1>Accessibility <span style={{color:webColor.themeColor}}>
           Reports 
             </span> 
             </h1>
         </div>
-      <Box  sx={{ width: { md: "90%", xs: "100%" }, margin: "0 auto" }}>
+      <Box  sx={{ width: { md: "100%", xs: "100%" } }}>
      
         
         <h3
@@ -133,7 +133,7 @@ export const AccessibilityReports = () => {
           </Typography>
           <ul>
             <li className="py-2 ">
-              <Typography>
+              <Typography className="d-flex flex-wrap">
                 <span style={{ fontWeight: "bold", paddingRight: "5px" }}>
                   Email:
                 </span>

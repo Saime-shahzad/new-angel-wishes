@@ -1,5 +1,5 @@
 .textFieldClass >  div >input{
-    padding: 12px !important;
+    padding: 17px !important;
     border-radius: 5px !important;
 }
 .textFieldClass >  div >textarea{
@@ -9,7 +9,7 @@
 
 .textFieldClass >  div {
     border-radius: 15px !important;
-    width: 413px !important;
+    width:100% !important;
 }
 .textFieldClass >  div::after{
     border-bottom: 2px solid #FDB515 !important;

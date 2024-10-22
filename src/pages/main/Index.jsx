@@ -57,10 +57,12 @@ export const Index = () => {
         <AppRoutes />
       </div>
       <div
-        className="how-to-apply-parrent p-2 text-white  justify-content-center d-flex w-100  "
+        // className="how-to-apply-parrent p-2 text-white   justify-content-center d-flex w-100  "
+        className="how-to-apply-parrent p-2 text-white row-cols-lg-1 row-cols-md-1  "
         style={{ backgroundColor: "#21668E" }}
       >
-        <div className="child-1 my-auto  text-center align-items-center ">
+        <div className="row container">
+        <div className="child-1 my-auto col-lg-6 col-md-6 col-sm-12 text-center align-items-center ">
           <h3>Subscribe to Our Newsletter</h3>
         </div>
         {/* <div className="child-2 my-auto justify-content-sm-center col-lg-4 col-md-12 col-sm-12  ">
@@ -70,7 +72,8 @@ export const Index = () => {
             learning more about how you can contribute to our mission!
           </p>
         </div> */}
-        <div className="child-3 justify-content-sm-center    mx-3 d-flex ">
+        <div className="child-3 justify-content-sm-center  justify-content-lg-center justify-content-md-center    col-lg-6 col-md-6 col-sm-12 d-flex ">
+        {/* <div className="child-3 justify-content-sm-center    mx-3 d-flex "> */}
           <Inputs
             icon={<div style={{color:"lightgrey" }} >{ icons.mailIcons}Email  
                       </div>}
@@ -81,6 +84,7 @@ export const Index = () => {
             text="Submit"
             style={{ padding: "12.2px", backgroundColor: "#FDB515" ,  borderTopLeftRadius:"0px" , borderBottomLeftRadius:"0px"}}
           />
+        </div>
         </div>
       </div>
       <div className="footer-parent">

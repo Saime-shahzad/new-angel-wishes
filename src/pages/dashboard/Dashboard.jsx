@@ -16,20 +16,22 @@ import CustomeMenu from "../../components/Menu/CustomeMenu";
 
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import CloseIcon from "@mui/icons-material/Close";
-import FolderIcon from "@mui/icons-material/Folder";
+// import FolderIcon from "@mui/icons-material/Folder";
 
 import file from "../../assets/images/file.png";
 import kids2old from "../../assets/images/kids2old.png";
+import mission2old from "../../assets/images/mission2old.jpg";
 import logo from "../../assets/images/logo.png";
 // import { getFolder } from "../../../redux-store/features/dashboard";
 import CustomModal from "../../components/modal/CustomModal"
 import Loader from "../../assets/loader/Loader";
 // import ToastNotification from "../../../components/other-component/toastify";
 // import { useNavigate } from "react-router-dom";
-import { Inputs } from "../../assets/input/Inputs";
+// import { Inputs } from "../../assets/input/Inputs";
 import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
 import webColor from "../../assets/colors/Colors";
+import Selects from "../../assets/select/Selects";
 
 // const initialValue = {
 //   name: "",
@@ -45,11 +47,24 @@ const Dashboard = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectImage, setSelectImage] = useState(null);
     const [isLoading, setIsloading] = useState(false);
-    const inputRef = useRef();
+    const [folderName, setFolderName] = useState(' ');
+
+    const handleSelectValue = (newValue) => {
+        if (newValue) {  // Ensure newValue and target are defined
+            setFolderName(newValue);  // Pass selected value back to parent
+          } 
+          
+          
+          console.log("folderName>>>", folderName);
+        };
+    
+    const inputRef = useRef(null);
     //   const dispatch = useDispatch();
     //   const navigation = useNavigate();
 
     //   const { user } = useSelector((state) => state.auth);
+
+
     const cardDetail = [
         {
             id: "1",
@@ -60,6 +75,11 @@ const Dashboard = () => {
             id: "2",
             isAllow: true,
             image: kids2old
+        },
+        {
+            id: "3",
+            isAllow: true,
+            image: mission2old
         },
     ];
     //   const { cardDetail } = useSelector((state) => state?.dashboard);
@@ -188,6 +208,29 @@ const Dashboard = () => {
         },
     ];
 
+    const menueItems=[
+        {
+        id:1,
+        menueName:"Music List Folder",
+        optionValue:"MusicListFolder"
+    },
+        {
+        id:2,
+        menueName:"Audio Links Folder",
+        optionValue:"AudioLinksFolder",
+    },
+        {
+        id:3,
+        menueName:"Medical Documents Folder",
+        optionValue:"MedicalDocumentsFolder",
+    },
+        {
+        id:4,
+        menueName:"Images Folder",
+        optionValue:"ImagesFolder",
+    },
+]
+
     const handleModal = () => {
         setIsModalOpen((prev) => !prev);
     };
@@ -216,6 +259,8 @@ const Dashboard = () => {
 
         const handleClick = () => {
             inputRef.current.click();
+          
+
         };
 
         const onSubmit = async (value) => {
@@ -224,6 +269,19 @@ const Dashboard = () => {
                 setIsloading(false);
 
             }, 3000);
+
+
+
+            
+    ////ya use hoga submition ka waqt
+
+    // const formData = new FormData();
+    //   formData.append("description", isPlan.description);
+    //   formData.append("imageFile", isPlan.imageFile);
+
+//////close///////
+
+
             //   try {
             //     setIsloading(true);
             //     const formData = new FormData();
@@ -249,6 +307,11 @@ const Dashboard = () => {
         // });
 
         // const { handleChange, handleSubmit, values, errors } = formik;
+        // const handleChange=(() => {
+        //     const getInputValue=inputRef.current.value
+        //     console.log("getInputValue>>>", getInputValue);
+            
+        // })
 
         return (
             <>
@@ -292,19 +355,21 @@ const Dashboard = () => {
                                 //   onSubmit={onSubmit}
                                 //   onSubmit={handleSubmit}
                                 >
-                                    <Inputs
+                                    {/* <Inputs
                                         placeholder="Enter Title"
                                         label="Folder Title"
                                         inputWidth="100%"
                                         style={{ color: "#fff" }}
                                         startIcon={true}
                                         icon={<FolderIcon />}
+                                        ref={inputRef}
                                         //   value={values?.name}
                                         //   onChange={handleChange}
                                         name="name"
                                         type="text"
                                     //   error={errors?.name}
-                                    />
+                                    /> */}
+                                    <Selects  menueItems={menueItems} value={folderName} onChange={handleSelectValue} inputLabel="Folder Name" iconName={icons.createNewFolderIcons} />
                                     <Box
                                         sx={{
                                             display: "flex",
@@ -318,13 +383,13 @@ const Dashboard = () => {
                                                 style={{ backgroundColor: "transparent" }}
                                                 onClick={handleClick}
                                             >
-                                                Upload Image
+                                                Upload 
                                             </Button>
                                             <input
                                                 type="file"
                                                 ref={inputRef}
                                                 style={{ display: "none" }}
-                                                onChange={handleImageChange}
+                                                onChange={handleImageChange} 
                                                 accept="image/*"
                                             />
                                             <br />
@@ -453,12 +518,10 @@ const Dashboard = () => {
                     )}
                 </Box>
             </Stack>
-            <Stack sx={{ mx: { md: 6, sm: 3, xs: 1 }, mb: 2 }}>
-                {/* <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
-         Folders
-        </Typography> */}
+            {/* <Stack sx={{ mx: { md: 6, sm: 3, xs: 1 }, mb: 2 }}>
+               
                 <CustomeTable columns={columns} rows={row} title="Folders" />
-            </Stack>
+            </Stack> */}
             <CustomModal
                 open={isModalOpen}
                 handleClose={() => setIsModalOpen(false)}

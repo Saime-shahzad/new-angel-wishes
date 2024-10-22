@@ -17,6 +17,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 
@@ -38,6 +39,7 @@ const icons=
     cancelIcons: < CancelIcon  style={{color: webColor.themeColor}} />,
     createNewFolderIcons: < CreateNewFolderIcon   />,
     addPhotoAlternateIcons: < AddPhotoAlternateIcon   />,
+    deleteIcon: < DeleteIcon   />,
     addIcons: < AddIcon   />,
 
 

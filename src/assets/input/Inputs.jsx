@@ -1,30 +1,36 @@
-import React from 'react'
+import React, { forwardRef } from 'react';
 import TextField from '@mui/material/TextField';
-import "./Inputs.css"
 import { InputAdornment } from '@mui/material';
+import "./Inputs.css";
 
-export const Inputs = ({type , labelName , icon , onChange,placeholder, className, suffix , variants}) => {
+export const Inputs = forwardRef(({
+  type, labelName,value, icon, onChange, placeholder, className, suffix, variants , name
+}, inputRef) => {
   return (
     <div>
-        <div className='textFieldparrent '>
-            <div>
-                {labelName}
-            </div>
-        <TextField className={ className ? className :'textFieldClass '}
-       
-            endAdornment={ <InputAdornment position="start">kg</InputAdornment>}
-            
-    label={icon ? icon :labelName}
-
-    placeholder={placeholder}
-    multiline={labelName === "Message" ? true : false}
-    onChange={onChange}
-    
-    type={type}
-    variant={ variants ? "outlined"  :"filled"}
-  />
-  </div>
-  
-  </div>
-  )
-}
+      <div className='textFieldparrent'>
+        <div>
+          {labelName}
+        </div>
+        <TextField
+          className={className ? className : 'textFieldClass w-100'}
+          label={icon ? icon : labelName}
+          placeholder={placeholder}
+          multiline={labelName === "Message"}
+          onChange={onChange}
+          inputRef={inputRef}  // Use inputRef instead of ref
+          autoComplete='off'
+          type={type}
+          name={name}
+          value={value}
+          variant={variants ? "outlined" : "filled"}
+          InputProps={{
+            endAdornment: suffix && (
+              <InputAdornment position="end">{suffix}</InputAdornment>
+            )
+          }}
+        />
+      </div>
+    </div>
+  );
+});

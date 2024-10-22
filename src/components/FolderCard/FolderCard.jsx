@@ -90,6 +90,7 @@ export default function FolderCard({
           justifyContent: "space-between",
         }}
       >
+       
         <Box
           sx={{
             display: "flex",
@@ -156,6 +157,7 @@ export default function FolderCard({
                 onClick={handleOption}
               >
                 {/* <MoreHorizIcon sx={{ color: colors.white }} /> */}
+                
                 <CustomeMenu
                   isAllow={isAllow}
                   icon={
@@ -170,12 +172,14 @@ export default function FolderCard({
           />
         )}
       </Box>
+     
       <CardMedia
         sx={{ my: 1, cursor: "pointer", objectFit: "contain", p: 1 }}
         component="img"
         height="194"
         image={image}
         alt="Paella dish"
+        
       />
     </Card>
   );

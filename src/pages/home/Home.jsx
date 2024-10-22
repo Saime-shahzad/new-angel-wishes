@@ -49,7 +49,8 @@ export const Home = () => {
       text: "Every moment in life counts. At Angel Wishes Memory Keeper, we provide a secure and loving space where you and your loved ones can preserve these precious memories. Whether it's photos, videos, or written stories, our platform ensures that your life's highlights are safely stored and easily accessible. Start today and keep your cherished memories alive for generations to come. Experience the comfort of knowing that your most significant moments are preserved with care and respect.",
       className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: home1,
-      sizes:["540px" , "422px"],
+      sizes:["100%" , "422px"],
+      // sizes:["540px" , "422px"],
 
 
     },
@@ -61,7 +62,9 @@ export const Home = () => {
       text: "Your privacy and the security of your data are our top priorities. At Angel Wishes Memory Keeper, we protect your information with advanced encryption and robust security protocols. Our platform operates on a custom AWS secure configuration, providing 400 terabytes of dedicated, safe storage. With 99.98% uptime, you can trust that your sensitive documents, from wills to power of attorney forms, are protected around the clock. Secure your legacy with confidence, knowing your data is safe.",
       className: "content-Parent  row my-4    ",
       img: home2,
-      sizes:["596px" , "440px"]
+      sizes:["100%" , "422px"],
+
+      // sizes:["596px" , "440px"]
 
     },
     {
@@ -86,7 +89,9 @@ export const Home = () => {
       text: "Navigating final wishes planning can be complex and emotional. That's why Angel Wishes Memory Keeper offers compassionate and professional final wishes consulting. Our experts are here to guide you through every step of the process, from estate planning to creating a living trust. We ensure you have all the resources and support needed to make informed decisions that honor your wishes and provide peace of mind for your family. Reach out today to learn how our consulting services can help simplify this critical journey.",
       className: "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
       img: home3,
-      sizes:["540px" , "422px"],
+      // sizes:["540px" , "422px"],
+      sizes:["100%" , "422px"],
+
 
     },
 
@@ -109,7 +114,9 @@ This home page content highlights Angel Wishes Memory Keeper's core services, in
       </div>,
       className: "content-Parent  row my-5   ",
       img: home4,
-      sizes:["540px" , "492px"],
+      // sizes:["540px" , "492px"],
+      sizes:["100%" , "422px"],
+
 
     },
 
@@ -150,7 +157,10 @@ This home page content highlights Angel Wishes Memory Keeper's core services, in
 
           <div class="position-absolute BannerTextControl text-white text-sm-start  d-md-block" >
 
-            <div className="d-flex  custom-animate-left">
+                <div className="d-flex  " 
+                data-aos="fade-right"
+
+                 >
               <div className="logo-parent">
                 <img class=" px-3" height="280px" src={angell} alt="First slide" />
               </div>

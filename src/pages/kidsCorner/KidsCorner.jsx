@@ -33,7 +33,8 @@ export const KidsCorner = () => {
       className: "row my-4 flex-lg-row-reverse   ",
       // className: "content-Parent  row my-4 flex-lg-row-reverse  ",
       img: kids1,
-      sizes:["480px" , "300px"]
+      // sizes:["480px" , "300px"],
+      sizes:["100%" , "300px"],
 
     },
 
@@ -63,7 +64,9 @@ export const KidsCorner = () => {
 
       className: "content-Parent  row my-4    ",
       img: kids2,
-      sizes:["480px" , "300px"]
+      // sizes:["480px" , "300px"],
+      sizes:["100%" , "300px"],
+
 
     },
 
@@ -81,7 +84,9 @@ export const KidsCorner = () => {
       className:
         "content-Parent  row my-5 flex-lg-row-reverse justify-content-between   ",
       img: kids3,
-      sizes:["480px" , "300px"]
+      // sizes:["480px" , "300px"],
+      sizes:["100%" , "300px"],
+
     },
 
     {
@@ -109,7 +114,9 @@ export const KidsCorner = () => {
       ),
       className: "content-Parent  row my-5   ",
       img: kids4,
-      sizes:["480px" , "300px"]
+      // sizes:["480px" , "300px"],
+      sizes:["100%" , "300px"],
+
 
     },
   ];

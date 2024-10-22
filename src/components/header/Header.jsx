@@ -101,7 +101,7 @@ export const Header = () => {
     <div className="Header-Parrent ">
       <div className="first-child ">
         <div
-          className="child-1  d-flex justify-content-between align-items-center p-2 px-5 "
+          className="child-1  d-flex justify-content-between align-items-center p-2 "
           style={{
             backgroundColor: "#21668E"
           }}
@@ -170,7 +170,7 @@ export const Header = () => {
             >
               <img
                 src={ menueImage }
-                className="social-media-icons"
+                className=""
                 width="22px"
                 alt="logo"
               />

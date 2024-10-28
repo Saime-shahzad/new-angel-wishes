@@ -144,7 +144,7 @@ const SignUp = () => {
       // icon: icons.passwordIcons,
       // placeholder: "upload Image",
       // suffix: <div style={{cursor:"pointer"}} onClick={() => setIsView(true)}>{icons.eyeIcons}</div>,
-      onChange: (e) =>  setIsUserData({ ...isUserData, image: e.target.files[0] }),
+      // onChange: (e) =>  setIsUserData({ ...isUserData, image: e.target.files[0] }),
       // onChange: (e) =>  console.log("Hello World."),
       name: "uploadImage",
       className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",

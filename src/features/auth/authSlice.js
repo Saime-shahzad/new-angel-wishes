@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axiosInstance from "../../axiosInstance";
+import axiosInstance, { axiosInstance2 } from "../../axiosInstance";
 // import axios from "axios";
 
 export const loginUser = createAsyncThunk(
@@ -23,7 +23,7 @@ export const registerUser = createAsyncThunk(
     console.log("userdata...slice>>", userData);
     
     try {
-      const response = await axiosInstance.post("/register", userData);
+      const response = await axiosInstance2.post("/register", userData);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response.data);

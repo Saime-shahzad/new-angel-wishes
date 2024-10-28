@@ -11,3 +11,15 @@ const axiosInstance = axios.create({
 });
 
 export default axiosInstance;
+
+
+/////inctence for file sending
+export const  axiosInstance2 = axios.create({
+  // baseURL: process.env.API_BASE_URL, // Change this to your API base URL
+  // baseURL:" https://checkyourproject.website/angle-wishes/public/api/v1/auth" 
+  baseURL: process.env.REACT_APP_API_BASE_URL,// Change this to your API base URL
+  headers: {
+    "Content-type": "multipart/form-data",
+  },
+});
+

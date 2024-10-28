@@ -12,9 +12,10 @@ const SignIn = () => {
   const dispatch = useDispatch();
   const routeTo = useRoutFunction();
 
-  const { loading, error, isAuthenticated } = useSelector(
+  const { loading, error, isAuthenticated , token} = useSelector(
     (state) => state.auth
   );
+  
 
   const userObj = {
     userEmail: "",
@@ -32,13 +33,12 @@ const SignIn = () => {
   };
 
   const submituserInfo = () => {
-    if (!isUserData.userEmail || !isUserData.password) {
+    
+    
+    if (isUserData.userEmail && isUserData.password) {
+      console.log("ok>>>>", isUserData.password);
       // toast.warn(!isUserData.userEmail ? `Fields${isUserData.userEmail}` : `${isUserData.password} Fields`)
-      toast.warn(
-        !isUserData.userEmail
-          ? ` ${isUserData.userEmail || "Email is missing"}`
-          : `${isUserData.password || "Password is missing"}`
-      );
+     
 
       dispatch(
         loginUser({
@@ -46,6 +46,15 @@ const SignIn = () => {
           password: isUserData.password,
         })
       );
+    }
+    else{
+      toast.warn(
+        !isUserData.userEmail
+          ? ` ${isUserData.userEmail || "Email is missing"}`
+          : `${isUserData.password || "Password is missing"}`
+      );
+
+      
     }
   };
 
@@ -55,9 +64,9 @@ const SignIn = () => {
       routeTo("/dashboard");
     }
     if (error) {
-      toast.error("Error in logging in");
+      toast.error("Invalid Details");
     }
-  }, [isAuthenticated, error, routeTo]);
+  }, [isAuthenticated, error]);
 
   const formContent = [
     {
@@ -66,7 +75,7 @@ const SignIn = () => {
       icon: icons.mailIcons,
       placeholder: "Email",
 
-      className: "col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+      className: "col-lg-12 col-md-6 col-sm-12 inputcontrolings my-2",
       variant: true,
     },
     {
@@ -75,7 +84,7 @@ const SignIn = () => {
       placeholder: "Password",
 
       icon: icons.passwordIcons,
-      className: "col-lg-6 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
+      className: "col-lg-12 col-md-6 col-sm-12 inputcontrolings   my-2",
       variant: true,
     },
 
@@ -97,7 +106,7 @@ const SignIn = () => {
                 <div className="heading-contant p-2 text-center ">
                   <h1 style={{ color: "#FDB515" }}>Sign In</h1>
                 </div>
-                <div className="from-body     ">
+                <div className="from-body  row w-75  ">
                   {formContent?.map((item) => {
                     return (
                       <div className={item.className}>

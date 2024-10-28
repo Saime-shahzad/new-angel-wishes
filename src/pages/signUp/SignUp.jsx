@@ -5,18 +5,46 @@ import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
 import { useRoutFunction } from "../../assets/others/UseFullFunctions";
 import Selects from "../../assets/select/Selects";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { registerUser } from "../../features/auth/authSlice";
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { TextField, InputAdornment } from '@mui/material';
+import moment from 'moment';
+
 
 const SignUp = () => {
+  const userObj = {
+    first_name: "",
+    last_name: "",
+    contact_no: "",
+    country: "",
+    email: "",
+    password: "",
+    password_confirmation: "",
+    image: "",
+    date_of_birth:""
+
+  }
   const RoutFunction = useRoutFunction();
 
-  const [firstName, setFirstName] = useState("");
+  // const [first_name, setfirst_name] = useState("");
 
-  const [lastName, setLastName] = useState("");
-  const [contactNumber, setContactNumber] = useState("");
-  const [country, setCountry] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  // const [last_name, setlast_name] = useState("");
+  // const [contact_no, setcontact_no] = useState("");
+  // const [country, setCountry] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [password_confirmation, setpassword_confirmation] = useState("");
+  const [isUserData, setIsUserData] = useState(userObj)
+  const [isVisible, setIsVisible] = useState(false)
+  const [isView, setIsView] = useState(false)
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [preview, setPreview] = useState(null);
+  const dispatch=useDispatch()
 
   const formContent = [
     {
@@ -24,9 +52,10 @@ const SignUp = () => {
       type: "text",
       icon: icons.manIcons,
       placeholder: "First Name",
-      onChange: (e) => setFirstName(e.target.value),
+      // onChange: (e) => setfirst_name(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, first_name: e.target.value }),
       className:
-        "col-lg-6 col-md-12 col-sm-12  justify-content-lg-center justify-content-sm-start inputcontrolings  d-flex ",
+        "col-lg-6 col-md-12 col-sm-12  justify-content-lg-center justify-content-sm-start my-2 inputcontrolings  d-flex ",
       variant: true,
     },
     {
@@ -34,9 +63,11 @@ const SignUp = () => {
       type: "text",
       icon: icons.manIcons,
       placeholder: "Last Name",
-      onchange: (e) => setLastName(e.target.value),
+      // onchange: (e) => setlast_name(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, last_name: e.target.value }),
+
       className:
-        "col-lg-6 col-md-12 col-sm-12  justify-content-lg-center justify-content-sm-start inputcontrolings  d-flex ",
+        "col-lg-6 col-md-12 col-sm-12  justify-content-lg-center justify-content-sm-start my-2 inputcontrolings  d-flex ",
       variant: true,
     },
     {
@@ -44,8 +75,10 @@ const SignUp = () => {
       type: "number",
       icon: icons.mailIcons,
       placeholder: "Contact Number",
-      onChange: (e) => setContactNumber(e.target.value),
-      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
+      // onChange: (e) => setcontact_no(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, contact_no: e.target.value }),
+
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2  d-flex ",
       variant: true,
     },
     {
@@ -53,8 +86,10 @@ const SignUp = () => {
       type: "text",
       icon: icons.mailIcons,
       placeholder: "Country",
-      onChange: (e) => setCountry(e.target.value),
-      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
+      // onChange: (e) => setCountry(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, country: e.target.value }),
+
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2  d-flex ",
       variant: true,
     },
     {
@@ -62,8 +97,22 @@ const SignUp = () => {
       type: "email",
       icon: icons.mailIcons,
       placeholder: "Email",
-      onChange: (e) => setEmail(e.target.value),
-      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
+      // onChange: (e) => setEmail(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, email: e.target.value }),
+
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",
+      variant: true,
+    },
+    {
+      label: "Date Of Birth",
+      type: "datePicker",
+      // icon: icons.passwordIcons,
+      // placeholder: "upload Image",
+      // suffix: <div style={{cursor:"pointer"}} onClick={() => setIsView(true)}>{icons.eyeIcons}</div>,
+      // onChange: (e) => setpassword_confirmation(e.target.value),
+      // onChange: (e) => setIsUserData({ ...isUserData, password_confirmation: e.target.value }),
+      name: "datePicker",
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",
       variant: true,
     },
     {
@@ -71,8 +120,10 @@ const SignUp = () => {
       type: "password",
       icon: icons.passwordIcons,
       placeholder: "Password",
-      onChange: (e) => setPassword(e.target.value),
-      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
+      // onChange: (e) => setPassword(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, password: e.target.value }),
+
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",
       variant: true,
     },
     {
@@ -80,67 +131,103 @@ const SignUp = () => {
       type: "password",
       icon: icons.passwordIcons,
       placeholder: "Confirm Password",
-      onChange: (e) => setConfirmPassword(e.target.value),
-      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings  d-flex ",
+      // suffix: <div style={{cursor:"pointer"}} onClick={() => setIsView(true)}>{icons.eyeIcons}</div>,
+      // onChange: (e) => setpassword_confirmation(e.target.value),
+      onChange: (e) => setIsUserData({ ...isUserData, password_confirmation: e.target.value }),
+
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",
       variant: true,
     },
+    {
+      label: "Upload Image",
+      type: "file",
+      // icon: icons.passwordIcons,
+      // placeholder: "upload Image",
+      // suffix: <div style={{cursor:"pointer"}} onClick={() => setIsView(true)}>{icons.eyeIcons}</div>,
+      onChange: (e) =>  setIsUserData({ ...isUserData, image: e.target.files[0] }),
+      // onChange: (e) =>  console.log("Hello World."),
+      name: "uploadImage",
+      className: "col-lg-6 col-md-12 col-sm-12  inputcontrolings my-2 d-flex ",
+      variant: true,
+    },
+   
 
-    // {
-    //   label: "Age",
-    //   type: "age",
-    //   placeholder: "Age",
+  ]
 
-    //   icon: icons.ageIcons,
-    //   className:
-    //     "col-lg-6 col-md-12 col-sm-12 p-0 justify-content-lg-center justify-content-sm-start selectcontroling  my-2 d-flex ",
-    //   variant: true,
-    // },
-    // {
-    //   label: "Password",
-    //   type: "password",
-    //   placeholder: "Password",
+    const onSignup = () => {
+    if (isUserData.password != isUserData.password_confirmation) {
+      setIsVisible(true)
+      setTimeout(() => {
+        setIsVisible(false)
 
-    //   icon: icons.passwordIcons,
-    //   className: "col-lg-6 col-md-12 col-sm-12 inputcontrolings  my-2 d-flex ",
-    //   variant: true,
-    // },
-  ];
-  // const nominyFormContent = [
-  //   {
-  //     label: "Name",
-  //     type: "text",
-  //     icon: icons.manIcons,
-  //     placeholder: "Name",
+      }, 5000);
+    }
+    else if (isUserData.first_name && 
+      isUserData.last_name &&
+       isUserData.email &&
+        isUserData.country && 
+        isUserData.contact_no &&
+        isUserData.image &&
+         isUserData.password && isUserData.password_confirmation
+        && isUserData.date_of_birth
+        )
+         {
 
-  //     className:
-  //       "col-lg-6 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  d-flex ",
-  //     variant: true,
-  //   },
-  //   {
-  //     label: "Email",
-  //     type: "email",
-  //     icon: icons.mailIcons,
-  //     placeholder: "Email",
+       console.log("isuserData.image>>>>", isUserData);
+       
+          const formData = new FormData();
+          formData.append("first_name", isUserData.first_name);
+          formData.append("last_name", isUserData.last_name);
+          formData.append("contact_no", isUserData.contact_no);
+          formData.append("country", isUserData.country);
+          formData.append("email", isUserData.email);
+          formData.append("password", isUserData.password);
+          formData.append("password_confirmation", isUserData.password_confirmation);
 
-  //     className: "col-lg-6 col-md-12 col-sm-12   inputcontrolings  d-flex ",
-  //     variant: true,
-  //   },
+          if (isUserData.image instanceof File) {
+            formData.append("image", isUserData.image);
+          } else {
+              console.error("Image is not a File object");
+          }
 
-  //   {
-  //     label: "Contact-No",
-  //     type: "number",
-  //     placeholder: "Contect",
+          formData.append("date_of_birth", isUserData.date_of_birth);
+          
 
-  //     icon: icons.phoneicons,
-  //     className:
-  //       "col-lg-12 col-md-12 col-sm-12 justify-content-lg-center justify-content-sm-start inputcontrolings  my-2 d-flex ",
-  //     variant: true,
-  //   },
-  // ];
+          formData?.forEach((value, key) => {
+            console.log(`${key}: ${value}`);
+          });
 
-  console.log(firstName);
-  const onSignup = () => {
-    RoutFunction("/packages-details");
+
+
+
+
+
+          dispatch(
+            registerUser(
+              formData
+            )
+          );
+         }
+         else{
+          toast.error("incorrect fields")
+         }
+    // RoutFunction("/packages-details");
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+
+    //console.log(file);
+    
+    setSelectedFile(file);
+    setIsUserData({ ...isUserData, image: file })
+
+    // Generate a preview of the file (image/video)
+    if (file) {
+
+      const fileUrl = URL?.createObjectURL(file);
+      setPreview(fileUrl);
+    }
   };
   return (
     <div className="sign-in-parent">
@@ -153,15 +240,73 @@ const SignUp = () => {
             <div className="form-parent">
               <form className="my-5 container control-width rounded-2 w-100">
                 <div className="heading-contant p-2 text-center ">
-                  <h1 style={{ color: "#FDB515" }}>Sign Up</h1>
+                  {preview ? (
+                    <div style={{ marginTop: "20px", borderRadius: "30px" }}>
+
+                      <img src={preview} alt="Preview" className="rounded-5" height="150" width="200px" />
+
+                    </div>)
+                    :
+
+                    <h1 style={{ color: "#FDB515" }}>Sign Up</h1>
+                  }
                 </div>
                 <div className="from-body  row   ">
                   {formContent?.map((item) => {
                     return (
                       <div className={item.className}>
-                        {item.type === "age" ? (
-                          <Selects />
-                        ) : (
+                        {item.type === "file" ? (
+                          <div className="text-dark w-100">
+                            <input
+                              type="file"
+                              accept="image/*,video/*"
+                              onChange={handleFileChange}
+                              id="fileInput"
+
+                              className="fileControl d-none "
+                            />
+                            <label htmlFor="fileInput" className="custom-upload-button   w-100">
+                              {icons.addPhotoAlternateIcons} Profile Image
+                            </label>
+
+                          </div>
+                        ) : item.type === "datePicker" ? (
+
+
+                          <LocalizationProvider dateAdapter={AdapterDayjs}>
+                          <DemoContainer sx={{width:"100%" , borderRadius:"15px"}} components={['DatePicker']}>
+                          <DatePicker
+                                label={<div  style={{color:"#D6D3D3"}}>
+                                  {icons.mailIcons} Date Of Birth
+                                </div>}
+
+                               
+                                onChange={(newValue) => {
+                                    // Format the selected date using moment and update state
+                                    //console.log(e.target.value);
+                                    const dateofBirth = newValue ? newValue.toISOString().split('T')[0] : '';
+                                     console.log("Formatted date:", dateofBirth);
+                                     setIsUserData({...isUserData, date_of_birth: dateofBirth});
+                                }}
+                                
+                                className="w-100 datepickerControl"
+                            />
+                          </DemoContainer>
+                        </LocalizationProvider>
+//                         <LocalizationProvider dateAdapter={AdapterDayjs}>
+//   <DemoContainer components={['DatePicker']} sx={
+//     {width:"100%" , borderRadius:"15px"}
+
+//   }>
+//     <DatePicker
+//       label="Basic date picker"
+//       sx={{ width: '100%', borderRadius: '15px' }}
+//     />
+//   </DemoContainer>
+// </LocalizationProvider>
+                        
+
+                        )   : (
                           <Inputs
                             className=""
                             type={item.type}
@@ -170,7 +315,10 @@ const SignUp = () => {
                                 {item.icon} {item.placeholder}
                               </div>
                             }
+                            suffix={item.suffix}
                             //   icon={ item.icon}
+                            name={item.name}
+                            isView={isView}
                             onChange={item.onChange}
                             variants={item.variant}
                           />
@@ -203,13 +351,18 @@ const SignUp = () => {
                       })}
                     </div>
                   </div> */}
+                  {isVisible &&
+                    <div className="text-danger">
+                      Password Must Be Same*
+                    </div>}
                 </div>
                 <div className="d-flex justify-content-center">
                   <Buttons
-                    text="Submit"
+                    text="Sign Up"
                     onClick={onSignup}
                     style={{ backgroundColor: "#FDB515" }}
                   />
+                  
                 </div>
               </form>
             </div>

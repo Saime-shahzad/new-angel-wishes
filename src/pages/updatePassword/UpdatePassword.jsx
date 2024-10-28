@@ -48,7 +48,7 @@ const UpdatePassword = () => {
             icon: icons.passwordIcons,
             placeholder: "Email",
 
-            className: "col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+            className: "col-lg-12 col-md-6 col-sm-12  inputcontrolings  d-flex ",
             variant: true
         },
         {
@@ -57,7 +57,7 @@ const UpdatePassword = () => {
             placeholder: "Confirm Password",
 
             icon: icons.passwordIcons,
-            className: "col-lg-6 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
+            className: "col-lg-12 col-md-6 col-sm-12 inputcontrolings  my-2 d-flex ",
             variant: true
         },
 

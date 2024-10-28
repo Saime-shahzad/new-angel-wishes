@@ -18,6 +18,7 @@ import CreateNewFolderIcon from "@mui/icons-material/CreateNewFolder";
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 
 
@@ -37,6 +38,7 @@ const icons=
     arrowBackIosNewIcons: < ArrowBackIosNewIcon  style={{fontSize:"15px"}} />,
     locationIcons: < FmdGoodIcon  style={{color: webColor.themeColor}} />,
     cancelIcons: < CancelIcon  style={{color: webColor.themeColor}} />,
+    eyeIcons: < RemoveRedEyeIcon  style={{color: webColor.themeColor}} />,
     createNewFolderIcons: < CreateNewFolderIcon   />,
     addPhotoAlternateIcons: < AddPhotoAlternateIcon   />,
     deleteIcon: < DeleteIcon   />,

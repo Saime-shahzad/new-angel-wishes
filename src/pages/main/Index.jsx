@@ -77,7 +77,7 @@ export const Index = () => {
           <Inputs
             icon={<div style={{color:"lightgrey" }} >{ icons.mailIcons}Email  
                       </div>}
-            className="inputcontrols  "
+            className="inputcontrols"
             type="text"
           />
           <Buttons

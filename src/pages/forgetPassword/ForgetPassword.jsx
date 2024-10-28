@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bgImage1 from "../../assets/images/bgImage1.png";
 import { Inputs } from '../../assets/input/Inputs';
 import { Buttons } from '../../components/button/Buttons';
@@ -6,50 +6,71 @@ import icons from '../../assets/icons/icons';
 import { toast } from 'react-toastify';
  import Loader from "../../assets/loader/Loader"
 import { useRoutFunction } from '../../assets/others/UseFullFunctions';
+import { forgetPassword } from '../../features/forgetPassword/forgetPasswordSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
 const ForgetPassword = () => {
     const userObj = {
-        userEmail: "",
+        email: "",
     }
   const routeTo = useRoutFunction();
+  const dispatch = useDispatch();
+
 
 
     const [isUserData, setIsUserData] = useState(userObj)
     const [isLoading, setIsLoading] = useState(false)
+    const [isResponse, setIsResponse] = useState([])
+
+    const { data} = useSelector(
+        (state) => state.passwordReset
+      );
+
+useEffect(() => {
+ setIsResponse(data)
+  
+}, [data])
+
 
     const submituserInfo = (() => {
-        if (!isUserData.userEmail) {
-            // toast.warn(!isUserData.userEmail ? `Fields${isUserData.userEmail}` : `${isUserData.password} Fields`)
+        if (!isUserData.email) {
+            // toast.warn(!isUserData.email ? `Fields${isUserData.email}` : `${isUserData.password} Fields`)
             toast.warn(
-                !isUserData.userEmail
-                    ? ` ${isUserData.userEmail || 'Email is missing'}`
+                !isUserData.email
+                    ? ` ${isUserData.email || 'Email is missing'}`
                     : ""
             );
 
         }
         else{
-            if(!isUserData.userEmail.includes(".com")){
+            if(!isUserData.email.includes(".com")){
                 toast.warn("Invalid Email")
                 
             }
             else{
                 setIsLoading(true)
+                
+          dispatch(
+            forgetPassword(
+                isUserData
+            )
+          );
 
-                setTimeout(() => {
+                // setTimeout(() => {
                     
-                    setIsLoading(false)
-                    if("200"){
+                //     setIsLoading(false)
+                //     if("200"){
     
-                        routeTo("/sign-in")
-                    }
-                    else{
-                        toast.warn("Incorrect Email")
-                    }
+                //         routeTo("/sign-in")
+                //     }
+                //     else{
+                //         toast.warn("Incorrect Email")
+                //     }
     
                     
-                }, 3000);
+                // }, 3000);
 
             }
         }
@@ -57,7 +78,7 @@ const ForgetPassword = () => {
     const inputValues = ((e) => {
 
         if (e?.target.type === "email") {
-            setIsUserData({ ...isUserData, userEmail: e?.target.value })
+            setIsUserData({ ...isUserData, email: e?.target.value })
         }
         
 
@@ -70,7 +91,7 @@ const ForgetPassword = () => {
             icon: icons.mailIcons,
             placeholder: "Email",
 
-            className: "col-lg-6 col-md-6 col-sm-12  inputcontrolings  d-flex ",
+            className: "col-lg-12 col-md-6 col-sm-12  inputcontrolings  d-flex ",
             variant: true
         },
 
@@ -121,7 +142,7 @@ const ForgetPassword = () => {
                                                     <Inputs
                                                         className=""
                                                         onChange={inputValues}
-                                                        // onChange={() => setIsUserData({...isUserData , userEmail:})}
+                                                        // onChange={() => setIsUserData({...isUserData , email:})}
                                                         type={item.type}
                                                         icon={<div style={{ color: "lightgrey" }} >{item.icon} {item.placeholder}
                                                         </div>}

@@ -32,6 +32,7 @@ import { Buttons } from "../../components/button/Buttons";
 import icons from "../../assets/icons/icons";
 import webColor from "../../assets/colors/Colors";
 import Selects from "../../assets/select/Selects";
+import { useSelector } from "react-redux";
 
 // const initialValue = {
 //   name: "",
@@ -48,6 +49,12 @@ const Dashboard = () => {
     const [selectImage, setSelectImage] = useState(null);
     const [isLoading, setIsloading] = useState(false);
     const [folderName, setFolderName] = useState(' ');
+    
+//   const {  token} = useSelector(
+//     (state) => state.auth
+//   );
+
+
 
     const handleSelectValue = (newValue) => {
         if (newValue) {  // Ensure newValue and target are defined

@@ -9,7 +9,6 @@ export const forgetPassword = createAsyncThunk(
     
     try {
       const response = await axiosInstance.post("/forget-password", userData);
-      console.log("response>>>>>data", response);
       
       // const response = await axiosInstance.post("/login", userData);
       return response.data;
@@ -33,41 +32,7 @@ export const updatePassword = createAsyncThunk(
   }
 );
 
-// const forgetPasswordSlice = createSlice({
-//     name: "passwordReset",
-//     initialState: {
-//       data: null,
-//       loading: false,
-//       error: null,
-//     },
-//     reducers: {
-//         logout: (state) => {
-//           state.data = null;
-         
-//         },
-//       },
-//     extraReducers: (builder) => {
-//       builder.addCase(forgetPassword.pending, (state) => {
-//         state.loading = true;
-//         state.error = null;
-//       });
-//       builder.addCase(forgetPassword.fulfilled, (state, action) => {
-//         console.log("action>>>>", action.payload);
-//         state.loading = false;  
-//         state.data = action.payload.message;
-//       });
-//       builder.addCase(forgetPassword.rejected, (state, action) => {
-//         state.loading = false;
-//         state.error = action.payload;
-//       });
-//     },
-//   });
-  
-//   // Export the reducer, not extraReducers
-// export const { logout } = forgetPasswordSlice.actions;
 
-//   export default forgetPasswordSlice.reducer;
-  
 
 
 const initialState = {
@@ -90,6 +55,19 @@ const forgetPasswordSlice = createSlice({
       state.error = "";
     });
     builder.addCase(forgetPassword.rejected, (state, action) => {
+      state.isFetching = false;
+      state.data = [];
+      state.error = action.error;
+    });
+    builder.addCase(updatePassword.pending, (state) => {
+      state.isFetching = true;
+    });
+    builder.addCase(updatePassword.fulfilled, (state, action) => {
+      state.isFetching = false;
+      state.data = action.payload;
+      state.error = "";
+    });
+    builder.addCase(updatePassword.rejected, (state, action) => {
       state.isFetching = false;
       state.data = [];
       state.error = action.error;

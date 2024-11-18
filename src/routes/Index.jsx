@@ -20,6 +20,11 @@ import UpdatePassword from "../pages/updatePassword/UpdatePassword";
 import Dashboard from "../pages/dashboard/Dashboard";
 import {Memories} from "../pages/memories/Memories";
 import DetailAudioList from "../pages/detailAudioList/DetailAudioList";
+import DetailMemories from "../pages/memories/DetailMemories";
+import PicturesMemories from "../pages/memories/PicturesMemories";
+import SlideShow from "../pages/memories/SlideShow";
+import Vediomemories from "../pages/vedioMemories/Vediomemories";
+import UploadVedios from "../pages/vedioMemories/uploadVedios/UploadVedios";
 // import { publicRoutesList } from "./Routes";
 
 const AppRoutes = () => {
@@ -43,8 +48,13 @@ const AppRoutes = () => {
         { path: "/updatePassword", element: <UpdatePassword /> },
         { path: "/packages-details", element: <Packages /> },
         { path: "/dashboard", element: <Dashboard /> },
-        { path: "/memories", element: <Memories /> },
+        { path: "/upload-memories", element: <Memories /> },
         { path: "/audioList", element: <DetailAudioList /> },
+        { path: "/memories-folder", element: <DetailMemories /> },
+        { path: "/pictures", element: <PicturesMemories /> },
+        { path: "/slideshow", element: <SlideShow /> },
+        { path: "/vediosMemories", element: <Vediomemories /> },
+        { path: "/upload-vedios", element: <UploadVedios /> },
 
        
       ];

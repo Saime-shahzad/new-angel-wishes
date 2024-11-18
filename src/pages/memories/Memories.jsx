@@ -7,9 +7,11 @@ import carrerpossition2 from "../../assets/images/carrerpossition2.png";
 import carrerpossition3 from "../../assets/images/carrerpossition3.png";
 import selectImage from "../../assets/images/selectImage.png";
 
-import Carousels from "../../components/carousel/Carousels";
+// import Carousels from "../../components/carousel/Carousels";
 import icons from "../../assets/icons/icons";
 import {Inputs} from "../../assets/input/Inputs"
+import { Buttons } from "../../components/button/Buttons";
+import webColor from "../../assets/colors/Colors";
 // import { toast } from "react-toastify";
 export const Memories = () => {
 
@@ -110,9 +112,9 @@ setIsMemoData({...isMemoData , file:file?.name})
   
   return (
     <div className="parent">
-      <div className="child-1 container ">
+      {/* <div className="child-1 container ">
         <Carousels cardsData={cardsData} />
-      </div>
+      </div> */}
 
       <div className="parrent container my-5" >
         <div className="fw-bold my-3 fs-4">
@@ -155,8 +157,8 @@ setIsMemoData({...isMemoData , file:file?.name})
             <label htmlFor="fileInput" className="custom-upload-button   w-25">
         {icons.addPhotoAlternateIcons} Upload
       </label>
-            <label  className="custom-upload-button mx-5  w-25" onClick={deleteImage}>
-        {icons.deleteIcon} Delete
+            <label  className="custom-upload-button-cancel mx-5  w-25" onClick={deleteImage}>
+        {icons.deleteIcon} Cancel
       </label>
             </div>
             <div className="message-Parrent-controls mt-4">
@@ -164,13 +166,16 @@ setIsMemoData({...isMemoData , file:file?.name})
       <Inputs type="text"  
               value={isMemoData.memoDescription}
 
-      onChange={(e) => setIsMemoData({...isMemoData, memoDescription : e.target.value})}  labelName="Message" icon={<div>{icons.messageicons} </div>} />
+      onChange={(e) => setIsMemoData({...isMemoData, memoDescription : e.target.value})}  labelName="Description" icon={<div>{icons.messageicons} </div>} />
  
             </div>
             <div className="mt-2">
-            <label  className="custom-upload-button   " htmlFor="fileInput" style={{width : "66%"}}>
+            {/* <label  className="custom-upload-button   " htmlFor="fileInput" style={{width : "66%"}}>
         {icons.addPhotoAlternateIcons} Add Photo/vedio in memories
-      </label>
+      </label> */}
+      <div>
+        <Buttons text="Submit" style={{backgroundColor:webColor.themeColor}} />
+      </div>
             </div>
       {/* <div>
         <Buttons text="delete" className="custom-upload-button  " />

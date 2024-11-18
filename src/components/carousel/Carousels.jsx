@@ -2,49 +2,42 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Carousel.css";
+
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 4 // optional, default to 1.
+  allScreens: {
+    breakpoint: { max: 4000, min: 0 },
+    items: 1,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 767, min: 464 },
-    items: 2,
-    slidesToSlide: 1 // optional, default to 1.
-  }
 };
 
-const Carousels = ({cardsData}) => {
+const Carousels = ({ cardsData }) => {
   return (
-    <div className="parent ">
+    <div className="container ">
+    
+
+        
+      <div className="fullscreen-carousel ">
+
+
       <Carousel
         responsive={responsive}
-        autoPlay={true}
         swipeable={true}
         draggable={true}
         infinite={true}
         partialVisible={false}
-        dotListClass="custom-dot-list-style"
+        // showDots={true}
       >
-        {cardsData.map((item, index) => {
-          return (
-            <div className="slider" key={index} >
-              <img src={item.image} alt="movie" />
-              <div className=" text-center">
-
-              {item.heading}
-              </div>
-            </div>
-          );
-        })}
+        {cardsData.map((item, index) => (
+          <div className="carousel-slide" key={index}>
+            <img src={item.image} alt="movie" className="carousel-image" />
+            <div className="carousel-text">{item.heading}</div>
+          </div>
+        ))}
       </Carousel>
+      </div>
+     
     </div>
   );
 };
+
 export default Carousels;

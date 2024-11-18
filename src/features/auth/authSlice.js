@@ -5,7 +5,6 @@ import axiosInstance, { axiosInstance2 } from "../../axiosInstance";
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async (userData, { rejectWithValue }) => {
-    console.log("userData>>>>>", userData);
     
     try {
       const response = await axiosInstance.post("/login", userData);

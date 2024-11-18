@@ -7,7 +7,8 @@ import { toast } from 'react-toastify';
  import Loader from "../../assets/loader/Loader"
 import { useRoutFunction } from '../../assets/others/UseFullFunctions';
 import { forgetPassword } from '../../features/forgetPassword/forgetPasswordSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import webColor from '../../assets/colors/Colors';
 
 
 
@@ -22,19 +23,14 @@ const ForgetPassword = () => {
 
     const [isUserData, setIsUserData] = useState(userObj)
     const [isLoading, setIsLoading] = useState(false)
-    const [isResponse, setIsResponse] = useState([])
-
-    const { data} = useSelector(
-        (state) => state.passwordReset
-      );
-
-useEffect(() => {
- setIsResponse(data)
-  
-}, [data])
+  const [isVisible, setIsVisible] = useState("");
+  const [isMessage, setIsMessage] = useState(false);
 
 
-    const submituserInfo = (() => {
+   
+
+    const submituserInfo =async(e) => {
+        e.preventDefault();
         if (!isUserData.email) {
             // toast.warn(!isUserData.email ? `Fields${isUserData.email}` : `${isUserData.password} Fields`)
             toast.warn(
@@ -50,13 +46,31 @@ useEffect(() => {
                 
             }
             else{
-                setIsLoading(true)
                 
-          dispatch(
+        const res = await dispatch(
             forgetPassword(
                 isUserData
             )
           );
+          if (res?.payload.status === 0) {
+            setIsVisible(res?.payload.message);
+            setTimeout(() => {
+              setIsVisible("");
+            }, 5000);
+          } else {
+          setIsLoading(true)
+    
+            setTimeout(() => {
+              
+              setIsLoading(false)
+              toast.success("Email Send Successfully")
+              setIsMessage(true)
+             
+            }, 2000);
+    
+          }
+        
+          
 
                 // setTimeout(() => {
                     
@@ -74,7 +88,7 @@ useEffect(() => {
 
             }
         }
-    })
+    }
     const inputValues = ((e) => {
 
         if (e?.target.type === "email") {
@@ -107,6 +121,15 @@ useEffect(() => {
         <div className='sign-in -parent'>
             <div className='parent container'
             >
+                {!isMessage ? (
+                    <div className='text-center vh-100  d-flex align-items-center justify-content-center'>
+                        <div>
+                    <h1>Thank <span style={{color:webColor.themeColor}}> You!</span></h1>
+
+                    <p>Your Response Has Been Subbmitted Please Go Back to continue</p>
+                    <Buttons text="go Back" style={{backgroundColor:webColor.themeColor}} onClick={()=> routeTo("/sign-in")} /> 
+                    </div>
+                    </div>):
 
                 <div className='row'>
                     <div className='img-section   vh-100 col-lg-4 d-md-none align-items-center justify-content-end d-lg-flex d-sm-none' >
@@ -115,6 +138,7 @@ useEffect(() => {
                     <div className='col-lg-8  justify-content-start align-items-center d-flex'>
                         <div className='form-parent'>
                             <form
+                             onSubmit={(e) => e.preventDefault()} 
                                 className="my-5 container control-width rounded-2 w-100  "
                             >
                                 <div className="heading-contant p-2 text-center  my-3">
@@ -134,9 +158,13 @@ useEffect(() => {
  
                                             >
                                                 {item.type === "Submit" ? (
-                                                    <div className='d-flex justify-content-between'>
-                                                        <Buttons className="mt-2" text={item.label} style={{ backgroundColor: "#FDB515" }} onClick={submituserInfo} />
+                                                    <div className="">
+                                                                          {isVisible && <div className="text-danger">{isVisible}</div>}
 
+                                                    <div className='d-flex justify-content-between'>
+                                                        <Buttons className="mt-2" type="button"  text={item.label} style={{ backgroundColor: "#FDB515" }} onClick={submituserInfo} />
+
+                                                    </div>
                                                     </div>
                                                 ) : (
                                                     <Inputs
@@ -165,6 +193,7 @@ useEffect(() => {
                     </div>
 
                 </div>
+                }
             </div>
 
 

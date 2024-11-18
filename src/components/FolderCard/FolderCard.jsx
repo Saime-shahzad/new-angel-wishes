@@ -15,6 +15,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 // import image from "./../../assets/images/image.png";
 import Union from "../../assets/images/Union.png";
 import union_2 from "../../assets/images/union_2.png";
+import folderBackImage from "../../assets/images/folderBackImage.png";
 import share from "../../assets/images/share.png";
 // import { useDispatch } from "react-redux";
 // import { folder } from "../../services/folder";
@@ -75,11 +76,13 @@ export default function FolderCard({
   return (
     <Card
       sx={{
-        backgroundImage: isSelected ? `url(${union_2})` : `url(${Union})`,
+        // backgroundImage: isSelected ? `url(${union_2})` : `url(${Union})`,
+        backgroundImage:  `url(${folderBackImage})`,
         backgroundSize: "cover",
         border: "none",
         boxShadow: "none",
         transition: "0.5s",
+        backgroundColor:"transparent"
       }}
       onClick={onClick}
     >
@@ -99,9 +102,13 @@ export default function FolderCard({
             pt: 4,
             // color: isSelected ? colors?.white : "#000",
           }}
+          
         >
+          
+        
           <Typography
-            sx={{ fontWeight: 600, color: isSelected ? "white" : "#000" }}
+            // sx={{  color: isSelected ? "white" : "#000" }}
+            sx={{  color: "white"}}
           >
             {title}
           </Typography>
@@ -109,74 +116,14 @@ export default function FolderCard({
             {time}
           </Typography>
         </Box>
-        {isSelected ? (
-          <CardHeader
-            action={
-              <Box
-                sx={{
-                  borderRadius: 50,
-                  p: 1.3,
-                  backgroundColor: "#fff",
-                  cursor: "pointer",
-                }}
-                onClick={handleShare}
-              >
-                <Box
-                  aria-label="settings"
-                  sx={{
-                    width: "20px",
-                    height: "20px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <img
-                    src={share}
-                    alt=""
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                    }}
-                  />
-                </Box>
-              </Box>
-            }
-          />
-        ) : (
-          <CardHeader
-            action={
-              <Box
-                aria-label="settings"
-                sx={{
-                  backgroundColor: "#111111",
-                  borderRadius: 50,
-                  p: 1,
-                }}
-                onClick={handleOption}
-              >
-                {/* <MoreHorizIcon sx={{ color: colors.white }} /> */}
-                
-                <CustomeMenu
-                  isAllow={isAllow}
-                  icon={
-                    <MoreHorizIcon
-                      sx={{ color: "white", cursor: "pointer" }}
-                    />
-                  }
-                  options={menuOptions}
-                />
-              </Box>
-            }
-          />
-        )}
+        
       </Box>
+     
      
       <CardMedia
         sx={{ my: 1, cursor: "pointer", objectFit: "contain", p: 1 }}
         component="img"
-        height="194"
+        height="154"
         image={image}
         alt="Paella dish"
         

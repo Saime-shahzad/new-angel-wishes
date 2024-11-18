@@ -43,7 +43,23 @@
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
+    /* background-color: green; */
     background-color: #FDB515;
+    font-size: 14px;
+    font-weight: 500 !important;
+    transition: background-color 0.3s ease;
+    height: 50px !important;
+    box-shadow: 1px 1px lightgray !important;
+    border:1px solid lightgray;
+  }
+  .custom-upload-button-cancel {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: red;
+    /* background-color: #FDB515; */
     font-size: 14px;
     font-weight: 500 !important;
     transition: background-color 0.3s ease;

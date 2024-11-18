@@ -19,6 +19,11 @@ import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import ShareIcon from '@mui/icons-material/Share';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import PlayCircleOutlinedIcon from '@mui/icons-material/PlayCircleOutlined';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 
 
@@ -36,9 +41,14 @@ const icons=
     expandMoreIcons: < ExpandMoreIcon style={{ color: "white" }}/>,
     checkCircleIcon: < CheckCircleIcon />,
     arrowBackIosNewIcons: < ArrowBackIosNewIcon  style={{fontSize:"15px"}} />,
+    contentCopyIcon: < ContentCopyIcon   style={{color: webColor.themeColor ,fontSize:"15px"}} />,
     locationIcons: < FmdGoodIcon  style={{color: webColor.themeColor}} />,
     cancelIcons: < CancelIcon  style={{color: webColor.themeColor}} />,
+    dotsMenueIcons: < MoreVertIcon  style={{color: webColor.themeColor}} />,
+    shareIcons: < ShareIcon  style={{color: webColor.themeColor}} />,
     eyeIcons: < RemoveRedEyeIcon  style={{color: webColor.themeColor}} />,
+    vedioIcons: < PlayCircleOutlinedIcon  style={{color: webColor.themeColor, width:"50px" , height:"auto"}} />,
+    // vedioIcons: < PlayCircleIcon  style={{ width:"50px" , height:"auto"}} />,
     createNewFolderIcons: < CreateNewFolderIcon   />,
     addPhotoAlternateIcons: < AddPhotoAlternateIcon   />,
     deleteIcon: < DeleteIcon   />,

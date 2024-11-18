@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 // import icons from "../../assets/icons/icons";
 import haderLogo from "../../assets/images/logo.png";
@@ -12,13 +12,35 @@ import webColor from "../../assets/colors/Colors";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import {useRoutFunction} from "../../assets/others/UseFullFunctions";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Header = () => {
   const location = useLocation();
   const routeTo = useRoutFunction();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [isPopupName, setIsPopupName] = useState("");
+  // const [isToken, setIsToken] = useState("");
   const open = Boolean(anchorEl);
+  const dispatch=useDispatch()
+
+    const {  token} = useSelector(
+    (state) => state.auth
+  );
+  useEffect(() => {
+    if(token){
+
+      localStorage.setItem("token" , token)
+    }
+    }, [ token])
+  //   useEffect(() => {
+
+  //     setIsToken(localStorage.getItem("token" ? "token" : ""))
+
+  //   }, [isToken])
+    
+  // console.log("token>>>>, token", isToken);
+
+
   const handleClick = (event, name) => {
     setIsPopupName(name);
     setAnchorEl(event.currentTarget);
@@ -67,13 +89,18 @@ export const Header = () => {
     },
   ];
   const profileMenue = [
-    // {
-    //   title: "Logout",
-    //   onClick: () => {
-    //     // routeTo("")
-    //     handleClose()
-    //   },
-    // },
+    {
+      title: "Logout",
+      onClick: () => {
+        // routeTo("")
+       
+localStorage.removeItem("token")
+
+window.location.reload()
+        
+        handleClose()
+      },
+    },
     {
       title: "Sign Up",
       onClick: () => {
@@ -190,8 +217,8 @@ export const Header = () => {
         >
           {(isPopupName === "profile" ? profileMenue : profileMenue)?.map(
             (item) => {
-              return <MenuItem onClick={item.onClick}>{item.title}</MenuItem>;
-            }
+              return <MenuItem className={ localStorage.getItem("token") && item.title.includes("Sign") ? "d-none" :  !localStorage.getItem("token") && item.title==="Logout" ? "d-none" :"" }onClick={item.onClick}>{item.title}</MenuItem>;
+            } 
           )}
         </Menu>
       </div>
